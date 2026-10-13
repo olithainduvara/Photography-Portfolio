@@ -1,0 +1,32 @@
+{
+  "title": "Collage Designs",
+  "location": "Studio",
+  "spotlight": true,
+  "description": "Album pages and collages designed from my own shoots: graduations, portraits and blooming-flower stories, laid out frame by frame.",
+  "order": [
+    "01-rainy-convocation.jpg",
+    "02-blooming-bouquet.jpg",
+    "03-lilac-and-leaves.jpg",
+    "04-circles-in-the-garden.jpg",
+    "05-graduation-day-story.jpg",
+    "06-dark-tree-spread.jpg",
+    "07-ruins-and-verse.jpg",
+    "08-floral-graduation-page.jpg",
+    "09-bouquet-story-page.jpg",
+    "10-two-page-story.jpg",
+    "11-quiet-moment-in-the-ruins.jpg"
+  ],
+  "captions": {
+    "01-rainy-convocation.jpg": "Rainy convocation",
+    "02-blooming-bouquet.jpg": "Blooming bouquet",
+    "03-lilac-and-leaves.jpg": "Lilac & leaves",
+    "04-circles-in-the-garden.jpg": "Circles in the garden",
+    "05-graduation-day-story.jpg": "Graduation day story",
+    "06-dark-tree-spread.jpg": "Dark tree spread",
+    "07-ruins-and-verse.jpg": "Ruins & verse",
+    "08-floral-graduation-page.jpg": "Floral graduation page",
+    "09-bouquet-story-page.jpg": "Bouquet story page",
+    "10-two-page-story.jpg": "Two-page story",
+    "11-quiet-moment-in-the-ruins.jpg": "A quiet moment in the ruins"
+  }
+}

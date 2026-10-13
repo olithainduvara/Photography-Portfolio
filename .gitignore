@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+__pycache__/
+*.pyc
+.claude/
+
+# raw originals (1.5 GB): the site uses the web-sized copies in portfolio/
+Assets 2/

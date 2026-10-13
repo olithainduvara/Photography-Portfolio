@@ -1,0 +1,14 @@
+{
+  "order": 4,
+  "name": "Reels",
+  "short": "Reels",
+  "tagline": "Vertical stories, cut for the feed",
+  "description": "Short vertical films: graduations, portraits and blooming trees, shot, edited and graded for Reels and Shorts.",
+  "tags": [
+    "Reels",
+    "Shorts",
+    "Colour grading",
+    "Music edits"
+  ],
+  "layout": "reels"
+}

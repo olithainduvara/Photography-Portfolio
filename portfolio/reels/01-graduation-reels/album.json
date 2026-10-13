@@ -1,0 +1,15 @@
+{
+  "title": "Graduation Reels",
+  "location": "University of Peradeniya",
+  "description": "Convocation day cut into one-minute stories, from the first portrait to the drone pull-away over the lawn.",
+  "order": [
+    "general-convocation-2026.mp4",
+    "graduation-from-above.mp4",
+    "graduation-story.mp4"
+  ],
+  "captions": {
+    "general-convocation-2026.mp4": "General Convocation 2026",
+    "graduation-from-above.mp4": "Graduation, from the ground to the sky",
+    "graduation-story.mp4": "A graduation story"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Live Event Coverage",
+  "location": "University of Peradeniya",
+  "description": "Gimbal and side-camera roles at major events like Wasanthaye Aga and Sandhwani: live coverage, framing and working under pressure.",
+  "captions": {
+    "stage-production-gauge.jpg": "Stage production, Gauge"
+  },
+  "order": [
+    "stage-production-gauge.jpg",
+    "gimbal-at-a-live-function.jpg",
+    "multi-camera-ceremony.jpg",
+    "side-camera-on-stage.jpg"
+  ]
+}

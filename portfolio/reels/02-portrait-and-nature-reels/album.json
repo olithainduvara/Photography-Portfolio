@@ -1,0 +1,13 @@
+{
+  "title": "Portrait & Nature Reels",
+  "location": "Sri Lanka",
+  "description": "A portrait session in white, and the trees of Peradeniya in full bloom.",
+  "order": [
+    "white-dress-portrait.mp4",
+    "blooming.mp4"
+  ],
+  "captions": {
+    "white-dress-portrait.mp4": "In white, with flowers",
+    "blooming.mp4": "Blooming"
+  }
+}

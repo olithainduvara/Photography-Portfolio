@@ -1,0 +1,13 @@
+{
+  "title": "Magical Pera",
+  "location": "University of Peradeniya",
+  "description": "Peradeniya waking up under a blanket of cloud, flown just above the mist at sunrise.",
+  "order": [
+    "magical-pera.mp4",
+    "misty-pera-poster.jpg"
+  ],
+  "captions": {
+    "magical-pera.mp4": "Magical Pera: above the morning mist",
+    "misty-pera-poster.jpg": "Misty Pera"
+  }
+}

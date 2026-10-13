@@ -1,0 +1,17 @@
+{
+  "title": "Hanthana Ridge",
+  "location": "Hanthana, Kandy",
+  "description": "The batch hike to the top of Hanthana, flown along the ridge: green folds, cliff edges and the whole batch on the summit.",
+  "order": [
+    "hanthana-ridge-flight.mp4",
+    "the-batch-on-the-summit.jpg",
+    "along-the-ridge.jpg",
+    "the-cliff-edge.jpg",
+    "hanthana-at-dawn.jpg",
+    "green-folds.jpg",
+    "the-group-from-above.jpg"
+  ],
+  "captions": {
+    "hanthana-ridge-flight.mp4": "Flying the Hanthana ridge"
+  }
+}

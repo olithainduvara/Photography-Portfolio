@@ -1,0 +1,14 @@
+{
+  "title": "Village from Above",
+  "location": "Sri Lanka",
+  "description": "A temple island in a lotus-covered lake, patchwork paddy fields and a peacock in the grass: village life from the air.",
+  "order": [
+    "temple-in-the-lotus-lake.mp4",
+    "paddy-fields-and-a-peacock.mp4",
+    "patchwork-paddies.jpg"
+  ],
+  "captions": {
+    "temple-in-the-lotus-lake.mp4": "A temple in the lotus lake",
+    "paddy-fields-and-a-peacock.mp4": "Paddy fields and a peacock"
+  }
+}

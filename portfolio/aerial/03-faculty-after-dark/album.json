@@ -1,0 +1,13 @@
+{
+  "title": "Faculty After Dark",
+  "location": "Faculty of Engineering, Peradeniya",
+  "description": "The faculty lit up for the night, and the first-ever drone show in university history, captured from the air at EngEx 2025.",
+  "captions": {
+    "faculty-lit-up.jpg": "The faculty lit up after dark",
+    "from-the-controller.jpg": "Framing the crowd from the controller"
+  },
+  "order": [
+    "faculty-lit-up.jpg",
+    "from-the-controller.jpg"
+  ]
+}

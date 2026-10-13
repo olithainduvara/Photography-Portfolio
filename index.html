@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Olitha Induvara Photography</title>
+  <meta name="description" content="Photography, videography, editing and aerial cinematography by Olitha Induvara: graduations, portraits, events and drone aerials in Peradeniya, Sri Lanka.">
+  <meta name="theme-color" content="#0a0a0c">
+  <meta property="og:title" content="Olitha Induvara Photography">
+  <meta property="og:description" content="Every picture tells a story. Photography · Videography · Editing · Aerial cinematography.">
+  <meta property="og:image" content="assets/logo.png">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1791912777">
+  <script type="importmap">
+    { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    } }
+  </script>
+</head>
+<body class="has-rail" data-page="home">
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">Olitha Induvara<small>Photography</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="active">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="#reels">Reels</a>
+      <a href="#studio">Studio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="top-actions">
+      <label class="search">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span class="sr-only">Search albums</span>
+        <input id="siteSearch" type="search" placeholder="Search albums…" autocomplete="off">
+      </label>
+      <a class="btn btn-gold btn-sm" href="#contact">Book a session</a>
+      <a href="#about" aria-label="About Olitha"><img class="top-avatar" src="assets/avatar.jpg" alt=""></a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO (3D) ================= -->
+    <section class="hero" id="home">
+      <canvas id="hero3d" aria-label="Interactive 3D lens with orbiting album frames. Drag to spin, click a frame to open its album."></canvas>
+      <div class="hero-fallback" aria-hidden="true"><div class="fan" id="heroFan"></div></div>
+
+      <div class="wrap">
+        <div class="hero-copy">
+          <span class="status"><i></i>Taking bookings · <span data-site="location"></span></span>
+          <h1>Every picture<br>tells a <em>story.</em></h1>
+          <p class="lead" data-site="intro"></p>
+          <div class="hero-cta">
+            <a class="btn btn-gold" href="explore.html">Explore the work
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost" href="#contact">Book a session</a>
+          </div>
+          <nav class="areas" id="heroAreas" aria-label="Disciplines"></nav>
+        </div>
+      </div>
+
+      <div class="hero-hint" aria-hidden="true"><span class="mouse"></span>Drag to orbit · click a frame</div>
+      <div class="hero-tip" id="heroTip" aria-hidden="true"></div>
+    </section>
+
+    <!-- ================= REELS ================= -->
+    <section class="reels-sec" id="reels">
+      <div class="wrap">
+        <div class="studio-head reveal">
+          <div>
+            <span class="eyebrow">Reels · <span id="reelCount"></span> films</span>
+            <h2 class="h2">Stories in <em>motion</em></h2>
+            <p class="lead">Graduation stories, portraits and drone flights cut for the vertical screen. Hover to preview, tap to watch with sound.</p>
+          </div>
+          <div class="row-nav">
+            <button class="sq-btn" data-scroll="-1" aria-label="Scroll reels left"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <button class="sq-btn" data-scroll="1" aria-label="Scroll reels right"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+            <a class="btn btn-ghost" href="explore.html#reels">All reels</a>
+          </div>
+        </div>
+        <div class="reels-row" id="reelsRow"></div>
+      </div>
+    </section>
+
+    <!-- ================= SPOTLIGHT: collage designs ================= -->
+    <section class="spotlight" id="spotlight">
+      <div class="wrap">
+        <div class="studio-head reveal">
+          <div>
+            <span class="eyebrow">Editing spotlight</span>
+            <h2 class="h2"><span id="spotTitle">Collage Designs</span>, <em>frame by frame</em></h2>
+            <p class="lead" id="spotDesc"></p>
+          </div>
+          <a class="btn btn-ghost" id="spotOpen" href="explore.html#editing">Open the album</a>
+        </div>
+        <div class="coverflow" id="coverflow" tabindex="0" aria-label="Collage designs: use the arrow keys to browse"></div>
+        <div class="cf-ui">
+          <button class="sq-btn" id="spotPrev" aria-label="Previous design"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+          <div class="cap"><b id="spotCaption"></b><small id="spotCount"></small></div>
+          <button class="sq-btn" id="spotNext" aria-label="Next design"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STUDIO (feed + sidebar) ================= -->
+    <section class="studio" id="studio">
+      <div class="wrap">
+        <div class="studio-head reveal">
+          <div>
+            <span class="eyebrow">The studio feed</span>
+            <h2 class="h2">Fresh from the <em>lens</em></h2>
+            <p class="lead">Albums from every discipline, posted like a feed. Tap a frame to view it full-screen, or open the album for the whole set.</p>
+          </div>
+          <a class="btn btn-ghost" href="explore.html">Browse all folders</a>
+        </div>
+
+        <div class="studio-grid">
+          <div class="feed">
+            <div class="feed-tools">
+              <div class="tabs" id="feedTabs" role="tablist" aria-label="Filter albums"></div>
+            </div>
+
+            <form class="panel composer" id="composer">
+              <span class="ava"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+              <label class="sr-only" for="composerInput">Tell me about your event</label>
+              <input id="composerInput" type="text" placeholder="Planning a graduation, event or aerial shoot? Tell me about it…">
+              <div class="tools">
+                <a class="sq-btn" href="explore.html#photography" aria-label="Photography albums"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="4"/></svg></a>
+                <a class="sq-btn" href="explore.html#videography" aria-label="Videography albums"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3.5v11L16 14"/></svg></a>
+                <button class="sq-btn gold" type="submit" aria-label="Send on WhatsApp"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
+              </div>
+            </form>
+
+            <div id="posts" class="feed" aria-live="polite"></div>
+            <button class="btn btn-ghost feed-more" id="feedMore" hidden></button>
+          </div>
+
+          <aside class="side">
+            <div class="panel p-orbit">
+              <div class="panel-head"><h3>Areas of Work</h3><a href="explore.html">View all</a></div>
+              <div class="orbit" id="orbit">
+                <span class="orbit-ring"></span><span class="orbit-ring r2"></span>
+                <span class="orbit-core"><img src="assets/avatar.jpg" alt="Olitha Induvara"></span>
+              </div>
+            </div>
+
+            <div class="panel p-feat">
+              <div class="panel-head"><h3>Featured Photographer</h3></div>
+              <div class="featured">
+                <img src="assets/avatar.jpg" alt="">
+                <div><b data-site="name"></b><small id="featuredStats"></small></div>
+                <a class="btn btn-gold btn-sm" href="#contact">Hire</a>
+              </div>
+            </div>
+
+            <div class="panel p-latest">
+              <div class="panel-head"><h3>Latest Content</h3><a href="explore.html">See all</a></div>
+              <div class="rows" id="latest"></div>
+            </div>
+
+            <div class="panel p-book">
+              <div class="panel-head"><h3>Now Booking</h3><a data-wa="">Check dates</a></div>
+              <div class="rows" id="booking"></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div class="portrait reveal">
+          <div class="portrait-frame"></div>
+          <div class="portrait-card">
+            <img src="assets/profile.jpg" alt="Olitha Induvara" loading="lazy">
+            <div class="portrait-badge">
+              <img src="assets/logo.png" alt="">
+              <div><b data-site="name"></b><small>Behind the lens</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="eyebrow">About me</span>
+          <h2 class="h2">From the ground <em>to the sky</em></h2>
+          <div id="bio"></div>
+          <div class="stats" id="stats"></div>
+          <div class="tags" id="aboutTags"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact" style="padding-top:20px">
+      <div class="wrap">
+        <div class="contact-card reveal">
+          <div class="contact-info">
+            <span class="eyebrow">Let's work together</span>
+            <h2 class="h2">Have a moment worth <em>keeping?</em></h2>
+            <p class="lead">Graduations, events, portraits or aerial coverage. Send the details and I'll get back to you on WhatsApp.</p>
+            <div class="contact-links">
+              <a data-wa="">
+                <span class="ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.9 7L3 21l2-6A8 8 0 1 1 21 12z"/></svg></span>
+                <div><b>WhatsApp</b><small data-site="phone"></small></div>
+              </a>
+              <a data-href="email">
+                <span class="ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+                <div><b>Email</b><small data-site="email"></small></div>
+              </a>
+              <a data-href="facebook" target="_blank" rel="noopener">
+                <span class="ic"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z"/></svg></span>
+                <div><b>Facebook</b><small>Full albums &amp; latest shoots</small></div>
+              </a>
+            </div>
+          </div>
+
+          <form class="form" id="contactForm">
+            <h3>Send a booking request</h3>
+            <div class="form-row">
+              <div class="field"><label for="cf-name">Your name</label><input id="cf-name" name="name" required autocomplete="name"></div>
+              <div class="field"><label for="cf-date">Event date</label><input id="cf-date" name="date" type="date"></div>
+            </div>
+            <div class="field"><label for="cf-service">Service</label><select id="cf-service" name="service"></select></div>
+            <div class="field"><label for="cf-msg">Tell me about it</label><textarea id="cf-msg" name="message" required placeholder="Location, number of people, what you have in mind…"></textarea></div>
+            <button class="btn btn-gold" type="submit">Send via WhatsApp
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
+            <p class="form-note">Opens WhatsApp with your message filled in. Nothing is stored on this site.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">Olitha Induvara<small>Every picture tells a story</small></span></a>
+      <span>&copy; <span id="year"></span> Olitha Induvara Photography · Peradeniya, Sri Lanka</span>
+      <div class="socials">
+        <a class="sq-btn" data-href="facebook" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z"/></svg></a>
+        <a class="sq-btn" data-href="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4m-4-7v7"/></svg></a>
+        <a class="sq-btn" data-href="email" aria-label="Email"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site.js?v=1791912777"></script>
+  <script src="js/data.js?v=1791912777"></script>
+  <script src="js/app.js?v=1791912777"></script>
+  <script type="module" src="js/hero3d.js?v=1791912777"></script>
+</body>
+</html>
