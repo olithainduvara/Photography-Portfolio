@@ -31,6 +31,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 2,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -274,6 +276,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -364,6 +368,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -580,6 +586,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 1,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -850,6 +858,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 3,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -967,6 +977,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -1021,6 +1033,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -1075,6 +1089,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -1129,6 +1145,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -1273,6 +1291,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -1453,6 +1473,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -1650,6 +1672,8 @@ window.PORTFOLIO = {
      "featured": false,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -1726,6 +1750,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -1797,6 +1823,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "video",
@@ -1879,6 +1907,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "video",
@@ -1916,6 +1946,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -1952,6 +1984,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "video",
@@ -1980,6 +2014,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "video",
@@ -2008,6 +2044,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "video",
@@ -2036,6 +2074,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "video",
@@ -2083,6 +2123,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -2137,6 +2179,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -2181,6 +2225,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 99,
+     "pin": 0,
+     "inFeed": false,
      "items": [
       {
        "type": "video",
@@ -2229,6 +2275,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "video",
@@ -2284,6 +2332,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": true,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -2392,6 +2442,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -2419,6 +2471,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -2491,6 +2545,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -2536,6 +2592,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -2608,6 +2666,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -2842,6 +2902,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -2914,6 +2976,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -3022,6 +3086,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",
@@ -3103,6 +3169,8 @@ window.PORTFOLIO = {
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
      "items": [
       {
        "type": "image",

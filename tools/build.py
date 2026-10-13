@@ -127,6 +127,8 @@ def scan_album(folder, cat_id, album_id, title_fallback):
         'featured': meta.get('featured', True),    # false = Explore only, never on the home page
         'spotlight': meta.get('spotlight', False),  # true = the 3D showcase on the home page
         'reelsOrder': meta.get('reelsOrder', 0),     # higher = later in the home Reels row
+        'pin': meta.get('pin', 0),                   # 1, 2, 3 ... = first posts in the home feed, in that order
+        'inFeed': meta.get('feed', True),            # false = no feed post (still in Reels, orbit etc.)
         'items': items,
     }
 

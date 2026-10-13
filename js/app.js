@@ -62,6 +62,9 @@
   const mixed = interleave(() => true);              // Explore: everything
   const homeMixed = interleave(onHome);              // home feed: featured albums only
   const firstOnHome = c => c.albums.find(onHome);
+  // feed order: pinned albums first (pin 1, 2, 3 ...), then the interleaved mix; "feed": false albums get no post
+  const feedList = homeMixed.filter(a => a.pin).sort((a, b) => a.pin - b.pin)
+    .concat(homeMixed.filter(a => !a.pin && a.inFeed !== false));
   const spotlight = albums.find(a => a.spotlight);
   // every vertical clip shown on the home page, reels first, then drone reels and the rest
   const reelsOf = list => list.flatMap(a => a.items
@@ -433,14 +436,15 @@
   function home() {
     const tabs = $('#feedTabs');
     if (!tabs) return;
-    let filter = 'all', limit = 4;
+    const FIRST = 3, MORE = 4;
+    let filter = 'all', limit = FIRST;
 
-    tabs.innerHTML = [{ id: 'all', short: 'All', n: homeMixed.length }]
-      .concat(cats.map(c => ({ id: c.id, short: c.short, n: c.albums.filter(onHome).length, c })).filter(t => t.n))
+    tabs.innerHTML = [{ id: 'all', short: 'All', n: feedList.length }]
+      .concat(cats.map(c => ({ id: c.id, short: c.short, n: feedList.filter(a => a.category === c.id).length, c })).filter(t => t.n))
       .map(t => `<button class="pill${t.id === 'all' ? ' active' : ''}" data-f="${t.id}" role="tab">${t.c ? icon(catIcon(t.id)) : ''}${esc(t.id === 'all' ? 'All work' : t.c.name)} <span class="count">${t.n}</span></button>`).join('');
 
     function draw() {
-      const list = filter === 'all' ? homeMixed : homeMixed.filter(a => a.category === filter);
+      const list = filter === 'all' ? feedList : feedList.filter(a => a.category === filter);
       $('#posts').innerHTML = list.slice(0, limit).map(postHTML).join('');
       const more = $('#feedMore');
       more.hidden = list.length <= limit;
@@ -449,11 +453,11 @@
       $$('.orbit-sat').forEach(s => s.classList.toggle('active', s.dataset.f === filter));
     }
     function setFilter(f, scroll) {
-      filter = f; limit = 4; draw();
+      filter = f; limit = FIRST; draw();
       if (scroll) $('#studio').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
     }
     tabs.addEventListener('click', e => { const b = e.target.closest('.pill'); b && setFilter(b.dataset.f); });
-    $('#feedMore').onclick = () => { limit += 4; draw(); };
+    $('#feedMore').onclick = () => { limit += MORE; draw(); };
 
     $('#posts').addEventListener('click', e => {
       const post = e.target.closest('.post'); if (!post) return;

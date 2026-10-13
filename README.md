@@ -64,6 +64,8 @@ Keep your raw exports somewhere outside `portfolio/` (`Assets 2/` is git-ignored
 - `"featured": false` keeps an album in Explore but off the home page: not in the feed, the 3D orbit, the thumbnails or the Reels row.
 - `"spotlight": true` puts an album in the 3D showcase on the home page, and its first 4 images lead the 3D orbit. Set it on one album only (currently `editing/01-collage-designs`).
 - `"reelsOrder": 99` moves an album's clips to the end of the home Reels row (default 0; lower numbers come first).
+- `"pin": 1` (2, 3 …) makes an album one of the first posts in the home feed, in that order.
+- `"feed": false` gives an album no feed post; its clips still appear in the Reels row.
 - `link` + `more` add a "+24 more frames on Facebook" button.
 
 ### Your details
