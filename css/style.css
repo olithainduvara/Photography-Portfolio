@@ -522,7 +522,17 @@ a.row:hover { background: rgba(255, 255, 255, .03); }
   transition: transform .5s var(--ease);
   transform-style: preserve-3d;
 }
-.portrait-card img { width: 100%; height: 100%; object-fit: cover; object-position: 55% 30%; }
+.portrait-card img { width: 100%; height: 100%; object-fit: cover; object-position: 48% 30%; }
+.portrait-mini {
+  position: absolute; z-index: 3; right: -34px; top: 34px; width: 38%; aspect-ratio: 3 / 4;
+  border-radius: 18px; overflow: hidden; border: 3px solid var(--panel);
+  box-shadow: 0 0 0 1px rgba(243, 181, 63, .45), 0 24px 50px -16px rgba(0, 0, 0, .9);
+  transform: rotate(6deg) translateZ(40px); transition: transform .5s var(--ease);
+  animation: floaty 6s ease-in-out infinite;
+}
+.portrait-mini img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 35%; }
+.portrait:hover .portrait-mini { transform: rotate(2deg) scale(1.05); animation-play-state: paused; }
+@keyframes floaty { 50% { translate: 0 -10px; } }
 .portrait-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(transparent 55%, rgba(0, 0, 0, .75)); }
 .portrait-badge {
   position: absolute; left: 22px; bottom: 22px; z-index: 2;
@@ -769,6 +779,7 @@ a.row:hover { background: rgba(255, 255, 255, .03); }
   .reels-side.next { right: -6px; }
   .composer .tools .sq-btn:not(.gold) { display: none; }
   .stats { grid-template-columns: 1fr; }
+  .portrait-mini { right: -6px; width: 34%; }
   .contact-info, .form { padding: 28px 22px; }
   .form-row { grid-template-columns: 1fr; }
 

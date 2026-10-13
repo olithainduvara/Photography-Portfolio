@@ -126,6 +126,7 @@ def scan_album(folder, cat_id, album_id, title_fallback):
         'coverH': cover['h'],
         'featured': meta.get('featured', True),    # false = Explore only, never on the home page
         'spotlight': meta.get('spotlight', False),  # true = the 3D showcase on the home page
+        'reelsOrder': meta.get('reelsOrder', 0),     # higher = later in the home Reels row
         'items': items,
     }
 

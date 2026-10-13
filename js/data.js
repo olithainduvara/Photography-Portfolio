@@ -30,6 +30,7 @@ window.PORTFOLIO = {
      "coverH": 2000,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -272,6 +273,7 @@ window.PORTFOLIO = {
      "coverH": 2000,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -361,6 +363,7 @@ window.PORTFOLIO = {
      "coverH": 2000,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -576,6 +579,7 @@ window.PORTFOLIO = {
      "coverH": 2000,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -845,6 +849,7 @@ window.PORTFOLIO = {
      "coverH": 2000,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -961,6 +966,7 @@ window.PORTFOLIO = {
      "coverH": 318,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -1014,6 +1020,7 @@ window.PORTFOLIO = {
      "coverH": 318,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -1067,6 +1074,7 @@ window.PORTFOLIO = {
      "coverH": 701,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -1120,6 +1128,7 @@ window.PORTFOLIO = {
      "coverH": 1306,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -1263,6 +1272,7 @@ window.PORTFOLIO = {
      "coverH": 1333,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -1442,6 +1452,7 @@ window.PORTFOLIO = {
      "coverH": 1333,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -1638,6 +1649,7 @@ window.PORTFOLIO = {
      "coverH": 900,
      "featured": false,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -1713,6 +1725,7 @@ window.PORTFOLIO = {
      "coverH": 719,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -1779,18 +1792,19 @@ window.PORTFOLIO = {
      "link": "",
      "more": 0,
      "cover": "thumbs/aerial/01-hanthana-ridge/hanthana-ridge-flight.jpg",
-     "coverW": 1280,
-     "coverH": 2276,
+     "coverW": 720,
+     "coverH": 1280,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "video",
        "src": "portfolio/aerial/01-hanthana-ridge/hanthana-ridge-flight.mp4",
        "file": "hanthana-ridge-flight.mp4",
        "title": "Flying the Hanthana ridge",
-       "w": 1280,
-       "h": 2276,
+       "w": 720,
+       "h": 1280,
        "poster": "portfolio/aerial/01-hanthana-ridge/hanthana-ridge-flight.jpg",
        "thumb": "thumbs/aerial/01-hanthana-ridge/hanthana-ridge-flight.jpg"
       },
@@ -1864,6 +1878,7 @@ window.PORTFOLIO = {
      "coverH": 1280,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "video",
@@ -1900,6 +1915,7 @@ window.PORTFOLIO = {
      "coverH": 540,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -1935,6 +1951,7 @@ window.PORTFOLIO = {
      "coverH": 1280,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "video",
@@ -1962,6 +1979,7 @@ window.PORTFOLIO = {
      "coverH": 1280,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "video",
@@ -1989,6 +2007,7 @@ window.PORTFOLIO = {
      "coverH": 1280,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "video",
@@ -2016,6 +2035,7 @@ window.PORTFOLIO = {
      "coverH": 1280,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "video",
@@ -2062,6 +2082,7 @@ window.PORTFOLIO = {
      "coverH": 1331,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -2115,6 +2136,7 @@ window.PORTFOLIO = {
      "coverH": 2000,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -2158,6 +2180,7 @@ window.PORTFOLIO = {
      "coverH": 1280,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 99,
      "items": [
       {
        "type": "video",
@@ -2205,6 +2228,7 @@ window.PORTFOLIO = {
      "coverH": 1280,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "video",
@@ -2259,6 +2283,7 @@ window.PORTFOLIO = {
      "coverH": 2000,
      "featured": true,
      "spotlight": true,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -2277,15 +2302,6 @@ window.PORTFOLIO = {
        "title": "Blooming bouquet",
        "w": 509,
        "h": 720
-      },
-      {
-       "type": "image",
-       "src": "portfolio/editing/01-collage-designs/03-lilac-and-leaves.jpg",
-       "file": "03-lilac-and-leaves.jpg",
-       "thumb": "thumbs/editing/01-collage-designs/03-lilac-and-leaves.jpg",
-       "title": "Lilac & leaves",
-       "w": 1414,
-       "h": 2000
       },
       {
        "type": "image",
@@ -2375,6 +2391,7 @@ window.PORTFOLIO = {
      "coverH": 540,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -2401,6 +2418,7 @@ window.PORTFOLIO = {
      "coverH": 2000,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -2472,6 +2490,7 @@ window.PORTFOLIO = {
      "coverH": 2000,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -2516,6 +2535,7 @@ window.PORTFOLIO = {
      "coverH": 509,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -2587,6 +2607,7 @@ window.PORTFOLIO = {
      "coverH": 2000,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -2820,6 +2841,7 @@ window.PORTFOLIO = {
      "coverH": 1506,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -2891,6 +2913,7 @@ window.PORTFOLIO = {
      "coverH": 1080,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -2998,6 +3021,7 @@ window.PORTFOLIO = {
      "coverH": 2000,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",
@@ -3078,6 +3102,7 @@ window.PORTFOLIO = {
      "coverH": 1506,
      "featured": true,
      "spotlight": false,
+     "reelsOrder": 0,
      "items": [
       {
        "type": "image",

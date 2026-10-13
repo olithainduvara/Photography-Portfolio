@@ -70,7 +70,8 @@
   const allReels = (() => {
     const own = cats.filter(c => c.layout === 'reels');
     const pick = list => reelsOf(list.flatMap(c => c.albums).filter(onHome));
-    return pick(own).concat(pick(cats.filter(c => !own.includes(c))));
+    const list = pick(own).concat(pick(cats.filter(c => !own.includes(c))));
+    return list.sort((a, b) => (a.album.reelsOrder || 0) - (b.album.reelsOrder || 0));   // stable: keeps order within a group
   })();
   // frames for the 3D orbit: the first four spotlight pieces, then album covers
   const heroPicks = (() => {
