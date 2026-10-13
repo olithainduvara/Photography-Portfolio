@@ -281,9 +281,67 @@
     if (!row) return;
     row.innerHTML = allReels.map(reelCard).join('');
     wireReels(row, allReels);
-    $$('[data-scroll]').forEach(b => b.addEventListener('click', () =>
-      row.scrollBy({ left: +b.dataset.scroll * row.clientWidth * 0.8, behavior: reduceMotion ? 'auto' : 'smooth' })));
     const n = $('#reelCount'); if (n) n.textContent = allReels.length;
+
+    const stage = $('#reelsStage'), cards = $$('.reel', row), bar = $('#reelsProgress');
+    const prev = $('.reels-side.prev', stage), next = $('.reels-side.next', stage);
+    cards.forEach((c, i) => c.style.setProperty('--i', i));
+    const smooth = reduceMotion ? 'auto' : 'smooth';
+    const stepPx = () => (cards[0] ? cards[0].offsetWidth + 18 : 250);
+    const page = () => Math.max(stepPx(), Math.floor(row.clientWidth / stepPx()) * stepPx() - stepPx());
+
+    // 3D curve: cards lean away and dim slightly as they move toward the edges
+    let raf = 0;
+    function shape() {
+      raf = 0;
+      const max = row.scrollWidth - row.clientWidth, x = row.scrollLeft;
+      const r = row.getBoundingClientRect(), mid = r.left + r.width / 2;
+      cards.forEach(c => {
+        const b = c.getBoundingClientRect();
+        const t = Math.max(-1, Math.min(1, (b.left + b.width / 2 - mid) / (r.width / 2)));  // -1 left edge … 1 right edge
+        c.style.setProperty('--ry', `${reduceMotion ? 0 : -t * 16}deg`);
+        c.style.setProperty('--sc', reduceMotion ? 1 : (1 - Math.abs(t) * 0.07).toFixed(3));
+        c.style.setProperty('--edge', (1 - Math.abs(t) * 0.25).toFixed(3));
+      });
+      prev.classList.toggle('off', x < 8);
+      next.classList.toggle('off', x > max - 8);
+      row.style.setProperty('--fl', x < 8 ? '0px' : '80px');
+      row.style.setProperty('--fr', x > max - 8 ? '0px' : '80px');
+      const shown = row.clientWidth / row.scrollWidth;
+      bar.style.width = `${shown * 100}%`;
+      bar.style.marginLeft = `${max ? (x / max) * (1 - shown) * 100 : 0}%`;
+    }
+    const queue = () => { if (!raf) raf = requestAnimationFrame(shape); };
+    row.addEventListener('scroll', queue, { passive: true });
+    addEventListener('resize', queue);
+
+    // auto-advance one reel at a time; pauses on hover, touch and while a reel previews
+    let pausedUntil = 0, visible = false;
+    const hold = ms => { pausedUntil = performance.now() + ms; };
+    stage.addEventListener('mouseenter', () => hold(Infinity));
+    stage.addEventListener('mouseleave', () => hold(1500));
+    row.addEventListener('pointerdown', () => hold(8000), { passive: true });
+    row.addEventListener('wheel', () => hold(6000), { passive: true });
+    setInterval(() => {
+      if (reduceMotion || !visible || document.hidden || performance.now() < pausedUntil || $('.reel.playing', row)) return;
+      const atEnd = row.scrollLeft > row.scrollWidth - row.clientWidth - 8;
+      atEnd ? row.scrollTo({ left: 0, behavior: smooth }) : row.scrollBy({ left: stepPx(), behavior: smooth });
+    }, 3600);
+
+    [prev, next].forEach(b => b.addEventListener('click', () => {
+      hold(7000);
+      row.scrollBy({ left: +b.dataset.scroll * page(), behavior: smooth });
+    }));
+    row.tabIndex = 0;
+    row.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); hold(7000); row.scrollBy({ left: (e.key === 'ArrowRight' ? 1 : -1) * stepPx(), behavior: smooth }); }
+    });
+
+    new IntersectionObserver(([e]) => {
+      visible = e.isIntersecting;
+      if (visible) { stage.classList.add('in'); queue(); }
+    }, { threshold: 0.25 }).observe(stage);
+    shape();
   }
 
   /* ---------------- HOME: spotlight coverflow (album.json "spotlight": true) ---------------- */
