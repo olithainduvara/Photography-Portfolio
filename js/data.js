@@ -852,15 +852,24 @@ window.PORTFOLIO = {
      "description": "A story of grace, confidence and blooming dreams: a patchwork dress, an armful of flowers and ancient stone pillars in soft evening light.",
      "link": "https://www.facebook.com/profile.php?id=100091314396526",
      "more": 0,
-     "cover": "thumbs/photography/05-blooming-beauty/bouquet-portrait.jpg",
-     "coverW": 1969,
-     "coverH": 2000,
+     "cover": "thumbs/photography/05-blooming-beauty/among-the-ruins.jpg",
+     "coverW": 2000,
+     "coverH": 1333,
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
      "pin": 3,
      "inFeed": true,
      "items": [
+      {
+       "type": "image",
+       "src": "portfolio/photography/05-blooming-beauty/among-the-ruins.jpg",
+       "file": "among-the-ruins.jpg",
+       "thumb": "thumbs/photography/05-blooming-beauty/among-the-ruins.jpg",
+       "title": "Among the ruins",
+       "w": 2000,
+       "h": 1333
+      },
       {
        "type": "image",
        "src": "portfolio/photography/05-blooming-beauty/bouquet-portrait.jpg",
@@ -941,15 +950,6 @@ window.PORTFOLIO = {
        "title": "Seated by the pillar",
        "w": 1333,
        "h": 2000
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/05-blooming-beauty/among-the-ruins.jpg",
-       "file": "among-the-ruins.jpg",
-       "thumb": "thumbs/photography/05-blooming-beauty/among-the-ruins.jpg",
-       "title": "Among the ruins",
-       "w": 2000,
-       "h": 1333
       },
       {
        "type": "image",

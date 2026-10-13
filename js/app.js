@@ -423,7 +423,7 @@
         </header>
         <h3 class="post-title">${esc(a.title)}</h3>
         ${a.description ? `<p class="post-text">${esc(a.description)}</p>` : ''}
-        <div class="post-media n${Math.min(shown.length, 3)}${shown.filter(isTall).length * 2 > shown.length ? ' tall' : ''}">${media}</div>
+        <div class="post-media n${Math.min(shown.length, 3)}${isTall(shown[0]) && shown.filter(isTall).length * 2 > shown.length ? ' tall' : ''}">${media}</div>
         <footer class="post-foot">
           <span class="count">${a.items.length} on site${a.more ? ` · +${a.more} on Facebook` : ''}</span>
           <a class="act" href="${albumUrl(a)}">${icon('images')}<span>Open album</span></a>
