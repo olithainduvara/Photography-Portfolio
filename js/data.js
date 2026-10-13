@@ -1105,6 +1105,364 @@ window.PORTFOLIO = {
        "h": 789
       }
      ]
+    },
+    {
+     "id": "11-baby-and-family-shoot",
+     "category": "photography",
+     "title": "Baby & Family Shoot",
+     "location": "Sri Lanka",
+     "date": "January 2023",
+     "description": "A relaxed outdoor family session: a knitted bunny hat, first wobbly steps, big hugs and a little driver in a toy car.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/photography/11-baby-and-family-shoot/family-of-four.jpg",
+     "coverW": 2000,
+     "coverH": 1333,
+     "featured": true,
+     "spotlight": false,
+     "items": [
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/family-of-four.jpg",
+       "file": "family-of-four.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/family-of-four.jpg",
+       "title": "Family of four",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/holding-a-flower.jpg",
+       "file": "holding-a-flower.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/holding-a-flower.jpg",
+       "title": "Holding a flower",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/a-kiss-for-the-little-one.jpg",
+       "file": "a-kiss-for-the-little-one.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/a-kiss-for-the-little-one.jpg",
+       "title": "A kiss for the little one",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/in-mums-arms.jpg",
+       "file": "in-mums-arms.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/in-mums-arms.jpg",
+       "title": "In mums arms",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/little-explorer.jpg",
+       "file": "little-explorer.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/little-explorer.jpg",
+       "title": "Little explorer",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/all-smiles.jpg",
+       "file": "all-smiles.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/all-smiles.jpg",
+       "title": "All smiles",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/family-under-the-tree.jpg",
+       "file": "family-under-the-tree.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/family-under-the-tree.jpg",
+       "title": "Family under the tree",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/dad-and-baby.jpg",
+       "file": "dad-and-baby.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/dad-and-baby.jpg",
+       "title": "Dad and baby",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/reaching-up.jpg",
+       "file": "reaching-up.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/reaching-up.jpg",
+       "title": "Reaching up",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/standing-together.jpg",
+       "file": "standing-together.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/standing-together.jpg",
+       "title": "Standing together",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/playtime-with-dad.jpg",
+       "file": "playtime-with-dad.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/playtime-with-dad.jpg",
+       "title": "Playtime with dad",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/together-in-the-shade.jpg",
+       "file": "together-in-the-shade.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/together-in-the-shade.jpg",
+       "title": "Together in the shade",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/a-big-hug.jpg",
+       "file": "a-big-hug.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/a-big-hug.jpg",
+       "title": "A big hug",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/first-steps.jpg",
+       "file": "first-steps.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/first-steps.jpg",
+       "title": "First steps",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/woolly-hat.jpg",
+       "file": "woolly-hat.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/woolly-hat.jpg",
+       "title": "Woolly hat",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/mum-and-son.jpg",
+       "file": "mum-and-son.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/mum-and-son.jpg",
+       "title": "Mum and son",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/the-whole-family.jpg",
+       "file": "the-whole-family.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/the-whole-family.jpg",
+       "title": "The whole family",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/11-baby-and-family-shoot/little-driver.jpg",
+       "file": "little-driver.jpg",
+       "thumb": "thumbs/photography/11-baby-and-family-shoot/little-driver.jpg",
+       "title": "Little driver",
+       "w": 2000,
+       "h": 1333
+      }
+     ]
+    },
+    {
+     "id": "12-zest-english-academy-annual-trip",
+     "category": "photography",
+     "title": "ZEST English Academy Annual Trip",
+     "location": "Sri Lanka",
+     "date": "",
+     "description": "Official photography partner for the ZEST English Academy annual trip: blue-water beaches, forest trails and the village roads in between.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/photography/12-zest-english-academy-annual-trip/beach-day.jpg",
+     "coverW": 2000,
+     "coverH": 1333,
+     "featured": true,
+     "spotlight": false,
+     "items": [
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/beach-day.jpg",
+       "file": "beach-day.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/beach-day.jpg",
+       "title": "Beach day",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/by-the-waves.jpg",
+       "file": "by-the-waves.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/by-the-waves.jpg",
+       "title": "By the waves",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/meeting-on-the-trail.jpg",
+       "file": "meeting-on-the-trail.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/meeting-on-the-trail.jpg",
+       "title": "Meeting on the trail",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/on-the-boat.jpg",
+       "file": "on-the-boat.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/on-the-boat.jpg",
+       "title": "On the boat",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/in-the-water.jpg",
+       "file": "in-the-water.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/in-the-water.jpg",
+       "title": "In the water",
+       "w": 2000,
+       "h": 1334
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/into-the-forest.jpg",
+       "file": "into-the-forest.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/into-the-forest.jpg",
+       "title": "Into the forest",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/tuk-tuk-lane.jpg",
+       "file": "tuk-tuk-lane.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/tuk-tuk-lane.jpg",
+       "title": "Tuk tuk lane",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/trail-friends.jpg",
+       "file": "trail-friends.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/trail-friends.jpg",
+       "title": "Trail friends",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/on-the-jungle-path.jpg",
+       "file": "on-the-jungle-path.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/on-the-jungle-path.jpg",
+       "title": "On the jungle path",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/the-souvenir-shop.jpg",
+       "file": "the-souvenir-shop.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/the-souvenir-shop.jpg",
+       "title": "The souvenir shop",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/the-group.jpg",
+       "file": "the-group.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/the-group.jpg",
+       "title": "The group",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/by-the-rocks.jpg",
+       "file": "by-the-rocks.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/by-the-rocks.jpg",
+       "title": "By the rocks",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/checking-the-shots.jpg",
+       "file": "checking-the-shots.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/checking-the-shots.jpg",
+       "title": "Checking the shots",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/street-style.jpg",
+       "file": "street-style.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/street-style.jpg",
+       "title": "Street style",
+       "w": 1334,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/down-the-road.jpg",
+       "file": "down-the-road.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/down-the-road.jpg",
+       "title": "Down the road",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/village-road.jpg",
+       "file": "village-road.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/village-road.jpg",
+       "title": "Village road",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/the-trailhead.jpg",
+       "file": "the-trailhead.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/the-trailhead.jpg",
+       "title": "The trailhead",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/12-zest-english-academy-annual-trip/on-the-sand.jpg",
+       "file": "on-the-sand.jpg",
+       "thumb": "thumbs/photography/12-zest-english-academy-annual-trip/on-the-sand.jpg",
+       "title": "On the sand",
+       "w": 2000,
+       "h": 1333
+      }
+     ]
     }
    ]
   },
