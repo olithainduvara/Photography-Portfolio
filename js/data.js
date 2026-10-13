@@ -1107,6 +1107,149 @@ window.PORTFOLIO = {
      ]
     },
     {
+     "id": "10-back-to-school-2023",
+     "category": "photography",
+     "title": "Back To School 2023",
+     "location": "Ananda College, Chilaw",
+     "date": "2023",
+     "description": "Past students back in school uniform for a day: backpacks, water bottles, old friends and familiar faces on the school grounds of Ananda College, Chilaw.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/photography/10-back-to-school-2023/the-whole-group-at-the-college.jpg",
+     "coverW": 2000,
+     "coverH": 1306,
+     "featured": true,
+     "spotlight": false,
+     "items": [
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/the-whole-group-at-the-college.jpg",
+       "file": "the-whole-group-at-the-college.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/the-whole-group-at-the-college.jpg",
+       "title": "The whole group at the college",
+       "w": 2000,
+       "h": 1306
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/old-friends.jpg",
+       "file": "old-friends.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/old-friends.jpg",
+       "title": "Old friends",
+       "w": 1479,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/walking-in-together.jpg",
+       "file": "walking-in-together.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/walking-in-together.jpg",
+       "title": "Walking in together",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/back-in-uniform.jpg",
+       "file": "back-in-uniform.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/back-in-uniform.jpg",
+       "title": "Back in uniform",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/the-squad.jpg",
+       "file": "the-squad.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/the-squad.jpg",
+       "title": "The squad",
+       "w": 2000,
+       "h": 1392
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/school-bags-on.jpg",
+       "file": "school-bags-on.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/school-bags-on.jpg",
+       "title": "School bags on",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/a-wave-hello.jpg",
+       "file": "a-wave-hello.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/a-wave-hello.jpg",
+       "title": "A wave hello",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/catching-up.jpg",
+       "file": "catching-up.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/catching-up.jpg",
+       "title": "Catching up",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/class-photo-on-the-path.jpg",
+       "file": "class-photo-on-the-path.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/class-photo-on-the-path.jpg",
+       "title": "Class photo on the path",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/side-by-side.jpg",
+       "file": "side-by-side.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/side-by-side.jpg",
+       "title": "Side by side",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/a-proud-moment.jpg",
+       "file": "a-proud-moment.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/a-proud-moment.jpg",
+       "title": "A proud moment",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/familiar-faces.jpg",
+       "file": "familiar-faces.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/familiar-faces.jpg",
+       "title": "Familiar faces",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/two-old-boys.jpg",
+       "file": "two-old-boys.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/two-old-boys.jpg",
+       "title": "Two old boys",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/10-back-to-school-2023/down-the-school-road.jpg",
+       "file": "down-the-school-road.jpg",
+       "thumb": "thumbs/photography/10-back-to-school-2023/down-the-school-road.jpg",
+       "title": "Down the school road",
+       "w": 2000,
+       "h": 1333
+      }
+     ]
+    },
+    {
      "id": "11-baby-and-family-shoot",
      "category": "photography",
      "title": "Baby & Family Shoot",
