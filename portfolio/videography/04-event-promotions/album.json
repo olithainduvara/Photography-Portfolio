@@ -1,0 +1,25 @@
+{
+  "title": "Event Promotions",
+  "location": "University of Peradeniya",
+  "description": "Presenter-led promo films for shows, religious programmes and faculty events: scripted, shot on location and cut with motion titles.",
+  "order": [
+    "pahan-tharuwa-2026.mp4",
+    "wasanthaye-aga-2024.mp4",
+    "enartia-2023.mp4",
+    "wesak-week-2026.mp4",
+    "yowun-daham-sakmana-2026.mp4",
+    "yowun-daham-sakmana-2024.mp4",
+    "poson-celebration.mp4",
+    "pirith-pinkama-promotion.mp4"
+  ],
+  "captions": {
+    "pahan-tharuwa-2026.mp4": "Pahan Tharuwa 2026: musical programme promo",
+    "wasanthaye-aga-2024.mp4": "Wasanthaye Aga 2024: show promo",
+    "enartia-2023.mp4": "ENARTIA 2023: Faculty of Engineering event promo",
+    "wesak-week-2026.mp4": "Wesak Week 2026, University of Peradeniya",
+    "yowun-daham-sakmana-2026.mp4": "Yowun Daham Sakmana 2026",
+    "yowun-daham-sakmana-2024.mp4": "Yowun Daham Sakmana 2024",
+    "poson-celebration.mp4": "Poson celebration: Engineering Faculty Buddhist Brotherhood Society",
+    "pirith-pinkama-promotion.mp4": "Pirith Pinkama: promo"
+  }
+}

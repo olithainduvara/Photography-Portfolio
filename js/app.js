@@ -348,6 +348,74 @@
     shape();
   }
 
+  /* ---------------- HOME: films (landscape & square videos, player + playlist) ---------------- */
+  function filmsHome() {
+    const screen = $('#filmScreen');
+    if (!screen) return;
+    const groups = cats.filter(c => c.layout !== 'reels').flatMap(c => c.albums).filter(onHome)
+      .map(a => ({ a, list: a.items.filter(it => it.type === 'video' && !isTall(it))
+        .map(it => Object.assign({}, it, { album: a, sub: `${a.cat.name} · ${a.title}` })) }))
+      .filter(g => g.list.length);
+    if (!groups.length) { $('#films').hidden = true; return; }
+    $('#filmCount').textContent = groups.reduce((n, g) => n + g.list.length, 0);
+
+    const v = $('#filmVideo'), list = $('#filmList'), tabs = $('#filmTabs'), bar = $('#filmProgress');
+    let gi = 0, ii = 0, inView = false, swapTimer;
+    tabs.innerHTML = groups.map((g, k) =>
+      `<button class="pill${k ? '' : ' active'}" data-g="${k}" role="tab">${icon(catIcon(g.a.category))}${esc(g.a.title)} <span class="count">${g.list.length}</span></button>`).join('');
+
+    function drawList() {
+      list.innerHTML = groups[gi].list.map((it, k) => `
+        <li class="film-item${k === ii ? ' active' : ''}" data-i="${k}" tabindex="0" style="animation-delay:${k * 40}ms">
+          <span class="film-thumb"><img src="${thumb(it)}" alt="" loading="lazy"><span class="num">${String(k + 1).padStart(2, '0')}</span></span>
+          <span><b>${esc(it.title)}</b><small>${esc(it.album.cat.name)}</small></span>
+        </li>`).join('');
+    }
+    function load(play) {
+      const it = groups[gi].list[ii];
+      v.poster = it.poster || thumb(it);
+      v.src = it.src;
+      // absolute URL: a relative url() inside a custom property resolves against css/, not the page
+      screen.style.setProperty('--poster', `url("${new URL(it.poster || thumb(it), location.href).href}")`);
+      $('#filmChip').textContent = it.album.cat.short;
+      $('#filmTitle').textContent = it.title;
+      $('#filmAlbum').textContent = `${it.album.title}${it.album.location ? ' · ' + it.album.location : ''}`;
+      $('#filmOpen').href = albumUrl(it.album);
+      $$('.film-item', list).forEach(li => li.classList.toggle('active', +li.dataset.i === ii));
+      const act = $('.film-item.active', list);
+      if (act) list.scrollTo({ top: act.offsetTop - list.clientHeight / 2 + act.offsetHeight / 2, behavior: reduceMotion ? 'auto' : 'smooth' });
+      bar.style.width = '0%';
+      if (play && inView && !reduceMotion) v.play().catch(() => {});
+    }
+    function show(g, i) {
+      const changedGroup = g !== gi;
+      gi = g; ii = i;
+      $$('.pill', tabs).forEach(p => p.classList.toggle('active', +p.dataset.g === gi));
+      if (changedGroup) drawList();
+      if (reduceMotion) return load(false);
+      screen.classList.add('switching');
+      clearTimeout(swapTimer);
+      swapTimer = setTimeout(() => { load(true); setTimeout(() => screen.classList.remove('switching'), 120); }, 420);
+    }
+    tabs.addEventListener('click', e => { const b = e.target.closest('.pill'); b && show(+b.dataset.g, 0); });
+    list.addEventListener('click', e => { const li = e.target.closest('.film-item'); li && show(gi, +li.dataset.i); });
+    list.addEventListener('keydown', e => {
+      const li = e.target.closest('.film-item');
+      if (li && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); show(gi, +li.dataset.i); }
+    });
+    // previews play muted and roll on to the next film in the collection
+    v.addEventListener('ended', () => show(gi, (ii + 1) % groups[gi].list.length));
+    v.addEventListener('timeupdate', () => { bar.style.width = `${(v.currentTime / (v.duration || 1)) * 100}%`; });
+    $('#filmPlay').addEventListener('click', () => { v.pause(); LB.open(groups[gi].list, ii, { title: groups[gi].a.title }); });
+    new IntersectionObserver(([e]) => {
+      inView = e.isIntersecting;
+      if (inView && !reduceMotion) v.play().catch(() => {}); else v.pause();
+    }, { threshold: 0.35 }).observe(screen);
+
+    drawList();
+    load(false);
+  }
+
   /* ---------------- HOME: spotlight coverflow (album.json "spotlight": true) ---------------- */
   function spotlightHome() {
     const box = $('#coverflow');
@@ -695,6 +763,7 @@
 
   shell();
   reelsHome();
+  filmsHome();
   spotlightHome();
   home();
   explore();

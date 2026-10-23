@@ -1,0 +1,21 @@
+{
+  "title": "Event Films",
+  "location": "University of Peradeniya",
+  "description": "Highlight films from university events: carols by candlelight, a Pirith Pinkama with drone footage of the lit-up faculty, a Rotaract installation, musical shows and award ceremonies.",
+  "order": [
+    "christmas-carols-university-of-peradeniya.mp4",
+    "pirith-pinkama-faculty-of-engineering.mp4",
+    "dharawa-musical-programme.mp4",
+    "rotaract-installation-ceremony.mp4",
+    "certificate-awarding-ceremony.mp4",
+    "sandwani-musical-show.mp4"
+  ],
+  "captions": {
+    "christmas-carols-university-of-peradeniya.mp4": "Christmas Carols, University of Peradeniya (highlights)",
+    "pirith-pinkama-faculty-of-engineering.mp4": "Pirith Pinkama, Faculty of Engineering (with drone, highlights)",
+    "dharawa-musical-programme.mp4": "Dharawa Musical Programme",
+    "rotaract-installation-ceremony.mp4": "Rotaract Club of the University of Peradeniya: Installation Ceremony",
+    "certificate-awarding-ceremony.mp4": "Certificate Awarding Ceremony",
+    "sandwani-musical-show.mp4": "Sandwani Musical Show by Vibhawa"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Tuition Class Advertisements",
+  "location": "Studio",
+  "description": "Motion-graphics adverts for tuition classes: animated titles, results walls, logo reveals and fast cuts for social media.",
+  "order": [
+    "physics-class.mp4",
+    "pre-engineering-class.mp4",
+    "robotics-class.mp4",
+    "robotics-class-2.mp4",
+    "chemistry-classes.mp4",
+    "chemistry-revision.mp4",
+    "chemistry-class-3.mp4",
+    "accounting-class.mp4",
+    "english-class.mp4"
+  ],
+  "captions": {
+    "physics-class.mp4": "Physics class",
+    "pre-engineering-class.mp4": "Pre-engineering class",
+    "robotics-class.mp4": "Robotics & circuit design",
+    "robotics-class-2.mp4": "Robotics class: Arduino projects",
+    "chemistry-classes.mp4": "Chemistry classes: 2024 A/L",
+    "chemistry-revision.mp4": "Chemistry: 2023 A/L revision",
+    "chemistry-class-3.mp4": "Chemistry class",
+    "accounting-class.mp4": "Accounting class",
+    "english-class.mp4": "English class"
+  }
+}

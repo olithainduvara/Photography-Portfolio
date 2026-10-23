@@ -1639,6 +1639,359 @@ window.PORTFOLIO = {
        "h": 1333
       }
      ]
+    },
+    {
+     "id": "13-ieee-iceeet-2026",
+     "category": "photography",
+     "title": "IEEE ICEEET 2026",
+     "location": "Sri Lanka",
+     "date": "2026",
+     "description": "Event coverage for the IEEE International Conference on Electrical Engineering and Emerging Technologies: keynotes, paper presentations, the audience and the full conference group photo.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/photography/13-ieee-iceeet-2026/the-whole-conference.jpg",
+     "coverW": 2000,
+     "coverH": 1333,
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/the-whole-conference.jpg",
+       "file": "the-whole-conference.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/the-whole-conference.jpg",
+       "title": "The whole conference",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/keynote-address.jpg",
+       "file": "keynote-address.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/keynote-address.jpg",
+       "title": "Keynote address",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/in-front-of-the-banner.jpg",
+       "file": "in-front-of-the-banner.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/in-front-of-the-banner.jpg",
+       "title": "In front of the banner",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/on-the-mic.jpg",
+       "file": "on-the-mic.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/on-the-mic.jpg",
+       "title": "On the mic",
+       "w": 1322,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/at-the-lectern.jpg",
+       "file": "at-the-lectern.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/at-the-lectern.jpg",
+       "title": "At the lectern",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/paper-presentation.jpg",
+       "file": "paper-presentation.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/paper-presentation.jpg",
+       "title": "Paper presentation",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/presenting-research.jpg",
+       "file": "presenting-research.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/presenting-research.jpg",
+       "title": "Presenting research",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/presenting-with-the-mic.jpg",
+       "file": "presenting-with-the-mic.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/presenting-with-the-mic.jpg",
+       "title": "Presenting with the mic",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/portrait-of-a-presenter.jpg",
+       "file": "portrait-of-a-presenter.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/portrait-of-a-presenter.jpg",
+       "title": "Portrait of a presenter",
+       "w": 1295,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/explaining-the-results.jpg",
+       "file": "explaining-the-results.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/explaining-the-results.jpg",
+       "title": "Explaining the results",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/a-final-word.jpg",
+       "file": "a-final-word.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/a-final-word.jpg",
+       "title": "A final word",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/conversations-between-sessions.jpg",
+       "file": "conversations-between-sessions.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/conversations-between-sessions.jpg",
+       "title": "Conversations between sessions",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/addressing-the-hall.jpg",
+       "file": "addressing-the-hall.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/addressing-the-hall.jpg",
+       "title": "Addressing the hall",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/at-the-podium.jpg",
+       "file": "at-the-podium.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/at-the-podium.jpg",
+       "title": "At the podium",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/making-a-point.jpg",
+       "file": "making-a-point.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/making-a-point.jpg",
+       "title": "Making a point",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/in-the-audience.jpg",
+       "file": "in-the-audience.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/in-the-audience.jpg",
+       "title": "In the audience",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/listening-in.jpg",
+       "file": "listening-in.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/listening-in.jpg",
+       "title": "Listening in",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/taking-the-floor.jpg",
+       "file": "taking-the-floor.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/taking-the-floor.jpg",
+       "title": "Taking the floor",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/a-question-from-the-floor.jpg",
+       "file": "a-question-from-the-floor.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/a-question-from-the-floor.jpg",
+       "title": "A question from the floor",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/presenter-by-the-screen.jpg",
+       "file": "presenter-by-the-screen.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/presenter-by-the-screen.jpg",
+       "title": "Presenter by the screen",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/the-ieee-podium.jpg",
+       "file": "the-ieee-podium.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/the-ieee-podium.jpg",
+       "title": "The ieee podium",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/the-audience.jpg",
+       "file": "the-audience.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/the-audience.jpg",
+       "title": "The audience",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/the-hall.jpg",
+       "file": "the-hall.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/the-hall.jpg",
+       "title": "The hall",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/keynote-wide.jpg",
+       "file": "keynote-wide.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/keynote-wide.jpg",
+       "title": "Keynote wide",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/ready-to-present.jpg",
+       "file": "ready-to-present.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/ready-to-present.jpg",
+       "title": "Ready to present",
+       "w": 1320,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/lunch-break.jpg",
+       "file": "lunch-break.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/lunch-break.jpg",
+       "title": "Lunch break",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/networking.jpg",
+       "file": "networking.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/networking.jpg",
+       "title": "Networking",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/hands-in-motion.jpg",
+       "file": "hands-in-motion.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/hands-in-motion.jpg",
+       "title": "Hands in motion",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/beside-the-ieee-banner.jpg",
+       "file": "beside-the-ieee-banner.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/beside-the-ieee-banner.jpg",
+       "title": "Beside the ieee banner",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/walking-through-the-slides.jpg",
+       "file": "walking-through-the-slides.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/walking-through-the-slides.jpg",
+       "title": "Walking through the slides",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/question-time.jpg",
+       "file": "question-time.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/question-time.jpg",
+       "title": "Question time",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/a-moment-of-thought.jpg",
+       "file": "a-moment-of-thought.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/a-moment-of-thought.jpg",
+       "title": "A moment of thought",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/table-discussion.jpg",
+       "file": "table-discussion.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/table-discussion.jpg",
+       "title": "Table discussion",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/engaging-the-audience.jpg",
+       "file": "engaging-the-audience.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/engaging-the-audience.jpg",
+       "title": "Engaging the audience",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/at-the-podium-portrait.jpg",
+       "file": "at-the-podium-portrait.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/at-the-podium-portrait.jpg",
+       "title": "At the podium portrait",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/guest-speaker.jpg",
+       "file": "guest-speaker.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/guest-speaker.jpg",
+       "title": "Guest speaker",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/13-ieee-iceeet-2026/the-speakers-view.jpg",
+       "file": "the-speakers-view.jpg",
+       "thumb": "thumbs/photography/13-ieee-iceeet-2026/the-speakers-view.jpg",
+       "title": "The speakers view",
+       "w": 2000,
+       "h": 1333
+      }
+     ]
     }
    ]
   },
@@ -1788,6 +2141,356 @@ window.PORTFOLIO = {
        "title": "Side camera on stage",
        "w": 526,
        "h": 789
+      }
+     ]
+    },
+    {
+     "id": "03-event-films",
+     "category": "videography",
+     "title": "Event Films",
+     "location": "University of Peradeniya",
+     "date": "",
+     "description": "Highlight films from university events: carols by candlelight, a Pirith Pinkama with drone footage of the lit-up faculty, a Rotaract installation, musical shows and award ceremonies.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/videography/03-event-films/christmas-carols-university-of-peradeniya.jpg",
+     "coverW": 1280,
+     "coverH": 720,
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "video",
+       "src": "portfolio/videography/03-event-films/christmas-carols-university-of-peradeniya.mp4",
+       "file": "christmas-carols-university-of-peradeniya.mp4",
+       "title": "Christmas Carols, University of Peradeniya (highlights)",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/videography/03-event-films/christmas-carols-university-of-peradeniya.jpg",
+       "thumb": "thumbs/videography/03-event-films/christmas-carols-university-of-peradeniya.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/03-event-films/pirith-pinkama-faculty-of-engineering.mp4",
+       "file": "pirith-pinkama-faculty-of-engineering.mp4",
+       "title": "Pirith Pinkama, Faculty of Engineering (with drone, highlights)",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/videography/03-event-films/pirith-pinkama-faculty-of-engineering.jpg",
+       "thumb": "thumbs/videography/03-event-films/pirith-pinkama-faculty-of-engineering.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/03-event-films/dharawa-musical-programme.mp4",
+       "file": "dharawa-musical-programme.mp4",
+       "title": "Dharawa Musical Programme",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/videography/03-event-films/dharawa-musical-programme.jpg",
+       "thumb": "thumbs/videography/03-event-films/dharawa-musical-programme.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/03-event-films/rotaract-installation-ceremony.mp4",
+       "file": "rotaract-installation-ceremony.mp4",
+       "title": "Rotaract Club of the University of Peradeniya: Installation Ceremony",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/videography/03-event-films/rotaract-installation-ceremony.jpg",
+       "thumb": "thumbs/videography/03-event-films/rotaract-installation-ceremony.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/03-event-films/certificate-awarding-ceremony.mp4",
+       "file": "certificate-awarding-ceremony.mp4",
+       "title": "Certificate Awarding Ceremony",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/videography/03-event-films/certificate-awarding-ceremony.jpg",
+       "thumb": "thumbs/videography/03-event-films/certificate-awarding-ceremony.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/03-event-films/sandwani-musical-show.mp4",
+       "file": "sandwani-musical-show.mp4",
+       "title": "Sandwani Musical Show by Vibhawa",
+       "w": 742,
+       "h": 1238,
+       "poster": "portfolio/videography/03-event-films/sandwani-musical-show.jpg",
+       "thumb": "thumbs/videography/03-event-films/sandwani-musical-show.jpg"
+      }
+     ]
+    },
+    {
+     "id": "04-event-promotions",
+     "category": "videography",
+     "title": "Event Promotions",
+     "location": "University of Peradeniya",
+     "date": "",
+     "description": "Presenter-led promo films for shows, religious programmes and faculty events: scripted, shot on location and cut with motion titles.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/videography/04-event-promotions/pahan-tharuwa-2026.jpg",
+     "coverW": 1280,
+     "coverH": 720,
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "video",
+       "src": "portfolio/videography/04-event-promotions/pahan-tharuwa-2026.mp4",
+       "file": "pahan-tharuwa-2026.mp4",
+       "title": "Pahan Tharuwa 2026: musical programme promo",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/videography/04-event-promotions/pahan-tharuwa-2026.jpg",
+       "thumb": "thumbs/videography/04-event-promotions/pahan-tharuwa-2026.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/04-event-promotions/wasanthaye-aga-2024.mp4",
+       "file": "wasanthaye-aga-2024.mp4",
+       "title": "Wasanthaye Aga 2024: show promo",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/videography/04-event-promotions/wasanthaye-aga-2024.jpg",
+       "thumb": "thumbs/videography/04-event-promotions/wasanthaye-aga-2024.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/04-event-promotions/enartia-2023.mp4",
+       "file": "enartia-2023.mp4",
+       "title": "ENARTIA 2023: Faculty of Engineering event promo",
+       "w": 960,
+       "h": 540,
+       "poster": "portfolio/videography/04-event-promotions/enartia-2023.jpg",
+       "thumb": "thumbs/videography/04-event-promotions/enartia-2023.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/04-event-promotions/wesak-week-2026.mp4",
+       "file": "wesak-week-2026.mp4",
+       "title": "Wesak Week 2026, University of Peradeniya",
+       "w": 996,
+       "h": 922,
+       "poster": "portfolio/videography/04-event-promotions/wesak-week-2026.jpg",
+       "thumb": "thumbs/videography/04-event-promotions/wesak-week-2026.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/04-event-promotions/yowun-daham-sakmana-2026.mp4",
+       "file": "yowun-daham-sakmana-2026.mp4",
+       "title": "Yowun Daham Sakmana 2026",
+       "w": 996,
+       "h": 922,
+       "poster": "portfolio/videography/04-event-promotions/yowun-daham-sakmana-2026.jpg",
+       "thumb": "thumbs/videography/04-event-promotions/yowun-daham-sakmana-2026.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/04-event-promotions/yowun-daham-sakmana-2024.mp4",
+       "file": "yowun-daham-sakmana-2024.mp4",
+       "title": "Yowun Daham Sakmana 2024",
+       "w": 960,
+       "h": 960,
+       "poster": "portfolio/videography/04-event-promotions/yowun-daham-sakmana-2024.jpg",
+       "thumb": "thumbs/videography/04-event-promotions/yowun-daham-sakmana-2024.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/04-event-promotions/poson-celebration.mp4",
+       "file": "poson-celebration.mp4",
+       "title": "Poson celebration: Engineering Faculty Buddhist Brotherhood Society",
+       "w": 960,
+       "h": 960,
+       "poster": "portfolio/videography/04-event-promotions/poson-celebration.jpg",
+       "thumb": "thumbs/videography/04-event-promotions/poson-celebration.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/04-event-promotions/pirith-pinkama-promotion.mp4",
+       "file": "pirith-pinkama-promotion.mp4",
+       "title": "Pirith Pinkama: promo",
+       "w": 1032,
+       "h": 892,
+       "poster": "portfolio/videography/04-event-promotions/pirith-pinkama-promotion.jpg",
+       "thumb": "thumbs/videography/04-event-promotions/pirith-pinkama-promotion.jpg"
+      }
+     ]
+    },
+    {
+     "id": "05-back-to-school-2023-teasers",
+     "category": "videography",
+     "title": "Back To School 2023: Teasers",
+     "location": "Ananda College, Chilaw",
+     "date": "",
+     "description": "A series of six short teasers announcing the Back To School day: past students back in uniform, counting down to 5 August.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/videography/05-back-to-school-2023-teasers/teaser-1.jpg",
+     "coverW": 964,
+     "coverH": 954,
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "video",
+       "src": "portfolio/videography/05-back-to-school-2023-teasers/teaser-1.mp4",
+       "file": "teaser-1.mp4",
+       "title": "Teaser 1",
+       "w": 964,
+       "h": 954,
+       "poster": "portfolio/videography/05-back-to-school-2023-teasers/teaser-1.jpg",
+       "thumb": "thumbs/videography/05-back-to-school-2023-teasers/teaser-1.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/05-back-to-school-2023-teasers/teaser-2.mp4",
+       "file": "teaser-2.mp4",
+       "title": "Teaser 2",
+       "w": 964,
+       "h": 954,
+       "poster": "portfolio/videography/05-back-to-school-2023-teasers/teaser-2.jpg",
+       "thumb": "thumbs/videography/05-back-to-school-2023-teasers/teaser-2.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/05-back-to-school-2023-teasers/teaser-3.mp4",
+       "file": "teaser-3.mp4",
+       "title": "Teaser 3",
+       "w": 964,
+       "h": 954,
+       "poster": "portfolio/videography/05-back-to-school-2023-teasers/teaser-3.jpg",
+       "thumb": "thumbs/videography/05-back-to-school-2023-teasers/teaser-3.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/05-back-to-school-2023-teasers/teaser-4.mp4",
+       "file": "teaser-4.mp4",
+       "title": "Teaser 4",
+       "w": 964,
+       "h": 954,
+       "poster": "portfolio/videography/05-back-to-school-2023-teasers/teaser-4.jpg",
+       "thumb": "thumbs/videography/05-back-to-school-2023-teasers/teaser-4.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/05-back-to-school-2023-teasers/teaser-5.mp4",
+       "file": "teaser-5.mp4",
+       "title": "Teaser 5",
+       "w": 964,
+       "h": 954,
+       "poster": "portfolio/videography/05-back-to-school-2023-teasers/teaser-5.jpg",
+       "thumb": "thumbs/videography/05-back-to-school-2023-teasers/teaser-5.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/05-back-to-school-2023-teasers/teaser-6.mp4",
+       "file": "teaser-6.mp4",
+       "title": "Teaser 6",
+       "w": 964,
+       "h": 954,
+       "poster": "portfolio/videography/05-back-to-school-2023-teasers/teaser-6.jpg",
+       "thumb": "thumbs/videography/05-back-to-school-2023-teasers/teaser-6.jpg"
+      }
+     ]
+    },
+    {
+     "id": "06-music-video",
+     "category": "videography",
+     "title": "Teri Meri Gallan: Tabla Cover",
+     "location": "Sri Lanka",
+     "date": "",
+     "description": "A tabla cover music video, shot and edited on location by an old railway bridge and a forest path.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/videography/06-music-video/teri-meri-gallan-tabla-cover.jpg",
+     "coverW": 1280,
+     "coverH": 720,
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "video",
+       "src": "portfolio/videography/06-music-video/teri-meri-gallan-tabla-cover.mp4",
+       "file": "teri-meri-gallan-tabla-cover.mp4",
+       "title": "Teri Meri Gallan: tabla cover",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/videography/06-music-video/teri-meri-gallan-tabla-cover.jpg",
+       "thumb": "thumbs/videography/06-music-video/teri-meri-gallan-tabla-cover.jpg"
+      }
+     ]
+    },
+    {
+     "id": "07-engex-2025-promotions",
+     "category": "videography",
+     "title": "EngEx 2025: Promotions",
+     "location": "Faculty of Engineering, Peradeniya",
+     "date": "",
+     "description": "Promo films for EngEx 2025, the Faculty of Engineering's 75th-anniversary exhibition: presenters on campus, aerials and motion branding.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/videography/07-engex-2025-promotions/engex-2025-promotion.jpg",
+     "coverW": 1280,
+     "coverH": 720,
+     "featured": false,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "video",
+       "src": "portfolio/videography/07-engex-2025-promotions/engex-2025-promotion.mp4",
+       "file": "engex-2025-promotion.mp4",
+       "title": "EngEx 2025: promotion video",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/videography/07-engex-2025-promotions/engex-2025-promotion.jpg",
+       "thumb": "thumbs/videography/07-engex-2025-promotions/engex-2025-promotion.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/07-engex-2025-promotions/engex-2025-promo-1.mp4",
+       "file": "engex-2025-promo-1.mp4",
+       "title": "EngEx 2025: promo 1",
+       "w": 1124,
+       "h": 818,
+       "poster": "portfolio/videography/07-engex-2025-promotions/engex-2025-promo-1.jpg",
+       "thumb": "thumbs/videography/07-engex-2025-promotions/engex-2025-promo-1.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/07-engex-2025-promotions/engex-2025-promo-2.mp4",
+       "file": "engex-2025-promo-2.mp4",
+       "title": "EngEx 2025: promo 2",
+       "w": 1124,
+       "h": 818,
+       "poster": "portfolio/videography/07-engex-2025-promotions/engex-2025-promo-2.jpg",
+       "thumb": "thumbs/videography/07-engex-2025-promotions/engex-2025-promo-2.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/07-engex-2025-promotions/engex-2025-promo-3.mp4",
+       "file": "engex-2025-promo-3.mp4",
+       "title": "EngEx 2025: promo 3",
+       "w": 1124,
+       "h": 818,
+       "poster": "portfolio/videography/07-engex-2025-promotions/engex-2025-promo-3.jpg",
+       "thumb": "thumbs/videography/07-engex-2025-promotions/engex-2025-promo-3.jpg"
       }
      ]
     }
@@ -1966,6 +2669,36 @@ window.PORTFOLIO = {
        "title": "Framing the crowd from the controller",
        "w": 519,
        "h": 590
+      }
+     ]
+    },
+    {
+     "id": "05-e18-batch-photo-day",
+     "category": "aerial",
+     "title": "E18 Batch Photo Day",
+     "location": "Faculty of Engineering, Peradeniya",
+     "date": "",
+     "description": "The E18 batch spelling out their name on the faculty lawn, flown from the hills down to the formation.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/aerial/05-e18-batch-photo-day/e18-batch-photo-day.jpg",
+     "coverW": 1280,
+     "coverH": 720,
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "video",
+       "src": "portfolio/aerial/05-e18-batch-photo-day/e18-batch-photo-day.mp4",
+       "file": "e18-batch-photo-day.mp4",
+       "title": "E18 Batch Photo Day from the air",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/aerial/05-e18-batch-photo-day/e18-batch-photo-day.jpg",
+       "thumb": "thumbs/aerial/05-e18-batch-photo-day/e18-batch-photo-day.jpg"
       }
      ]
     },
@@ -2630,6 +3363,116 @@ window.PORTFOLIO = {
        "title": "Th anniversary poster",
        "w": 1501,
        "h": 2000
+      }
+     ]
+    },
+    {
+     "id": "06-tuition-class-advertisements",
+     "category": "editing",
+     "title": "Tuition Class Advertisements",
+     "location": "Studio",
+     "date": "",
+     "description": "Motion-graphics adverts for tuition classes: animated titles, results walls, logo reveals and fast cuts for social media.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/editing/06-tuition-class-advertisements/physics-class.jpg",
+     "coverW": 1280,
+     "coverH": 720,
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "video",
+       "src": "portfolio/editing/06-tuition-class-advertisements/physics-class.mp4",
+       "file": "physics-class.mp4",
+       "title": "Physics class",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/editing/06-tuition-class-advertisements/physics-class.jpg",
+       "thumb": "thumbs/editing/06-tuition-class-advertisements/physics-class.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/06-tuition-class-advertisements/pre-engineering-class.mp4",
+       "file": "pre-engineering-class.mp4",
+       "title": "Pre-engineering class",
+       "w": 960,
+       "h": 540,
+       "poster": "portfolio/editing/06-tuition-class-advertisements/pre-engineering-class.jpg",
+       "thumb": "thumbs/editing/06-tuition-class-advertisements/pre-engineering-class.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/06-tuition-class-advertisements/robotics-class.mp4",
+       "file": "robotics-class.mp4",
+       "title": "Robotics & circuit design",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/editing/06-tuition-class-advertisements/robotics-class.jpg",
+       "thumb": "thumbs/editing/06-tuition-class-advertisements/robotics-class.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/06-tuition-class-advertisements/robotics-class-2.mp4",
+       "file": "robotics-class-2.mp4",
+       "title": "Robotics class: Arduino projects",
+       "w": 1086,
+       "h": 848,
+       "poster": "portfolio/editing/06-tuition-class-advertisements/robotics-class-2.jpg",
+       "thumb": "thumbs/editing/06-tuition-class-advertisements/robotics-class-2.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/06-tuition-class-advertisements/chemistry-classes.mp4",
+       "file": "chemistry-classes.mp4",
+       "title": "Chemistry classes: 2024 A/L",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/editing/06-tuition-class-advertisements/chemistry-classes.jpg",
+       "thumb": "thumbs/editing/06-tuition-class-advertisements/chemistry-classes.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/06-tuition-class-advertisements/chemistry-revision.mp4",
+       "file": "chemistry-revision.mp4",
+       "title": "Chemistry: 2023 A/L revision",
+       "w": 1034,
+       "h": 888,
+       "poster": "portfolio/editing/06-tuition-class-advertisements/chemistry-revision.jpg",
+       "thumb": "thumbs/editing/06-tuition-class-advertisements/chemistry-revision.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/06-tuition-class-advertisements/chemistry-class-3.mp4",
+       "file": "chemistry-class-3.mp4",
+       "title": "Chemistry class",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/editing/06-tuition-class-advertisements/chemistry-class-3.jpg",
+       "thumb": "thumbs/editing/06-tuition-class-advertisements/chemistry-class-3.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/06-tuition-class-advertisements/accounting-class.mp4",
+       "file": "accounting-class.mp4",
+       "title": "Accounting class",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/editing/06-tuition-class-advertisements/accounting-class.jpg",
+       "thumb": "thumbs/editing/06-tuition-class-advertisements/accounting-class.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/06-tuition-class-advertisements/english-class.mp4",
+       "file": "english-class.mp4",
+       "title": "English class",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/editing/06-tuition-class-advertisements/english-class.jpg",
+       "thumb": "thumbs/editing/06-tuition-class-advertisements/english-class.jpg"
       }
      ]
     }

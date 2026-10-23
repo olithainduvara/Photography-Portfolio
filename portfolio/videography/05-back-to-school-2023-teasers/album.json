@@ -1,0 +1,21 @@
+{
+  "title": "Back To School 2023: Teasers",
+  "location": "Ananda College, Chilaw",
+  "description": "A series of six short teasers announcing the Back To School day: past students back in uniform, counting down to 5 August.",
+  "order": [
+    "teaser-1.mp4",
+    "teaser-2.mp4",
+    "teaser-3.mp4",
+    "teaser-4.mp4",
+    "teaser-5.mp4",
+    "teaser-6.mp4"
+  ],
+  "captions": {
+    "teaser-1.mp4": "Teaser 1",
+    "teaser-2.mp4": "Teaser 2",
+    "teaser-3.mp4": "Teaser 3",
+    "teaser-4.mp4": "Teaser 4",
+    "teaser-5.mp4": "Teaser 5",
+    "teaser-6.mp4": "Teaser 6"
+  }
+}

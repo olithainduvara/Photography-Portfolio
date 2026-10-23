@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=1791915279">
+  <link rel="stylesheet" href="css/style.css?v=1792729622">
   <script type="importmap">
     { "imports": {
       "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
@@ -33,6 +33,7 @@
       <a href="index.html" class="active">Home</a>
       <a href="explore.html">Explore</a>
       <a href="#reels">Reels</a>
+      <a href="#films">Films</a>
       <a href="#studio">Studio</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -90,6 +91,40 @@
           <div class="reels-row" id="reelsRow"></div>
           <button class="reels-side next" data-scroll="1" aria-label="Next reels"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
           <div class="reels-progress" aria-hidden="true"><i id="reelsProgress"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FILMS: cinematic player + playlist ================= -->
+    <section class="films-sec" id="films">
+      <div class="wrap">
+        <div class="studio-head reveal">
+          <div>
+            <span class="eyebrow">Films · <span id="filmCount"></span> videos</span>
+            <h2 class="h2">Cinematic <em>films</em></h2>
+            <p class="lead">Event films, promotions, music videos, drone flights and motion-graphics ads, shot, cut and graded in-house. Previews play muted; hit play for sound.</p>
+          </div>
+          <a class="btn btn-ghost" href="explore.html#videography">All videography</a>
+        </div>
+        <div class="tabs film-tabs" id="filmTabs" role="tablist" aria-label="Film collections"></div>
+        <div class="film-stage reveal">
+          <div class="film-screen" id="filmScreen">
+            <div class="film-bg" aria-hidden="true"></div>
+            <video id="filmVideo" muted playsinline preload="none"></video>
+            <div class="film-bars" aria-hidden="true"></div>
+            <div class="film-info">
+              <span class="chip" id="filmChip"></span>
+              <h3 id="filmTitle"></h3>
+              <p id="filmAlbum"></p>
+              <div class="film-actions">
+                <button class="btn btn-gold" id="filmPlay"><svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg>Watch with sound</button>
+                <a class="btn btn-ghost" id="filmOpen">Open album</a>
+              </div>
+            </div>
+            <span class="film-live"><i></i>Muted preview</span>
+            <div class="film-progress"><i id="filmProgress"></i></div>
+          </div>
+          <ol class="film-list" id="filmList"></ol>
         </div>
       </div>
     </section>
@@ -256,9 +291,9 @@
     </div>
   </footer>
 
-  <script src="js/site.js?v=1791915279"></script>
-  <script src="js/data.js?v=1791915279"></script>
-  <script src="js/app.js?v=1791915279"></script>
-  <script type="module" src="js/hero3d.js?v=1791915279"></script>
+  <script src="js/site.js?v=1792729622"></script>
+  <script src="js/data.js?v=1792729622"></script>
+  <script src="js/app.js?v=1792729622"></script>
+  <script type="module" src="js/hero3d.js?v=1792729622"></script>
 </body>
 </html>
