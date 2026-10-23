@@ -142,6 +142,33 @@
     };
     mark(); addEventListener('hashchange', mark);
 
+    // light / dark switch: saved per visitor, circular reveal from the button where supported
+    const themeBtn = $('#themeToggle');
+    const metaTheme = $('meta[name="theme-color"]');
+    const syncTheme = () => {
+      const light = document.documentElement.dataset.theme === 'light';
+      if (themeBtn) themeBtn.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
+      if (metaTheme) metaTheme.content = light ? '#f5f5f7' : '#0a0a0c';
+    };
+    syncTheme();
+    if (themeBtn) themeBtn.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+      const apply = () => {
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (_) { /* private mode */ }
+        syncTheme();
+        window.dispatchEvent(new CustomEvent('themechange', { detail: next }));
+      };
+      if (!document.startViewTransition || reduceMotion) return apply();
+      const r = themeBtn.getBoundingClientRect(), x = r.left + r.width / 2, y = r.top + r.height / 2;
+      const end = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+      document.startViewTransition(apply).ready.then(() => {
+        document.documentElement.animate(
+          { clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${end}px at ${x}px ${y}px)`] },
+          { duration: 700, easing: 'cubic-bezier(.2, .8, .2, 1)', pseudoElement: '::view-transition-new(root)' });
+      }).catch(() => {});
+    });
+
     const top = $('.topbar');
     const onScroll = () => top && top.classList.toggle('scrolled', scrollY > 30);
     onScroll(); addEventListener('scroll', onScroll, { passive: true });

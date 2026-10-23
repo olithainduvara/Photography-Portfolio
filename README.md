@@ -68,6 +68,10 @@ Keep your raw exports somewhere outside `portfolio/` (`Assets 2/` is git-ignored
 - `"feed": false` gives an album no feed post; its clips still appear in the Reels row.
 - `link` + `more` add a "+24 more frames on Facebook" button.
 
+### Light & dark themes
+
+The sun/moon button in the top bar switches themes. The site opens in dark by default and remembers each visitor's choice. Both themes share the colour variables in `css/style.css`: the dark values are in `:root`, and the light overrides are under `html[data-theme="light"]` near the end of the file.
+
 ### Your details
 
 Edit `js/site.js` to change your name, WhatsApp number, email, social links, bio, stats and the "Now booking" list.

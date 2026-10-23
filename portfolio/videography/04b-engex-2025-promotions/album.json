@@ -1,0 +1,17 @@
+{
+  "title": "EngEx 2025: Promotions",
+  "location": "Faculty of Engineering, Peradeniya",
+  "description": "Promo films for EngEx 2025, the Faculty of Engineering's 75th-anniversary exhibition: presenters on campus, aerial views of the faculty and motion branding.",
+  "order": [
+    "engex-2025-promotion.mp4",
+    "engex-2025-promo-1.mp4",
+    "engex-2025-promo-2.mp4",
+    "engex-2025-promo-3.mp4"
+  ],
+  "captions": {
+    "engex-2025-promotion.mp4": "EngEx 2025: promotion video",
+    "engex-2025-promo-1.mp4": "EngEx 2025: promo 1",
+    "engex-2025-promo-2.mp4": "EngEx 2025: promo 2",
+    "engex-2025-promo-3.mp4": "EngEx 2025: promo 3"
+  }
+}

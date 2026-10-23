@@ -2191,6 +2191,66 @@ window.PORTFOLIO = {
      ]
     },
     {
+     "id": "04b-engex-2025-promotions",
+     "category": "videography",
+     "title": "EngEx 2025: Promotions",
+     "location": "Faculty of Engineering, Peradeniya",
+     "date": "",
+     "description": "Promo films for EngEx 2025, the Faculty of Engineering's 75th-anniversary exhibition: presenters on campus, aerial views of the faculty and motion branding.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/videography/04b-engex-2025-promotions/engex-2025-promotion.jpg",
+     "coverW": 1280,
+     "coverH": 720,
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "video",
+       "src": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promotion.mp4",
+       "file": "engex-2025-promotion.mp4",
+       "title": "EngEx 2025: promotion video",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promotion.jpg",
+       "thumb": "thumbs/videography/04b-engex-2025-promotions/engex-2025-promotion.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promo-1.mp4",
+       "file": "engex-2025-promo-1.mp4",
+       "title": "EngEx 2025: promo 1",
+       "w": 1124,
+       "h": 818,
+       "poster": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promo-1.jpg",
+       "thumb": "thumbs/videography/04b-engex-2025-promotions/engex-2025-promo-1.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promo-2.mp4",
+       "file": "engex-2025-promo-2.mp4",
+       "title": "EngEx 2025: promo 2",
+       "w": 1124,
+       "h": 818,
+       "poster": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promo-2.jpg",
+       "thumb": "thumbs/videography/04b-engex-2025-promotions/engex-2025-promo-2.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promo-3.mp4",
+       "file": "engex-2025-promo-3.mp4",
+       "title": "EngEx 2025: promo 3",
+       "w": 1124,
+       "h": 818,
+       "poster": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promo-3.jpg",
+       "thumb": "thumbs/videography/04b-engex-2025-promotions/engex-2025-promo-3.jpg"
+      }
+     ]
+    },
+    {
      "id": "05-live-event-coverage",
      "category": "videography",
      "title": "Live Event Coverage",

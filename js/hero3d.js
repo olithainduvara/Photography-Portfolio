@@ -257,6 +257,22 @@ function init() {
     return pts;
   })();
 
+  /* ---------------- theme: glowing dust on dark, soft bronze specks on light ---------------- */
+  let lightTheme = false;
+  function applyTheme() {
+    lightTheme = document.documentElement.dataset.theme === 'light';
+    dust.material.blending = lightTheme ? THREE.NormalBlending : THREE.AdditiveBlending;
+    dust.material.vertexColors = !lightTheme;
+    dust.material.color.set(lightTheme ? 0xa9823f : 0xffffff);
+    dust.material.opacity = lightTheme ? 0.5 : 0.75;
+    dust.material.needsUpdate = true;
+    lineMat.color.set(lightTheme ? 0xa9823f : GOLD);
+    lineMat.opacity = lightTheme ? 0.45 : 0.28;
+    renderer.toneMappingExposure = lightTheme ? 1.15 : 1.05;
+  }
+  applyTheme();
+  addEventListener('themechange', applyTheme);
+
   /* ---------------- layout ---------------- */
   let W = 0, H = 0;
   const base = { x: 0, y: 0, s: 1 };
@@ -412,7 +428,7 @@ function init() {
       const front = THREE.MathUtils.clamp((tmpV.z - world.position.z + RADIUS * s) / (2 * RADIUS * s), 0, 1);
       d.hover = lerp(d.hover, hovered === m ? 1 : 0, 0.15);
       m.scale.setScalar((0.82 + front * 0.28 + d.hover * 0.14) * k);
-      m.material.color.setScalar(0.32 + front * 0.68 + d.hover * 0.2);
+      m.material.color.setScalar((lightTheme ? 0.62 : 0.32) + front * (lightTheme ? 0.38 : 0.68) + d.hover * 0.2);
       m.material.opacity = k;
     });
 
