@@ -1215,3 +1215,59 @@ html:root :is(.topbar, .rail, .tabbar) > * { position: relative; z-index: 1; }
 
 /* colour buttons keep their solid theme colour (gold in dark, bronze in light) */
 :is(.btn-gold, .pill.active, .sq-btn.gold)::before { display: none; }
+
+/* =========================================================
+   LIGHT THEME ONLY: raised yellow buttons
+   (bevelled top highlight, inner edge, soft colour glow, icon chip)
+   The dark theme's solid gold buttons are untouched.
+   ========================================================= */
+html[data-theme="light"] {
+  --y-top: #ffd36e;
+  --y-mid: #f6bb3f;
+  --y-bot: #eba62c;
+  --y-ink: #3a2905;
+}
+html[data-theme="light"] :is(.btn-gold, .sq-btn.gold, .pill.active) {
+  background: linear-gradient(180deg, var(--y-top) 0%, var(--y-mid) 55%, var(--y-bot) 100%);
+  color: var(--y-ink);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .35);
+  border-color: transparent;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .65),      /* top bevel */
+    inset 0 -2px 0 rgba(170, 105, 0, .22),       /* inner bottom edge */
+    inset 0 0 0 1px rgba(255, 240, 200, .45),    /* fine inner light border */
+    0 0 0 1px rgba(205, 140, 20, .35),           /* crisp outer edge */
+    0 2px 4px rgba(150, 95, 0, .18),
+    0 10px 26px -8px rgba(243, 181, 63, .6);     /* soft yellow glow */
+  transition: transform .2s var(--ease), box-shadow .3s, filter .3s;
+}
+html[data-theme="light"] :is(.btn-gold, .sq-btn.gold, .pill.active):hover {
+  background: linear-gradient(180deg, var(--y-top) 0%, var(--y-mid) 55%, var(--y-bot) 100%);
+  color: var(--y-ink);
+  filter: brightness(1.04) saturate(1.05);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .7),
+    inset 0 -2px 0 rgba(170, 105, 0, .22),
+    inset 0 0 0 1px rgba(255, 240, 200, .5),
+    0 0 0 1px rgba(205, 140, 20, .4),
+    0 3px 6px rgba(150, 95, 0, .2),
+    0 16px 34px -10px rgba(243, 181, 63, .75);
+}
+html[data-theme="light"] :is(.btn-gold, .sq-btn.gold, .pill.active):active {
+  transform: translateY(1px);
+  box-shadow:
+    inset 0 2px 4px rgba(170, 105, 0, .25),
+    inset 0 0 0 1px rgba(255, 240, 200, .35),
+    0 0 0 1px rgba(205, 140, 20, .35),
+    0 4px 12px -6px rgba(243, 181, 63, .55);
+}
+html[data-theme="light"] .pill.active :is(.count, .star) { color: var(--y-ink); opacity: .7; }
+html[data-theme="light"] .pill.active .icon { color: var(--y-ink); }
+/* the icon sits in its own lighter rounded chip, like the reference */
+html[data-theme="light"] .btn-gold .icon {
+  width: 24px; height: 24px; padding: 4px; margin: 0 -6px 0 4px; border-radius: 8px;
+  background: rgba(255, 255, 255, .42);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .75), 0 1px 2px rgba(150, 95, 0, .15);
+}
+html[data-theme="light"] .btn-gold .icon:first-child { margin: 0 2px 0 -8px; }
+html[data-theme="light"] .sq-btn.gold { border-radius: 12px; }
