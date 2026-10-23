@@ -17,6 +17,359 @@ window.PORTFOLIO = {
    "order": 1,
    "albums": [
     {
+     "id": "00-ieee-iceeet-2026",
+     "category": "photography",
+     "title": "IEEE ICEEET 2026",
+     "location": "Sri Lanka",
+     "date": "2026",
+     "description": "Event coverage for the IEEE International Conference on Electrical Engineering and Emerging Technologies: keynotes, paper presentations, the audience and the full conference group photo.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/photography/00-ieee-iceeet-2026/on-the-mic.jpg",
+     "coverW": 1322,
+     "coverH": 2000,
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 4,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/on-the-mic.jpg",
+       "file": "on-the-mic.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/on-the-mic.jpg",
+       "title": "On the mic",
+       "w": 1322,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/the-whole-conference.jpg",
+       "file": "the-whole-conference.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/the-whole-conference.jpg",
+       "title": "The whole conference",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/keynote-address.jpg",
+       "file": "keynote-address.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/keynote-address.jpg",
+       "title": "Keynote address",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/in-front-of-the-banner.jpg",
+       "file": "in-front-of-the-banner.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/in-front-of-the-banner.jpg",
+       "title": "In front of the banner",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/at-the-lectern.jpg",
+       "file": "at-the-lectern.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/at-the-lectern.jpg",
+       "title": "At the lectern",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/paper-presentation.jpg",
+       "file": "paper-presentation.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/paper-presentation.jpg",
+       "title": "Paper presentation",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/presenting-research.jpg",
+       "file": "presenting-research.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/presenting-research.jpg",
+       "title": "Presenting research",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/presenting-with-the-mic.jpg",
+       "file": "presenting-with-the-mic.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/presenting-with-the-mic.jpg",
+       "title": "Presenting with the mic",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/portrait-of-a-presenter.jpg",
+       "file": "portrait-of-a-presenter.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/portrait-of-a-presenter.jpg",
+       "title": "Portrait of a presenter",
+       "w": 1295,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/explaining-the-results.jpg",
+       "file": "explaining-the-results.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/explaining-the-results.jpg",
+       "title": "Explaining the results",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/a-final-word.jpg",
+       "file": "a-final-word.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/a-final-word.jpg",
+       "title": "A final word",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/conversations-between-sessions.jpg",
+       "file": "conversations-between-sessions.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/conversations-between-sessions.jpg",
+       "title": "Conversations between sessions",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/addressing-the-hall.jpg",
+       "file": "addressing-the-hall.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/addressing-the-hall.jpg",
+       "title": "Addressing the hall",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/at-the-podium.jpg",
+       "file": "at-the-podium.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/at-the-podium.jpg",
+       "title": "At the podium",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/making-a-point.jpg",
+       "file": "making-a-point.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/making-a-point.jpg",
+       "title": "Making a point",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/in-the-audience.jpg",
+       "file": "in-the-audience.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/in-the-audience.jpg",
+       "title": "In the audience",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/listening-in.jpg",
+       "file": "listening-in.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/listening-in.jpg",
+       "title": "Listening in",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/taking-the-floor.jpg",
+       "file": "taking-the-floor.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/taking-the-floor.jpg",
+       "title": "Taking the floor",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/a-question-from-the-floor.jpg",
+       "file": "a-question-from-the-floor.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/a-question-from-the-floor.jpg",
+       "title": "A question from the floor",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/presenter-by-the-screen.jpg",
+       "file": "presenter-by-the-screen.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/presenter-by-the-screen.jpg",
+       "title": "Presenter by the screen",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/the-ieee-podium.jpg",
+       "file": "the-ieee-podium.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/the-ieee-podium.jpg",
+       "title": "The ieee podium",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/the-audience.jpg",
+       "file": "the-audience.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/the-audience.jpg",
+       "title": "The audience",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/the-hall.jpg",
+       "file": "the-hall.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/the-hall.jpg",
+       "title": "The hall",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/keynote-wide.jpg",
+       "file": "keynote-wide.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/keynote-wide.jpg",
+       "title": "Keynote wide",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/ready-to-present.jpg",
+       "file": "ready-to-present.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/ready-to-present.jpg",
+       "title": "Ready to present",
+       "w": 1320,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/lunch-break.jpg",
+       "file": "lunch-break.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/lunch-break.jpg",
+       "title": "Lunch break",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/networking.jpg",
+       "file": "networking.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/networking.jpg",
+       "title": "Networking",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/hands-in-motion.jpg",
+       "file": "hands-in-motion.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/hands-in-motion.jpg",
+       "title": "Hands in motion",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/beside-the-ieee-banner.jpg",
+       "file": "beside-the-ieee-banner.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/beside-the-ieee-banner.jpg",
+       "title": "Beside the ieee banner",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/walking-through-the-slides.jpg",
+       "file": "walking-through-the-slides.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/walking-through-the-slides.jpg",
+       "title": "Walking through the slides",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/question-time.jpg",
+       "file": "question-time.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/question-time.jpg",
+       "title": "Question time",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/a-moment-of-thought.jpg",
+       "file": "a-moment-of-thought.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/a-moment-of-thought.jpg",
+       "title": "A moment of thought",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/table-discussion.jpg",
+       "file": "table-discussion.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/table-discussion.jpg",
+       "title": "Table discussion",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/engaging-the-audience.jpg",
+       "file": "engaging-the-audience.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/engaging-the-audience.jpg",
+       "title": "Engaging the audience",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/at-the-podium-portrait.jpg",
+       "file": "at-the-podium-portrait.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/at-the-podium-portrait.jpg",
+       "title": "At the podium portrait",
+       "w": 1333,
+       "h": 2000
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/guest-speaker.jpg",
+       "file": "guest-speaker.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/guest-speaker.jpg",
+       "title": "Guest speaker",
+       "w": 2000,
+       "h": 1333
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/00-ieee-iceeet-2026/the-speakers-view.jpg",
+       "file": "the-speakers-view.jpg",
+       "thumb": "thumbs/photography/00-ieee-iceeet-2026/the-speakers-view.jpg",
+       "title": "The speakers view",
+       "w": 2000,
+       "h": 1333
+      }
+     ]
+    },
+    {
      "id": "01-graduation-day",
      "category": "photography",
      "title": "Graduation Day",
@@ -1639,359 +1992,6 @@ window.PORTFOLIO = {
        "h": 1333
       }
      ]
-    },
-    {
-     "id": "13-ieee-iceeet-2026",
-     "category": "photography",
-     "title": "IEEE ICEEET 2026",
-     "location": "Sri Lanka",
-     "date": "2026",
-     "description": "Event coverage for the IEEE International Conference on Electrical Engineering and Emerging Technologies: keynotes, paper presentations, the audience and the full conference group photo.",
-     "link": "",
-     "more": 0,
-     "cover": "thumbs/photography/13-ieee-iceeet-2026/the-whole-conference.jpg",
-     "coverW": 2000,
-     "coverH": 1333,
-     "featured": true,
-     "spotlight": false,
-     "reelsOrder": 0,
-     "pin": 0,
-     "inFeed": true,
-     "items": [
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/the-whole-conference.jpg",
-       "file": "the-whole-conference.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/the-whole-conference.jpg",
-       "title": "The whole conference",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/keynote-address.jpg",
-       "file": "keynote-address.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/keynote-address.jpg",
-       "title": "Keynote address",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/in-front-of-the-banner.jpg",
-       "file": "in-front-of-the-banner.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/in-front-of-the-banner.jpg",
-       "title": "In front of the banner",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/on-the-mic.jpg",
-       "file": "on-the-mic.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/on-the-mic.jpg",
-       "title": "On the mic",
-       "w": 1322,
-       "h": 2000
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/at-the-lectern.jpg",
-       "file": "at-the-lectern.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/at-the-lectern.jpg",
-       "title": "At the lectern",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/paper-presentation.jpg",
-       "file": "paper-presentation.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/paper-presentation.jpg",
-       "title": "Paper presentation",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/presenting-research.jpg",
-       "file": "presenting-research.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/presenting-research.jpg",
-       "title": "Presenting research",
-       "w": 1333,
-       "h": 2000
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/presenting-with-the-mic.jpg",
-       "file": "presenting-with-the-mic.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/presenting-with-the-mic.jpg",
-       "title": "Presenting with the mic",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/portrait-of-a-presenter.jpg",
-       "file": "portrait-of-a-presenter.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/portrait-of-a-presenter.jpg",
-       "title": "Portrait of a presenter",
-       "w": 1295,
-       "h": 2000
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/explaining-the-results.jpg",
-       "file": "explaining-the-results.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/explaining-the-results.jpg",
-       "title": "Explaining the results",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/a-final-word.jpg",
-       "file": "a-final-word.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/a-final-word.jpg",
-       "title": "A final word",
-       "w": 1333,
-       "h": 2000
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/conversations-between-sessions.jpg",
-       "file": "conversations-between-sessions.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/conversations-between-sessions.jpg",
-       "title": "Conversations between sessions",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/addressing-the-hall.jpg",
-       "file": "addressing-the-hall.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/addressing-the-hall.jpg",
-       "title": "Addressing the hall",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/at-the-podium.jpg",
-       "file": "at-the-podium.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/at-the-podium.jpg",
-       "title": "At the podium",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/making-a-point.jpg",
-       "file": "making-a-point.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/making-a-point.jpg",
-       "title": "Making a point",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/in-the-audience.jpg",
-       "file": "in-the-audience.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/in-the-audience.jpg",
-       "title": "In the audience",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/listening-in.jpg",
-       "file": "listening-in.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/listening-in.jpg",
-       "title": "Listening in",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/taking-the-floor.jpg",
-       "file": "taking-the-floor.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/taking-the-floor.jpg",
-       "title": "Taking the floor",
-       "w": 1333,
-       "h": 2000
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/a-question-from-the-floor.jpg",
-       "file": "a-question-from-the-floor.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/a-question-from-the-floor.jpg",
-       "title": "A question from the floor",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/presenter-by-the-screen.jpg",
-       "file": "presenter-by-the-screen.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/presenter-by-the-screen.jpg",
-       "title": "Presenter by the screen",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/the-ieee-podium.jpg",
-       "file": "the-ieee-podium.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/the-ieee-podium.jpg",
-       "title": "The ieee podium",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/the-audience.jpg",
-       "file": "the-audience.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/the-audience.jpg",
-       "title": "The audience",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/the-hall.jpg",
-       "file": "the-hall.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/the-hall.jpg",
-       "title": "The hall",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/keynote-wide.jpg",
-       "file": "keynote-wide.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/keynote-wide.jpg",
-       "title": "Keynote wide",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/ready-to-present.jpg",
-       "file": "ready-to-present.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/ready-to-present.jpg",
-       "title": "Ready to present",
-       "w": 1320,
-       "h": 2000
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/lunch-break.jpg",
-       "file": "lunch-break.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/lunch-break.jpg",
-       "title": "Lunch break",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/networking.jpg",
-       "file": "networking.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/networking.jpg",
-       "title": "Networking",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/hands-in-motion.jpg",
-       "file": "hands-in-motion.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/hands-in-motion.jpg",
-       "title": "Hands in motion",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/beside-the-ieee-banner.jpg",
-       "file": "beside-the-ieee-banner.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/beside-the-ieee-banner.jpg",
-       "title": "Beside the ieee banner",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/walking-through-the-slides.jpg",
-       "file": "walking-through-the-slides.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/walking-through-the-slides.jpg",
-       "title": "Walking through the slides",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/question-time.jpg",
-       "file": "question-time.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/question-time.jpg",
-       "title": "Question time",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/a-moment-of-thought.jpg",
-       "file": "a-moment-of-thought.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/a-moment-of-thought.jpg",
-       "title": "A moment of thought",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/table-discussion.jpg",
-       "file": "table-discussion.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/table-discussion.jpg",
-       "title": "Table discussion",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/engaging-the-audience.jpg",
-       "file": "engaging-the-audience.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/engaging-the-audience.jpg",
-       "title": "Engaging the audience",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/at-the-podium-portrait.jpg",
-       "file": "at-the-podium-portrait.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/at-the-podium-portrait.jpg",
-       "title": "At the podium portrait",
-       "w": 1333,
-       "h": 2000
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/guest-speaker.jpg",
-       "file": "guest-speaker.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/guest-speaker.jpg",
-       "title": "Guest speaker",
-       "w": 2000,
-       "h": 1333
-      },
-      {
-       "type": "image",
-       "src": "portfolio/photography/13-ieee-iceeet-2026/the-speakers-view.jpg",
-       "file": "the-speakers-view.jpg",
-       "thumb": "thumbs/photography/13-ieee-iceeet-2026/the-speakers-view.jpg",
-       "title": "The speakers view",
-       "w": 2000,
-       "h": 1333
-      }
-     ]
     }
    ]
   },
@@ -2010,140 +2010,6 @@ window.PORTFOLIO = {
    "layout": "albums",
    "order": 2,
    "albums": [
-    {
-     "id": "01-engex-2025-control-room",
-     "category": "videography",
-     "title": "EngEx 2025: Media Control Room",
-     "location": "Faculty of Engineering, Peradeniya",
-     "date": "",
-     "description": "Led the Media Team in the main control room of EngEx 2025, one of Sri Lanka's largest engineering exhibitions. Our video marketing carried the event's story across the whole country.",
-     "link": "",
-     "more": 0,
-     "cover": "thumbs/videography/01-engex-2025-control-room/broadcast-desk.jpg",
-     "coverW": 1600,
-     "coverH": 900,
-     "featured": false,
-     "spotlight": false,
-     "reelsOrder": 0,
-     "pin": 0,
-     "inFeed": true,
-     "items": [
-      {
-       "type": "image",
-       "src": "portfolio/videography/01-engex-2025-control-room/broadcast-desk.jpg",
-       "file": "broadcast-desk.jpg",
-       "thumb": "thumbs/videography/01-engex-2025-control-room/broadcast-desk.jpg",
-       "title": "The broadcast desk",
-       "w": 1600,
-       "h": 900
-      },
-      {
-       "type": "video",
-       "src": "portfolio/videography/01-engex-2025-control-room/control-room-4.mp4",
-       "file": "control-room-4.mp4",
-       "title": "Wrapping the day",
-       "w": 960,
-       "h": 540,
-       "poster": "portfolio/videography/01-engex-2025-control-room/control-room-4.jpg",
-       "thumb": "thumbs/videography/01-engex-2025-control-room/control-room-4.jpg"
-      },
-      {
-       "type": "image",
-       "src": "portfolio/videography/01-engex-2025-control-room/on-the-mic.jpg",
-       "file": "on-the-mic.jpg",
-       "thumb": "thumbs/videography/01-engex-2025-control-room/on-the-mic.jpg",
-       "title": "On the mic for EngEx 2025",
-       "w": 1125,
-       "h": 2000
-      },
-      {
-       "type": "video",
-       "src": "portfolio/videography/01-engex-2025-control-room/control-room-1.mp4",
-       "file": "control-room-1.mp4",
-       "title": "Live switching in the control room",
-       "w": 720,
-       "h": 1280,
-       "poster": "portfolio/videography/01-engex-2025-control-room/control-room-1.jpg",
-       "thumb": "thumbs/videography/01-engex-2025-control-room/control-room-1.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/videography/01-engex-2025-control-room/control-room-2.mp4",
-       "file": "control-room-2.mp4",
-       "title": "Multi-screen monitoring",
-       "w": 720,
-       "h": 1280,
-       "poster": "portfolio/videography/01-engex-2025-control-room/control-room-2.jpg",
-       "thumb": "thumbs/videography/01-engex-2025-control-room/control-room-2.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/videography/01-engex-2025-control-room/control-room-3.mp4",
-       "file": "control-room-3.mp4",
-       "title": "The team at work",
-       "w": 720,
-       "h": 1280,
-       "poster": "portfolio/videography/01-engex-2025-control-room/control-room-3.jpg",
-       "thumb": "thumbs/videography/01-engex-2025-control-room/control-room-3.jpg"
-      }
-     ]
-    },
-    {
-     "id": "02-live-event-coverage",
-     "category": "videography",
-     "title": "Live Event Coverage",
-     "location": "University of Peradeniya",
-     "date": "",
-     "description": "Gimbal and side-camera roles at major events like Wasanthaye Aga and Sandhwani: live coverage, framing and working under pressure.",
-     "link": "",
-     "more": 0,
-     "cover": "thumbs/videography/02-live-event-coverage/stage-production-gauge.jpg",
-     "coverW": 1080,
-     "coverH": 719,
-     "featured": true,
-     "spotlight": false,
-     "reelsOrder": 0,
-     "pin": 0,
-     "inFeed": true,
-     "items": [
-      {
-       "type": "image",
-       "src": "portfolio/videography/02-live-event-coverage/stage-production-gauge.jpg",
-       "file": "stage-production-gauge.jpg",
-       "thumb": "thumbs/videography/02-live-event-coverage/stage-production-gauge.jpg",
-       "title": "Stage production, Gauge",
-       "w": 1080,
-       "h": 719
-      },
-      {
-       "type": "image",
-       "src": "portfolio/videography/02-live-event-coverage/gimbal-at-a-live-function.jpg",
-       "file": "gimbal-at-a-live-function.jpg",
-       "thumb": "portfolio/videography/02-live-event-coverage/gimbal-at-a-live-function.jpg",
-       "title": "Gimbal at a live function",
-       "w": 512,
-       "h": 640
-      },
-      {
-       "type": "image",
-       "src": "portfolio/videography/02-live-event-coverage/multi-camera-ceremony.jpg",
-       "file": "multi-camera-ceremony.jpg",
-       "thumb": "portfolio/videography/02-live-event-coverage/multi-camera-ceremony.jpg",
-       "title": "Multi camera ceremony",
-       "w": 393,
-       "h": 590
-      },
-      {
-       "type": "image",
-       "src": "portfolio/videography/02-live-event-coverage/side-camera-on-stage.jpg",
-       "file": "side-camera-on-stage.jpg",
-       "thumb": "portfolio/videography/02-live-event-coverage/side-camera-on-stage.jpg",
-       "title": "Side camera on stage",
-       "w": 526,
-       "h": 789
-      }
-     ]
-    },
     {
      "id": "03-event-films",
      "category": "videography",
@@ -2325,7 +2191,63 @@ window.PORTFOLIO = {
      ]
     },
     {
-     "id": "05-back-to-school-2023-teasers",
+     "id": "05-live-event-coverage",
+     "category": "videography",
+     "title": "Live Event Coverage",
+     "location": "University of Peradeniya",
+     "date": "",
+     "description": "Gimbal and side-camera roles at major events like Wasanthaye Aga and Sandhwani: live coverage, framing and working under pressure.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/videography/05-live-event-coverage/stage-production-gauge.jpg",
+     "coverW": 1080,
+     "coverH": 719,
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "image",
+       "src": "portfolio/videography/05-live-event-coverage/stage-production-gauge.jpg",
+       "file": "stage-production-gauge.jpg",
+       "thumb": "thumbs/videography/05-live-event-coverage/stage-production-gauge.jpg",
+       "title": "Stage production, Gauge",
+       "w": 1080,
+       "h": 719
+      },
+      {
+       "type": "image",
+       "src": "portfolio/videography/05-live-event-coverage/gimbal-at-a-live-function.jpg",
+       "file": "gimbal-at-a-live-function.jpg",
+       "thumb": "portfolio/videography/05-live-event-coverage/gimbal-at-a-live-function.jpg",
+       "title": "Gimbal at a live function",
+       "w": 512,
+       "h": 640
+      },
+      {
+       "type": "image",
+       "src": "portfolio/videography/05-live-event-coverage/multi-camera-ceremony.jpg",
+       "file": "multi-camera-ceremony.jpg",
+       "thumb": "portfolio/videography/05-live-event-coverage/multi-camera-ceremony.jpg",
+       "title": "Multi camera ceremony",
+       "w": 393,
+       "h": 590
+      },
+      {
+       "type": "image",
+       "src": "portfolio/videography/05-live-event-coverage/side-camera-on-stage.jpg",
+       "file": "side-camera-on-stage.jpg",
+       "thumb": "portfolio/videography/05-live-event-coverage/side-camera-on-stage.jpg",
+       "title": "Side camera on stage",
+       "w": 526,
+       "h": 789
+      }
+     ]
+    },
+    {
+     "id": "06-back-to-school-2023-teasers",
      "category": "videography",
      "title": "Back To School 2023: Teasers",
      "location": "Ananda College, Chilaw",
@@ -2333,7 +2255,7 @@ window.PORTFOLIO = {
      "description": "A series of six short teasers announcing the Back To School day: past students back in uniform, counting down to 5 August.",
      "link": "",
      "more": 0,
-     "cover": "thumbs/videography/05-back-to-school-2023-teasers/teaser-1.jpg",
+     "cover": "thumbs/videography/06-back-to-school-2023-teasers/teaser-1.jpg",
      "coverW": 964,
      "coverH": 954,
      "featured": true,
@@ -2344,68 +2266,68 @@ window.PORTFOLIO = {
      "items": [
       {
        "type": "video",
-       "src": "portfolio/videography/05-back-to-school-2023-teasers/teaser-1.mp4",
+       "src": "portfolio/videography/06-back-to-school-2023-teasers/teaser-1.mp4",
        "file": "teaser-1.mp4",
        "title": "Teaser 1",
        "w": 964,
        "h": 954,
-       "poster": "portfolio/videography/05-back-to-school-2023-teasers/teaser-1.jpg",
-       "thumb": "thumbs/videography/05-back-to-school-2023-teasers/teaser-1.jpg"
+       "poster": "portfolio/videography/06-back-to-school-2023-teasers/teaser-1.jpg",
+       "thumb": "thumbs/videography/06-back-to-school-2023-teasers/teaser-1.jpg"
       },
       {
        "type": "video",
-       "src": "portfolio/videography/05-back-to-school-2023-teasers/teaser-2.mp4",
+       "src": "portfolio/videography/06-back-to-school-2023-teasers/teaser-2.mp4",
        "file": "teaser-2.mp4",
        "title": "Teaser 2",
        "w": 964,
        "h": 954,
-       "poster": "portfolio/videography/05-back-to-school-2023-teasers/teaser-2.jpg",
-       "thumb": "thumbs/videography/05-back-to-school-2023-teasers/teaser-2.jpg"
+       "poster": "portfolio/videography/06-back-to-school-2023-teasers/teaser-2.jpg",
+       "thumb": "thumbs/videography/06-back-to-school-2023-teasers/teaser-2.jpg"
       },
       {
        "type": "video",
-       "src": "portfolio/videography/05-back-to-school-2023-teasers/teaser-3.mp4",
+       "src": "portfolio/videography/06-back-to-school-2023-teasers/teaser-3.mp4",
        "file": "teaser-3.mp4",
        "title": "Teaser 3",
        "w": 964,
        "h": 954,
-       "poster": "portfolio/videography/05-back-to-school-2023-teasers/teaser-3.jpg",
-       "thumb": "thumbs/videography/05-back-to-school-2023-teasers/teaser-3.jpg"
+       "poster": "portfolio/videography/06-back-to-school-2023-teasers/teaser-3.jpg",
+       "thumb": "thumbs/videography/06-back-to-school-2023-teasers/teaser-3.jpg"
       },
       {
        "type": "video",
-       "src": "portfolio/videography/05-back-to-school-2023-teasers/teaser-4.mp4",
+       "src": "portfolio/videography/06-back-to-school-2023-teasers/teaser-4.mp4",
        "file": "teaser-4.mp4",
        "title": "Teaser 4",
        "w": 964,
        "h": 954,
-       "poster": "portfolio/videography/05-back-to-school-2023-teasers/teaser-4.jpg",
-       "thumb": "thumbs/videography/05-back-to-school-2023-teasers/teaser-4.jpg"
+       "poster": "portfolio/videography/06-back-to-school-2023-teasers/teaser-4.jpg",
+       "thumb": "thumbs/videography/06-back-to-school-2023-teasers/teaser-4.jpg"
       },
       {
        "type": "video",
-       "src": "portfolio/videography/05-back-to-school-2023-teasers/teaser-5.mp4",
+       "src": "portfolio/videography/06-back-to-school-2023-teasers/teaser-5.mp4",
        "file": "teaser-5.mp4",
        "title": "Teaser 5",
        "w": 964,
        "h": 954,
-       "poster": "portfolio/videography/05-back-to-school-2023-teasers/teaser-5.jpg",
-       "thumb": "thumbs/videography/05-back-to-school-2023-teasers/teaser-5.jpg"
+       "poster": "portfolio/videography/06-back-to-school-2023-teasers/teaser-5.jpg",
+       "thumb": "thumbs/videography/06-back-to-school-2023-teasers/teaser-5.jpg"
       },
       {
        "type": "video",
-       "src": "portfolio/videography/05-back-to-school-2023-teasers/teaser-6.mp4",
+       "src": "portfolio/videography/06-back-to-school-2023-teasers/teaser-6.mp4",
        "file": "teaser-6.mp4",
        "title": "Teaser 6",
        "w": 964,
        "h": 954,
-       "poster": "portfolio/videography/05-back-to-school-2023-teasers/teaser-6.jpg",
-       "thumb": "thumbs/videography/05-back-to-school-2023-teasers/teaser-6.jpg"
+       "poster": "portfolio/videography/06-back-to-school-2023-teasers/teaser-6.jpg",
+       "thumb": "thumbs/videography/06-back-to-school-2023-teasers/teaser-6.jpg"
       }
      ]
     },
     {
-     "id": "06-music-video",
+     "id": "07-music-video",
      "category": "videography",
      "title": "Teri Meri Gallan: Tabla Cover",
      "location": "Sri Lanka",
@@ -2413,7 +2335,7 @@ window.PORTFOLIO = {
      "description": "A tabla cover music video, shot and edited on location by an old railway bridge and a forest path.",
      "link": "",
      "more": 0,
-     "cover": "thumbs/videography/06-music-video/teri-meri-gallan-tabla-cover.jpg",
+     "cover": "thumbs/videography/07-music-video/teri-meri-gallan-tabla-cover.jpg",
      "coverW": 1280,
      "coverH": 720,
      "featured": true,
@@ -2424,73 +2346,13 @@ window.PORTFOLIO = {
      "items": [
       {
        "type": "video",
-       "src": "portfolio/videography/06-music-video/teri-meri-gallan-tabla-cover.mp4",
+       "src": "portfolio/videography/07-music-video/teri-meri-gallan-tabla-cover.mp4",
        "file": "teri-meri-gallan-tabla-cover.mp4",
        "title": "Teri Meri Gallan: tabla cover",
        "w": 1280,
        "h": 720,
-       "poster": "portfolio/videography/06-music-video/teri-meri-gallan-tabla-cover.jpg",
-       "thumb": "thumbs/videography/06-music-video/teri-meri-gallan-tabla-cover.jpg"
-      }
-     ]
-    },
-    {
-     "id": "07-engex-2025-promotions",
-     "category": "videography",
-     "title": "EngEx 2025: Promotions",
-     "location": "Faculty of Engineering, Peradeniya",
-     "date": "",
-     "description": "Promo films for EngEx 2025, the Faculty of Engineering's 75th-anniversary exhibition: presenters on campus, aerials and motion branding.",
-     "link": "",
-     "more": 0,
-     "cover": "thumbs/videography/07-engex-2025-promotions/engex-2025-promotion.jpg",
-     "coverW": 1280,
-     "coverH": 720,
-     "featured": false,
-     "spotlight": false,
-     "reelsOrder": 0,
-     "pin": 0,
-     "inFeed": true,
-     "items": [
-      {
-       "type": "video",
-       "src": "portfolio/videography/07-engex-2025-promotions/engex-2025-promotion.mp4",
-       "file": "engex-2025-promotion.mp4",
-       "title": "EngEx 2025: promotion video",
-       "w": 1280,
-       "h": 720,
-       "poster": "portfolio/videography/07-engex-2025-promotions/engex-2025-promotion.jpg",
-       "thumb": "thumbs/videography/07-engex-2025-promotions/engex-2025-promotion.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/videography/07-engex-2025-promotions/engex-2025-promo-1.mp4",
-       "file": "engex-2025-promo-1.mp4",
-       "title": "EngEx 2025: promo 1",
-       "w": 1124,
-       "h": 818,
-       "poster": "portfolio/videography/07-engex-2025-promotions/engex-2025-promo-1.jpg",
-       "thumb": "thumbs/videography/07-engex-2025-promotions/engex-2025-promo-1.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/videography/07-engex-2025-promotions/engex-2025-promo-2.mp4",
-       "file": "engex-2025-promo-2.mp4",
-       "title": "EngEx 2025: promo 2",
-       "w": 1124,
-       "h": 818,
-       "poster": "portfolio/videography/07-engex-2025-promotions/engex-2025-promo-2.jpg",
-       "thumb": "thumbs/videography/07-engex-2025-promotions/engex-2025-promo-2.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/videography/07-engex-2025-promotions/engex-2025-promo-3.mp4",
-       "file": "engex-2025-promo-3.mp4",
-       "title": "EngEx 2025: promo 3",
-       "w": 1124,
-       "h": 818,
-       "poster": "portfolio/videography/07-engex-2025-promotions/engex-2025-promo-3.jpg",
-       "thumb": "thumbs/videography/07-engex-2025-promotions/engex-2025-promo-3.jpg"
+       "poster": "portfolio/videography/07-music-video/teri-meri-gallan-tabla-cover.jpg",
+       "thumb": "thumbs/videography/07-music-video/teri-meri-gallan-tabla-cover.jpg"
       }
      ]
     }
@@ -3124,15 +2986,6 @@ window.PORTFOLIO = {
       },
       {
        "type": "image",
-       "src": "portfolio/editing/01-collage-designs/08-floral-graduation-page.jpg",
-       "file": "08-floral-graduation-page.jpg",
-       "thumb": "thumbs/editing/01-collage-designs/08-floral-graduation-page.jpg",
-       "title": "Floral graduation page",
-       "w": 2000,
-       "h": 1690
-      },
-      {
-       "type": "image",
        "src": "portfolio/editing/01-collage-designs/09-bouquet-story-page.jpg",
        "file": "09-bouquet-story-page.jpg",
        "thumb": "thumbs/editing/01-collage-designs/09-bouquet-story-page.jpg",
@@ -3161,7 +3014,117 @@ window.PORTFOLIO = {
      ]
     },
     {
-     "id": "02-portrait-collages",
+     "id": "02-tuition-class-advertisements",
+     "category": "editing",
+     "title": "Motion-Graphics Ads: Tuition Classes",
+     "location": "Studio",
+     "date": "",
+     "description": "Motion-graphics adverts for tuition classes across physics, chemistry, robotics, accounting and English: kinetic Sinhala typography, results walls, logo reveals and fast social-media cuts.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/editing/02-tuition-class-advertisements/physics-class.jpg",
+     "coverW": 1280,
+     "coverH": 720,
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 5,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "video",
+       "src": "portfolio/editing/02-tuition-class-advertisements/physics-class.mp4",
+       "file": "physics-class.mp4",
+       "title": "Physics class",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/editing/02-tuition-class-advertisements/physics-class.jpg",
+       "thumb": "thumbs/editing/02-tuition-class-advertisements/physics-class.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/02-tuition-class-advertisements/pre-engineering-class.mp4",
+       "file": "pre-engineering-class.mp4",
+       "title": "Pre-engineering class",
+       "w": 960,
+       "h": 540,
+       "poster": "portfolio/editing/02-tuition-class-advertisements/pre-engineering-class.jpg",
+       "thumb": "thumbs/editing/02-tuition-class-advertisements/pre-engineering-class.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/02-tuition-class-advertisements/robotics-class.mp4",
+       "file": "robotics-class.mp4",
+       "title": "Robotics & circuit design",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/editing/02-tuition-class-advertisements/robotics-class.jpg",
+       "thumb": "thumbs/editing/02-tuition-class-advertisements/robotics-class.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/02-tuition-class-advertisements/robotics-class-2.mp4",
+       "file": "robotics-class-2.mp4",
+       "title": "Robotics class: Arduino projects",
+       "w": 1086,
+       "h": 848,
+       "poster": "portfolio/editing/02-tuition-class-advertisements/robotics-class-2.jpg",
+       "thumb": "thumbs/editing/02-tuition-class-advertisements/robotics-class-2.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/02-tuition-class-advertisements/chemistry-classes.mp4",
+       "file": "chemistry-classes.mp4",
+       "title": "Chemistry classes: 2024 A/L",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/editing/02-tuition-class-advertisements/chemistry-classes.jpg",
+       "thumb": "thumbs/editing/02-tuition-class-advertisements/chemistry-classes.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/02-tuition-class-advertisements/chemistry-revision.mp4",
+       "file": "chemistry-revision.mp4",
+       "title": "Chemistry: 2023 A/L revision",
+       "w": 1034,
+       "h": 888,
+       "poster": "portfolio/editing/02-tuition-class-advertisements/chemistry-revision.jpg",
+       "thumb": "thumbs/editing/02-tuition-class-advertisements/chemistry-revision.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/02-tuition-class-advertisements/chemistry-class-3.mp4",
+       "file": "chemistry-class-3.mp4",
+       "title": "Chemistry class",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/editing/02-tuition-class-advertisements/chemistry-class-3.jpg",
+       "thumb": "thumbs/editing/02-tuition-class-advertisements/chemistry-class-3.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/02-tuition-class-advertisements/accounting-class.mp4",
+       "file": "accounting-class.mp4",
+       "title": "Accounting class",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/editing/02-tuition-class-advertisements/accounting-class.jpg",
+       "thumb": "thumbs/editing/02-tuition-class-advertisements/accounting-class.jpg"
+      },
+      {
+       "type": "video",
+       "src": "portfolio/editing/02-tuition-class-advertisements/english-class.mp4",
+       "file": "english-class.mp4",
+       "title": "English class",
+       "w": 1280,
+       "h": 720,
+       "poster": "portfolio/editing/02-tuition-class-advertisements/english-class.jpg",
+       "thumb": "thumbs/editing/02-tuition-class-advertisements/english-class.jpg"
+      }
+     ]
+    },
+    {
+     "id": "03-portrait-collages",
      "category": "editing",
      "title": "Portrait Collages",
      "location": "Studio",
@@ -3169,7 +3132,7 @@ window.PORTFOLIO = {
      "description": "Layouts that turn a full shoot into one story: layered frames, soft type and a consistent grade.",
      "link": "https://www.facebook.com/profile.php?id=100091314396526",
      "more": 0,
-     "cover": "thumbs/editing/02-portrait-collages/portrait-hexagon-collage.jpg",
+     "cover": "thumbs/editing/03-portrait-collages/portrait-hexagon-collage.jpg",
      "coverW": 960,
      "coverH": 540,
      "featured": true,
@@ -3180,9 +3143,9 @@ window.PORTFOLIO = {
      "items": [
       {
        "type": "image",
-       "src": "portfolio/editing/02-portrait-collages/portrait-hexagon-collage.jpg",
+       "src": "portfolio/editing/03-portrait-collages/portrait-hexagon-collage.jpg",
        "file": "portrait-hexagon-collage.jpg",
-       "thumb": "thumbs/editing/02-portrait-collages/portrait-hexagon-collage.jpg",
+       "thumb": "thumbs/editing/03-portrait-collages/portrait-hexagon-collage.jpg",
        "title": "Portrait hexagon collage",
        "w": 960,
        "h": 540
@@ -3190,7 +3153,7 @@ window.PORTFOLIO = {
      ]
     },
     {
-     "id": "03-graduation-album-layouts",
+     "id": "04-graduation-album-layouts",
      "category": "editing",
      "title": "Graduation Album Layouts",
      "location": "Studio",
@@ -3198,7 +3161,7 @@ window.PORTFOLIO = {
      "description": "Print-ready album pages and spreads built from graduation shoots: layered frames, cut-outs, soft type and a consistent grade.",
      "link": "",
      "more": 0,
-     "cover": "thumbs/editing/03-graduation-album-layouts/the-colonnade-page.jpg",
+     "cover": "thumbs/editing/04-graduation-album-layouts/the-colonnade-page.jpg",
      "coverW": 1414,
      "coverH": 2000,
      "featured": true,
@@ -3209,54 +3172,54 @@ window.PORTFOLIO = {
      "items": [
       {
        "type": "image",
-       "src": "portfolio/editing/03-graduation-album-layouts/the-colonnade-page.jpg",
+       "src": "portfolio/editing/04-graduation-album-layouts/the-colonnade-page.jpg",
        "file": "the-colonnade-page.jpg",
-       "thumb": "thumbs/editing/03-graduation-album-layouts/the-colonnade-page.jpg",
+       "thumb": "thumbs/editing/04-graduation-album-layouts/the-colonnade-page.jpg",
        "title": "The colonnade page",
        "w": 1414,
        "h": 2000
       },
       {
        "type": "image",
-       "src": "portfolio/editing/03-graduation-album-layouts/black-and-white-story.jpg",
+       "src": "portfolio/editing/04-graduation-album-layouts/black-and-white-story.jpg",
        "file": "black-and-white-story.jpg",
-       "thumb": "thumbs/editing/03-graduation-album-layouts/black-and-white-story.jpg",
+       "thumb": "thumbs/editing/04-graduation-album-layouts/black-and-white-story.jpg",
        "title": "Black and white story",
        "w": 1414,
        "h": 2000
       },
       {
        "type": "image",
-       "src": "portfolio/editing/03-graduation-album-layouts/the-staircase-page.jpg",
+       "src": "portfolio/editing/04-graduation-album-layouts/the-staircase-page.jpg",
        "file": "the-staircase-page.jpg",
-       "thumb": "thumbs/editing/03-graduation-album-layouts/the-staircase-page.jpg",
+       "thumb": "thumbs/editing/04-graduation-album-layouts/the-staircase-page.jpg",
        "title": "The staircase page",
        "w": 1352,
        "h": 2000
       },
       {
        "type": "image",
-       "src": "portfolio/editing/03-graduation-album-layouts/floral-layout.jpg",
+       "src": "portfolio/editing/04-graduation-album-layouts/floral-layout.jpg",
        "file": "floral-layout.jpg",
-       "thumb": "thumbs/editing/03-graduation-album-layouts/floral-layout.jpg",
+       "thumb": "thumbs/editing/04-graduation-album-layouts/floral-layout.jpg",
        "title": "Floral layout",
        "w": 2000,
        "h": 1690
       },
       {
        "type": "image",
-       "src": "portfolio/editing/03-graduation-album-layouts/three-frame-spread.jpg",
+       "src": "portfolio/editing/04-graduation-album-layouts/three-frame-spread.jpg",
        "file": "three-frame-spread.jpg",
-       "thumb": "thumbs/editing/03-graduation-album-layouts/three-frame-spread.jpg",
+       "thumb": "thumbs/editing/04-graduation-album-layouts/three-frame-spread.jpg",
        "title": "Three frame spread",
        "w": 2000,
        "h": 1414
       },
       {
        "type": "image",
-       "src": "portfolio/editing/03-graduation-album-layouts/misty-frame-spread.jpg",
+       "src": "portfolio/editing/04-graduation-album-layouts/misty-frame-spread.jpg",
        "file": "misty-frame-spread.jpg",
-       "thumb": "thumbs/editing/03-graduation-album-layouts/misty-frame-spread.jpg",
+       "thumb": "thumbs/editing/04-graduation-album-layouts/misty-frame-spread.jpg",
        "title": "Misty frame spread",
        "w": 2000,
        "h": 1335
@@ -3264,7 +3227,7 @@ window.PORTFOLIO = {
      ]
     },
     {
-     "id": "04-blooming-beauty-layouts",
+     "id": "05-blooming-beauty-layouts",
      "category": "editing",
      "title": "Blooming Beauty Layouts",
      "location": "Studio",
@@ -3272,7 +3235,7 @@ window.PORTFOLIO = {
      "description": "Page designs from the Blooming Beauty shoot, with quotes, mono-to-colour strips and multi-frame spreads.",
      "link": "https://www.facebook.com/profile.php?id=100091314396526",
      "more": 0,
-     "cover": "thumbs/editing/04-blooming-beauty-layouts/framed-between-pillars.jpg",
+     "cover": "thumbs/editing/05-blooming-beauty-layouts/framed-between-pillars.jpg",
      "coverW": 1362,
      "coverH": 2000,
      "featured": true,
@@ -3283,27 +3246,27 @@ window.PORTFOLIO = {
      "items": [
       {
        "type": "image",
-       "src": "portfolio/editing/04-blooming-beauty-layouts/framed-between-pillars.jpg",
+       "src": "portfolio/editing/05-blooming-beauty-layouts/framed-between-pillars.jpg",
        "file": "framed-between-pillars.jpg",
-       "thumb": "thumbs/editing/04-blooming-beauty-layouts/framed-between-pillars.jpg",
+       "thumb": "thumbs/editing/05-blooming-beauty-layouts/framed-between-pillars.jpg",
        "title": "Framed between pillars",
        "w": 1362,
        "h": 2000
       },
       {
        "type": "image",
-       "src": "portfolio/editing/04-blooming-beauty-layouts/quote-page.jpg",
+       "src": "portfolio/editing/05-blooming-beauty-layouts/quote-page.jpg",
        "file": "quote-page.jpg",
-       "thumb": "thumbs/editing/04-blooming-beauty-layouts/quote-page.jpg",
+       "thumb": "thumbs/editing/05-blooming-beauty-layouts/quote-page.jpg",
        "title": "Quote page",
        "w": 1296,
        "h": 2000
       },
       {
        "type": "image",
-       "src": "portfolio/editing/04-blooming-beauty-layouts/colour-to-mono-strip.jpg",
+       "src": "portfolio/editing/05-blooming-beauty-layouts/colour-to-mono-strip.jpg",
        "file": "colour-to-mono-strip.jpg",
-       "thumb": "thumbs/editing/04-blooming-beauty-layouts/colour-to-mono-strip.jpg",
+       "thumb": "thumbs/editing/05-blooming-beauty-layouts/colour-to-mono-strip.jpg",
        "title": "Colour to mono strip",
        "w": 1333,
        "h": 2000
@@ -3311,7 +3274,7 @@ window.PORTFOLIO = {
      ]
     },
     {
-     "id": "05-thumbnails-and-posters",
+     "id": "06-thumbnails-and-posters",
      "category": "editing",
      "title": "Thumbnails & Posters",
      "location": "Studio",
@@ -3319,7 +3282,7 @@ window.PORTFOLIO = {
      "description": "Video thumbnails, event posters and typography over aerial frames.",
      "link": "",
      "more": 0,
-     "cover": "portfolio/editing/05-thumbnails-and-posters/thumbnail-wall.jpg",
+     "cover": "portfolio/editing/06-thumbnails-and-posters/thumbnail-wall.jpg",
      "coverW": 552,
      "coverH": 509,
      "featured": true,
@@ -3330,149 +3293,39 @@ window.PORTFOLIO = {
      "items": [
       {
        "type": "image",
-       "src": "portfolio/editing/05-thumbnails-and-posters/thumbnail-wall.jpg",
+       "src": "portfolio/editing/06-thumbnails-and-posters/thumbnail-wall.jpg",
        "file": "thumbnail-wall.jpg",
-       "thumb": "portfolio/editing/05-thumbnails-and-posters/thumbnail-wall.jpg",
+       "thumb": "portfolio/editing/06-thumbnails-and-posters/thumbnail-wall.jpg",
        "title": "Thumbnail wall",
        "w": 552,
        "h": 509
       },
       {
        "type": "image",
-       "src": "portfolio/editing/05-thumbnails-and-posters/hanthana-poster.jpg",
+       "src": "portfolio/editing/06-thumbnails-and-posters/hanthana-poster.jpg",
        "file": "hanthana-poster.jpg",
-       "thumb": "thumbs/editing/05-thumbnails-and-posters/hanthana-poster.jpg",
+       "thumb": "thumbs/editing/06-thumbnails-and-posters/hanthana-poster.jpg",
        "title": "Hanthana poster",
        "w": 1649,
        "h": 2000
       },
       {
        "type": "image",
-       "src": "portfolio/editing/05-thumbnails-and-posters/hanthana-in-the-mist-poster.jpg",
+       "src": "portfolio/editing/06-thumbnails-and-posters/hanthana-in-the-mist-poster.jpg",
        "file": "hanthana-in-the-mist-poster.jpg",
-       "thumb": "thumbs/editing/05-thumbnails-and-posters/hanthana-in-the-mist-poster.jpg",
+       "thumb": "thumbs/editing/06-thumbnails-and-posters/hanthana-in-the-mist-poster.jpg",
        "title": "Hanthana in the mist poster",
        "w": 1715,
        "h": 2000
       },
       {
        "type": "image",
-       "src": "portfolio/editing/05-thumbnails-and-posters/75th-anniversary-poster.jpg",
+       "src": "portfolio/editing/06-thumbnails-and-posters/75th-anniversary-poster.jpg",
        "file": "75th-anniversary-poster.jpg",
-       "thumb": "thumbs/editing/05-thumbnails-and-posters/75th-anniversary-poster.jpg",
+       "thumb": "thumbs/editing/06-thumbnails-and-posters/75th-anniversary-poster.jpg",
        "title": "Th anniversary poster",
        "w": 1501,
        "h": 2000
-      }
-     ]
-    },
-    {
-     "id": "06-tuition-class-advertisements",
-     "category": "editing",
-     "title": "Tuition Class Advertisements",
-     "location": "Studio",
-     "date": "",
-     "description": "Motion-graphics adverts for tuition classes: animated titles, results walls, logo reveals and fast cuts for social media.",
-     "link": "",
-     "more": 0,
-     "cover": "thumbs/editing/06-tuition-class-advertisements/physics-class.jpg",
-     "coverW": 1280,
-     "coverH": 720,
-     "featured": true,
-     "spotlight": false,
-     "reelsOrder": 0,
-     "pin": 0,
-     "inFeed": true,
-     "items": [
-      {
-       "type": "video",
-       "src": "portfolio/editing/06-tuition-class-advertisements/physics-class.mp4",
-       "file": "physics-class.mp4",
-       "title": "Physics class",
-       "w": 1280,
-       "h": 720,
-       "poster": "portfolio/editing/06-tuition-class-advertisements/physics-class.jpg",
-       "thumb": "thumbs/editing/06-tuition-class-advertisements/physics-class.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/editing/06-tuition-class-advertisements/pre-engineering-class.mp4",
-       "file": "pre-engineering-class.mp4",
-       "title": "Pre-engineering class",
-       "w": 960,
-       "h": 540,
-       "poster": "portfolio/editing/06-tuition-class-advertisements/pre-engineering-class.jpg",
-       "thumb": "thumbs/editing/06-tuition-class-advertisements/pre-engineering-class.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/editing/06-tuition-class-advertisements/robotics-class.mp4",
-       "file": "robotics-class.mp4",
-       "title": "Robotics & circuit design",
-       "w": 1280,
-       "h": 720,
-       "poster": "portfolio/editing/06-tuition-class-advertisements/robotics-class.jpg",
-       "thumb": "thumbs/editing/06-tuition-class-advertisements/robotics-class.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/editing/06-tuition-class-advertisements/robotics-class-2.mp4",
-       "file": "robotics-class-2.mp4",
-       "title": "Robotics class: Arduino projects",
-       "w": 1086,
-       "h": 848,
-       "poster": "portfolio/editing/06-tuition-class-advertisements/robotics-class-2.jpg",
-       "thumb": "thumbs/editing/06-tuition-class-advertisements/robotics-class-2.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/editing/06-tuition-class-advertisements/chemistry-classes.mp4",
-       "file": "chemistry-classes.mp4",
-       "title": "Chemistry classes: 2024 A/L",
-       "w": 1280,
-       "h": 720,
-       "poster": "portfolio/editing/06-tuition-class-advertisements/chemistry-classes.jpg",
-       "thumb": "thumbs/editing/06-tuition-class-advertisements/chemistry-classes.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/editing/06-tuition-class-advertisements/chemistry-revision.mp4",
-       "file": "chemistry-revision.mp4",
-       "title": "Chemistry: 2023 A/L revision",
-       "w": 1034,
-       "h": 888,
-       "poster": "portfolio/editing/06-tuition-class-advertisements/chemistry-revision.jpg",
-       "thumb": "thumbs/editing/06-tuition-class-advertisements/chemistry-revision.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/editing/06-tuition-class-advertisements/chemistry-class-3.mp4",
-       "file": "chemistry-class-3.mp4",
-       "title": "Chemistry class",
-       "w": 1280,
-       "h": 720,
-       "poster": "portfolio/editing/06-tuition-class-advertisements/chemistry-class-3.jpg",
-       "thumb": "thumbs/editing/06-tuition-class-advertisements/chemistry-class-3.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/editing/06-tuition-class-advertisements/accounting-class.mp4",
-       "file": "accounting-class.mp4",
-       "title": "Accounting class",
-       "w": 1280,
-       "h": 720,
-       "poster": "portfolio/editing/06-tuition-class-advertisements/accounting-class.jpg",
-       "thumb": "thumbs/editing/06-tuition-class-advertisements/accounting-class.jpg"
-      },
-      {
-       "type": "video",
-       "src": "portfolio/editing/06-tuition-class-advertisements/english-class.mp4",
-       "file": "english-class.mp4",
-       "title": "English class",
-       "w": 1280,
-       "h": 720,
-       "poster": "portfolio/editing/06-tuition-class-advertisements/english-class.jpg",
-       "thumb": "thumbs/editing/06-tuition-class-advertisements/english-class.jpg"
       }
      ]
     }

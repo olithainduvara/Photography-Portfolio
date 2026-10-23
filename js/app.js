@@ -81,7 +81,8 @@
     const out = (spotlight ? spotlight.items.slice(0, 4) : []).map(it => ({
       category: spotlight.category, cat: spotlight.cat, title: it.title, cover: thumb(it),
       url: albumUrl(spotlight), frames: frames(spotlight) }));
-    for (const a of homeMixed) {
+    const pinnedFirst = homeMixed.filter(a => a.pin).sort((x, y) => x.pin - y.pin).concat(homeMixed.filter(a => !a.pin));
+    for (const a of pinnedFirst) {
       if (out.length >= 12) break;
       if (a !== spotlight) out.push({ category: a.category, cat: a.cat, title: a.title, cover: a.cover, url: albumUrl(a), frames: frames(a) });
     }
@@ -355,14 +356,18 @@
     const groups = cats.filter(c => c.layout !== 'reels').flatMap(c => c.albums).filter(onHome)
       .map(a => ({ a, list: a.items.filter(it => it.type === 'video' && !isTall(it))
         .map(it => Object.assign({}, it, { album: a, sub: `${a.cat.name} · ${a.title}` })) }))
-      .filter(g => g.list.length);
+      .filter(g => g.list.length)
+      // pinned collections (e.g. the tuition ads) come straight after the first tab
+      .sort((x, y) => (x.a.pin ? 0 : 1) - (y.a.pin ? 0 : 1));
+    const firstFilms = groups.findIndex(g => g.a.category === 'videography');
+    if (firstFilms > 0) groups.unshift(groups.splice(firstFilms, 1)[0]);
     if (!groups.length) { $('#films').hidden = true; return; }
     $('#filmCount').textContent = groups.reduce((n, g) => n + g.list.length, 0);
 
     const v = $('#filmVideo'), list = $('#filmList'), tabs = $('#filmTabs'), bar = $('#filmProgress');
     let gi = 0, ii = 0, inView = false, swapTimer;
     tabs.innerHTML = groups.map((g, k) =>
-      `<button class="pill${k ? '' : ' active'}" data-g="${k}" role="tab">${icon(catIcon(g.a.category))}${esc(g.a.title)} <span class="count">${g.list.length}</span></button>`).join('');
+      `<button class="pill${k ? '' : ' active'}${g.a.pin ? ' featured' : ''}" data-g="${k}" role="tab">${icon(catIcon(g.a.category))}${esc(g.a.title)} <span class="count">${g.list.length}</span>${g.a.pin ? '<span class="star" aria-label="Featured">★</span>' : ''}</button>`).join('');
 
     function drawList() {
       list.innerHTML = groups[gi].list.map((it, k) => `
@@ -481,6 +486,7 @@
         ${it.type === 'video' ? `<span class="play-badge">${icon('play')}Clip</span>` : ''}
         ${i === shown.length - 1 && rest > 0 ? `<span class="plus">+${rest}</span>` : ''}
       </button>`).join('');
+    const extra = a.items.slice(3, 11).filter(it => it.type === 'image').map(thumb);
     return `
       <article class="panel post" data-album="${a.category}/${a.id}">
         <header class="post-head">
@@ -491,7 +497,7 @@
         </header>
         <h3 class="post-title">${esc(a.title)}</h3>
         ${a.description ? `<p class="post-text">${esc(a.description)}</p>` : ''}
-        <div class="post-media n${Math.min(shown.length, 3)}${isTall(shown[0]) && shown.filter(isTall).length * 2 > shown.length ? ' tall' : ''}">${media}</div>
+        <div class="post-media n${Math.min(shown.length, 3)}${isTall(shown[0]) && shown.filter(isTall).length * 2 > shown.length ? ' tall' : ''}"${extra.length > 1 ? ` data-cycle='${esc(JSON.stringify(extra))}'` : ''}>${media}</div>
         <footer class="post-foot">
           <span class="count">${a.items.length} on site${a.more ? ` · +${a.more} on Facebook` : ''}</span>
           <a class="act" href="${albumUrl(a)}">${icon('images')}<span>Open album</span></a>
@@ -504,7 +510,7 @@
   function home() {
     const tabs = $('#feedTabs');
     if (!tabs) return;
-    const FIRST = 3, MORE = 4;
+    const FIRST = Math.max(3, feedList.filter(a => a.pin).length), MORE = 4;
     let filter = 'all', limit = FIRST;
 
     tabs.innerHTML = [{ id: 'all', short: 'All', n: feedList.length }]
@@ -514,6 +520,7 @@
     function draw() {
       const list = filter === 'all' ? feedList : feedList.filter(a => a.category === filter);
       $('#posts').innerHTML = list.slice(0, limit).map(postHTML).join('');
+      livePosts($('#posts'));
       const more = $('#feedMore');
       more.hidden = list.length <= limit;
       more.innerHTML = `Show more ${filter === 'all' ? '' : esc(catById(filter).short.toLowerCase()) + ' '}albums ${icon('arrow')}`;
@@ -620,15 +627,120 @@
     });
   }
 
+  /* ---------------- living previews: show what is inside an album ---------------- */
+  // one shared clock drives every visible preview, so nothing runs off-screen
+  const live = new Set();
+  const liveIO = new IntersectionObserver(es => es.forEach(e => e.target._live && (e.target._live.visible = e.isIntersecting)), { threshold: 0.15 });
+  if (!reduceMotion) setInterval(() => live.forEach(l => {
+    if (!document.contains(l.el)) { live.delete(l); liveIO.unobserve(l.el); return; }
+    if (l.visible && !l.hold && !l.near) l.next();
+  }), 2800);
+
+  // calm zone: when the pointer comes close to a preview, it stops flipping and its motion softens
+  const CALM_PX = 140;
+  let px = -1e5, py = -1e5, calmQueued = false;
+  function calmCheck() {
+    calmQueued = false;
+    live.forEach(l => {
+      if (!l.visible) return;
+      const r = l.el.getBoundingClientRect();
+      const dx = Math.max(r.left - px, 0, px - r.right), dy = Math.max(r.top - py, 0, py - r.bottom);
+      const near = Math.hypot(dx, dy) < CALM_PX;
+      if (near !== !!l.near) { l.near = near; l.el.classList.toggle('calm', near); }
+    });
+  }
+  const queueCalm = () => { if (!calmQueued) { calmQueued = true; requestAnimationFrame(calmCheck); } };
+  addEventListener('pointermove', e => { if (e.pointerType === 'mouse') { px = e.clientX; py = e.clientY; queueCalm(); } }, { passive: true });
+  addEventListener('scroll', queueCalm, { passive: true });
+  document.addEventListener('mouseleave', () => { px = py = -1e5; queueCalm(); });
+
+  function liveStacks(root) {
+    $$('.album[data-slides]', root).forEach((card, n) => {
+      const slides = JSON.parse(card.dataset.slides);
+      const frame = $('.f.live', card), dots = $$('.dots i', card), minis = $$('.strip img', card);
+      let k = 0;
+      const show = i => {
+        k = (i + slides.length) % slides.length;
+        let img = frame.querySelector(`img[data-k="${k}"]`) || (k === 0 ? frame.querySelector('img') : null);
+        if (!img) {
+          img = new Image(); img.className = 'slide'; img.alt = ''; img.dataset.k = k; img.src = slides[k];
+          frame.append(img); void img.offsetWidth;   // reflow so the new slide fades in instead of popping
+        }
+        frame.querySelectorAll('.slide').forEach(s => s.classList.toggle('on', s === img));
+        dots.forEach((d, j) => d.classList.toggle('on', j === k));
+        minis.forEach(m => m.classList.toggle('on', +m.dataset.k === k));
+        // warm the next frame so the crossfade never waits on the network
+        const nx = (k + 1) % slides.length;
+        if (!frame.querySelector(`img[data-k="${nx}"]`) && nx) { const pre = new Image(); pre.src = slides[nx]; }
+      };
+      frame.querySelector('img').dataset.k = 0;
+      if (slides.length < 2) return;
+      const l = { el: card, visible: false, hold: false, next: () => show(k + 1) };
+      card._live = l;
+      // stagger the cards so they don't all change on the same beat
+      setTimeout(() => { live.add(l); liveIO.observe(card); }, (n % 6) * 450);
+      minis.forEach(m => m.addEventListener('mouseenter', () => show(+m.dataset.k)));
+      card.addEventListener('mouseenter', () => {
+        l.hold = true;
+        if (card.dataset.video && canHover && !reduceMotion) {
+          let v = frame.querySelector('video');
+          if (!v) {
+            v = document.createElement('video');
+            Object.assign(v, { muted: true, loop: true, playsInline: true, src: card.dataset.video });
+            frame.append(v);
+          }
+          v.play().then(() => card.classList.add('previewing')).catch(() => {});
+        }
+      });
+      card.addEventListener('mouseleave', () => {
+        l.hold = false;
+        const v = frame.querySelector('video');
+        if (v) { v.pause(); card.classList.remove('previewing'); }
+      });
+    });
+  }
+
+  function livePosts(root) {
+    $$('.post-media[data-cycle]', root).forEach(media => {
+      const pics = JSON.parse(media.dataset.cycle), tile = $$('.m', media).pop(), img = tile && $('img', tile);
+      if (!img) return;
+      const first = img.src;
+      let k = -1;
+      const l = {
+        el: media, visible: false, hold: false,
+        next() {
+          k = (k + 1) % (pics.length + 1);
+          const src = k === pics.length ? first : new URL(pics[k], location.href).href;
+          const pre = new Image();
+          pre.onload = () => { img.classList.add('swap'); setTimeout(() => { img.src = src; img.classList.remove('swap'); }, 350); };
+          pre.src = src;
+        },
+      };
+      media._live = l;
+      tile.addEventListener('mouseenter', () => { l.hold = true; });
+      tile.addEventListener('mouseleave', () => { l.hold = false; });
+      live.add(l); liveIO.observe(media);
+    });
+  }
+
   /* ---------------- EXPLORE ---------------- */
   function albumCard(a, i) {
     const pics = a.items.slice(0, 3);
-    const vids = a.items.filter(x => x.type === 'video').length;
+    const vids = a.items.filter(x => x.type === 'video');
+    // front frame cycles through up to 8 frames of the album; images load only when they are about to show
+    const slides = [a.cover].concat(a.items.map(thumb).filter(t => t !== a.cover)).slice(0, 8);
+    const strip = a.items.slice(0, 5);
+    const extra = a.items.length - strip.length;
     return `
-      <a class="album${a.coverH > a.coverW * 1.05 ? ' tall' : ''}" href="${albumUrl(a)}" style="animation-delay:${i * 60}ms">
+      <a class="album${a.coverH > a.coverW * 1.05 ? ' tall' : ''}" href="${albumUrl(a)}" style="animation-delay:${i * 60}ms"
+         data-slides='${esc(JSON.stringify(slides))}'${vids.length ? ` data-video="${vids[0].src}"` : ''}>
         <div class="stack">
-          ${pics.map((it, j) => `<div class="f"><img src="${j === 0 ? a.cover : thumb(it)}" alt="" loading="lazy"></div>`).join('')}
-          <span class="badge">${icon(vids ? 'videography' : 'images')}${frames(a)}${vids ? ` · ${vids} clip${vids > 1 ? 's' : ''}` : ''}</span>
+          <div class="f live"><img class="slide on" src="${a.cover}" alt="" loading="lazy"></div>
+          ${pics.slice(1).map(it => `<div class="f"><img src="${thumb(it)}" alt="" loading="lazy"></div>`).join('')}
+          <span class="badge">${icon(vids.length ? 'videography' : 'images')}${frames(a)}${vids.length ? ` · ${vids.length} clip${vids.length > 1 ? 's' : ''}` : ''}</span>
+          ${slides.length > 1 ? `<span class="dots">${slides.map((_, k) => `<i${k ? '' : ' class="on"'}></i>`).join('')}</span>` : ''}
+          ${a.items.length > 1 ? `<span class="strip">${strip.map((it, k) => `<img src="${thumb(it)}" alt="" loading="lazy" data-k="${Math.min(k, slides.length - 1)}">`).join('')}${extra > 0 ? `<b>+${extra}</b>` : ''}</span>` : ''}
+          ${vids.length ? `<span class="hover-play">${icon('play')}Preview</span>` : ''}
         </div>
         <div class="album-meta">
           <span class="chip">${esc(a.cat.short)}</span>
@@ -756,6 +868,7 @@
           ${list.length ? `<div class="albums">${list.map(albumCard).join('')}</div>` : `<div class="empty">Nothing here yet. Try another search or <a class="link-gold" href="explore.html">browse everything</a>.</div>`}
           <div style="height:60px"></div>
         </div>`;
+      liveStacks(view);
     }
     addEventListener('hashchange', route);
     route();

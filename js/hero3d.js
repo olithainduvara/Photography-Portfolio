@@ -373,7 +373,8 @@ function init() {
       spin = lerp(spin, target, 1 - Math.pow(0.002, dt));
       if (Math.abs(spin - target) < 0.001) target = null;
     } else if (!dragging) {
-      const goal = now < idleUntil || hovered ? 0 : AUTO;
+      // stop on a hovered frame, drift slowly while the pointer is anywhere over the scene
+      const goal = now < idleUntil || hovered ? 0 : ndc.x > -2 ? AUTO * 0.3 : AUTO;
       vel = lerp(vel, goal, 1 - Math.pow(0.15, dt));
       spin += vel * dt;
     } else spin += vel * dt * 0.6;
