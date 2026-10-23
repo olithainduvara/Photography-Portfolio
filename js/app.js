@@ -142,6 +142,19 @@
     };
     mark(); addEventListener('hashchange', mark);
 
+    // liquid glass: a soft highlight follows the cursor across buttons and glass blocks
+    if (canHover && !reduceMotion) {
+      document.addEventListener('pointermove', e => {
+        for (const sel of ['.btn, .pill, .sq-btn, .reels-side', '.panel, .stat, .fb-more']) {
+          const el = e.target.closest && e.target.closest(sel);
+          if (!el) continue;
+          const r = el.getBoundingClientRect();
+          el.style.setProperty('--mx', `${e.clientX - r.left}px`);
+          el.style.setProperty('--my', `${e.clientY - r.top}px`);
+        }
+      }, { passive: true });
+    }
+
     // light / dark switch: saved per visitor, circular reveal from the button where supported
     const themeBtn = $('#themeToggle');
     const metaTheme = $('meta[name="theme-color"]');
