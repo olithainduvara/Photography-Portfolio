@@ -1087,7 +1087,8 @@ html[data-theme="light"] .pill.active { background: var(--gold); color: #fff; bo
 html[data-theme="light"] .pill.active .count, html[data-theme="light"] .pill.active .star { color: #fff; }
 html[data-theme="light"] .btn-gold { color: #fff; box-shadow: 0 12px 28px -12px var(--gold-glow), inset 0 1px 0 rgba(255, 255, 255, .35); }
 html[data-theme="light"] .btn-gold:hover { background: #b98f48; }
-html[data-theme="light"] .sq-btn.gold { color: #fff; }
+html[data-theme="light"] .sq-btn.gold { background: var(--gold); color: #fff; box-shadow: 0 8px 20px -10px var(--gold-glow); }
+html[data-theme="light"] .sq-btn.gold:hover { background: #b98f48; color: #fff; }
 html[data-theme="light"] :is(.nav a:hover, .rail a:hover, .act:hover, a.row:hover, .film-item:hover) { background: rgba(15, 23, 42, .045); }
 html[data-theme="light"] .rail a::after { background: #fff; box-shadow: 0 8px 24px -10px rgba(15, 23, 42, .25); }
 html[data-theme="light"] .form .field :is(input, select, textarea) { background: rgba(255, 255, 255, .8); border-color: rgba(15, 23, 42, .09); }
@@ -1197,24 +1198,8 @@ html:root :is(.btn-ghost, .pill:not(.active), .sq-btn:not(.gold), .reels-side):h
 }
 html:root .btn-ghost:hover { color: var(--text); transform: translateY(-2px); }
 
-/* tinted (gold) glass: primary actions, active pills, send button */
-html:root :is(.btn-gold, .pill.active, .sq-btn.gold) {
-  background: var(--gold-glass);
-  color: var(--gold-glass-ink);
-  border-color: transparent;
-  box-shadow: var(--gold-glass-shadow);
-  -webkit-backdrop-filter: blur(14px) saturate(180%); backdrop-filter: blur(14px) saturate(180%);
-}
-html:root :is(.btn-gold, .pill.active, .sq-btn.gold)::before { background: var(--rim-gold); }
-html:root :is(.btn-gold, .sq-btn.gold):hover {
-  background: radial-gradient(110px circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, .42), transparent 70%), var(--gold-glass);
-  color: var(--gold-glass-ink);
-}
-html:root .pill.active :is(.count, .star) { color: var(--gold-glass-ink); }
-html[data-theme="light"] :is(.btn-gold, .pill.active, .sq-btn.gold) { text-shadow: 0 1px 0 rgba(90, 60, 15, .3); }
-
 /* press: a soft dip, like glass under a fingertip */
-:is(.btn, .pill, .sq-btn, .reels-side):active { transform: scale(.965); transition-duration: .12s; }
+:is(.btn:not(.btn-gold), .pill:not(.active), .sq-btn:not(.gold), .reels-side):active { transform: scale(.965); transition-duration: .12s; }
 
 /* glass blocks: rim + top sheen + a faint light that follows the cursor */
 html:root :is(.panel, .stat, .fb-more, .film-list) {
@@ -1228,52 +1213,5 @@ html:root .contact-card { border-color: transparent; }
 html:root :is(.topbar, .rail, .tabbar) { border-color: transparent; }
 html:root :is(.topbar, .rail, .tabbar) > * { position: relative; z-index: 1; }
 
-/* =========================================================
-   PREMIUM PRIMARY BUTTONS
-   dark: pale champagne metal · light: graphite glass
-   hover: a slow light streak glides across the surface
-   ========================================================= */
-:root {
-  --pg-base: linear-gradient(135deg, #f5e8cb 0%, #e3c896 46%, #c9a669 100%);
-  --pg-gloss: linear-gradient(180deg, rgba(255, 255, 255, .38), rgba(255, 255, 255, 0) 62%);
-  --pg-shine: linear-gradient(115deg, transparent 36%, rgba(255, 255, 255, .6) 50%, transparent 64%);
-  --pg-ink: #2a1f0e;
-  --pg-rim: linear-gradient(180deg, rgba(255, 255, 255, .95), rgba(255, 255, 255, .25) 50%, rgba(150, 112, 55, .55));
-  --pg-shadow: inset 0 1px 0 rgba(255, 255, 255, .85), inset 0 -1px 1px rgba(110, 78, 28, .3), 0 1px 2px rgba(0, 0, 0, .35), 0 16px 34px -16px rgba(227, 200, 150, .5);
-  --pg-shadow-hover: inset 0 1px 0 rgba(255, 255, 255, .9), inset 0 -1px 1px rgba(110, 78, 28, .3), 0 2px 4px rgba(0, 0, 0, .35), 0 22px 44px -18px rgba(227, 200, 150, .7);
-}
-html[data-theme="light"] {
-  --pg-base: linear-gradient(180deg, #3c3c41 0%, #1d1d1f 100%);
-  --pg-gloss: linear-gradient(180deg, rgba(255, 255, 255, .16), rgba(255, 255, 255, 0) 58%);
-  --pg-shine: linear-gradient(115deg, transparent 36%, rgba(255, 255, 255, .24) 50%, transparent 64%);
-  --pg-ink: #ffffff;
-  --pg-rim: linear-gradient(180deg, rgba(255, 255, 255, .38), rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .12));
-  --pg-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(15, 23, 42, .2), 0 16px 32px -16px rgba(15, 23, 42, .5);
-  --pg-shadow-hover: inset 0 1px 0 rgba(255, 255, 255, .25), 0 2px 4px rgba(15, 23, 42, .2), 0 22px 40px -16px rgba(15, 23, 42, .6);
-}
-html:root :is(.btn-gold, .pill.active, .sq-btn.gold),
-html:root :is(.btn-gold, .sq-btn.gold):hover {
-  background: var(--pg-shine), var(--pg-gloss), var(--pg-base);
-  background-size: 260% 100%, 100% 100%, 100% 100%;
-  background-repeat: no-repeat;
-  background-position: 150% 0, 0 0, 0 0;
-  color: var(--pg-ink);
-  text-shadow: none;
-  box-shadow: var(--pg-shadow);
-  transition: background-position 1s var(--ease), box-shadow .35s, transform .25s var(--ease), color .2s;
-}
-html:root :is(.btn-gold, .pill.active, .sq-btn.gold)::before { background: var(--pg-rim); }
-html:root :is(.btn-gold, .sq-btn.gold):hover,
-html:root .pill.active:hover {
-  background-position: -50% 0, 0 0, 0 0;
-  box-shadow: var(--pg-shadow-hover);
-  color: var(--pg-ink);
-}
-html:root .btn-gold:hover { transform: translateY(-2px); }
-html:root .pill.active :is(.count, .star) { color: var(--pg-ink); opacity: .75; }
-html[data-theme="light"] .pill.active .star { color: #e3c896; opacity: 1; }
-
-/* other places that used flat gold fills */
-html:root .reels-side:hover { background: var(--pg-gloss), var(--pg-base); color: var(--pg-ink); box-shadow: var(--pg-shadow-hover); }
-html:root .lb-nav:hover { background: rgba(255, 255, 255, .18); color: #fff; }
-html:root .reel-meta .chip { background: linear-gradient(135deg, rgba(245, 232, 203, .92), rgba(201, 166, 105, .92)); color: #2a1f0e; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .7); }
+/* colour buttons keep their solid theme colour (gold in dark, bronze in light) */
+:is(.btn-gold, .pill.active, .sq-btn.gold)::before { display: none; }
