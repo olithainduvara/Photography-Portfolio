@@ -715,13 +715,13 @@
       };
       frame.querySelector('img').dataset.k = 0;
       if (slides.length < 2) return;
-      const l = { el: card, visible: false, hold: false, next: () => show(k + 1) };
-      card._live = l;
-      // stagger the cards so they don't all change on the same beat
-      setTimeout(() => { live.add(l); liveIO.observe(card); }, (n % 6) * 450);
-      minis.forEach(m => m.addEventListener('mouseenter', () => show(+m.dataset.k)));
+      // the cover stays put; the hover filmstrip lets visitors look through the album
+      const stopVideo = () => {
+        const v = frame.querySelector('video');
+        if (v) { v.pause(); card.classList.remove('previewing'); }
+      };
+      minis.forEach(m => m.addEventListener('mouseenter', () => { stopVideo(); show(+m.dataset.k); }));
       card.addEventListener('mouseenter', () => {
-        l.hold = true;
         if (card.dataset.video && canHover && !reduceMotion) {
           let v = frame.querySelector('video');
           if (!v) {
@@ -732,11 +732,7 @@
           v.play().then(() => card.classList.add('previewing')).catch(() => {});
         }
       });
-      card.addEventListener('mouseleave', () => {
-        l.hold = false;
-        const v = frame.querySelector('video');
-        if (v) { v.pause(); card.classList.remove('previewing'); }
-      });
+      card.addEventListener('mouseleave', () => { stopVideo(); show(0); });   // back to the cover
     });
   }
 
