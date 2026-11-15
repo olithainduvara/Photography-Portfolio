@@ -772,10 +772,10 @@
     const strip = a.items.slice(0, 5);
     const extra = a.items.length - strip.length;
     return `
-      <a class="album${a.coverH > a.coverW * 1.05 ? ' tall' : ''}" href="${albumUrl(a)}" style="animation-delay:${i * 60}ms"
+      <a class="album tall" href="${albumUrl(a)}" style="animation-delay:${i * 60}ms"
          data-slides='${esc(JSON.stringify(slides))}'${vids.length ? ` data-video="${vids[0].src}"` : ''}>
         <div class="stack">
-          <div class="f live"><img class="slide on" src="${a.cover}" alt="" loading="lazy"></div>
+          <div class="f live"><img class="slide on" src="${a.cover}" alt="" loading="lazy" style="object-position:${a.coverFocus || '50% 30%'}"></div>
           ${pics.slice(1).map(it => `<div class="f"><img src="${thumb(it)}" alt="" loading="lazy"></div>`).join('')}
           <span class="badge">${icon(vids.length ? 'videography' : 'images')}${frames(a)}${vids.length ? ` · ${vids.length} clip${vids.length > 1 ? 's' : ''}` : ''}</span>
           ${slides.length > 1 ? `<span class="dots">${slides.map((_, k) => `<i${k ? '' : ' class="on"'}></i>`).join('')}</span>` : ''}

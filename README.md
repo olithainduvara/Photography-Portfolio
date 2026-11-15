@@ -66,6 +66,7 @@ Keep your raw exports somewhere outside `portfolio/` (`Assets 2/` is git-ignored
 - `"reelsOrder": 99` moves an album's clips to the end of the home Reels row (default 0; lower numbers come first).
 - `"pin": 1` (2, 3 …) makes an album one of the first posts in the home feed, in that order.
 - `"feed": false` gives an album no feed post; its clips still appear in the Reels row.
+- **Portrait covers:** every album card is portrait (4:5). To choose the exact crop, save a portrait image named `_cover.jpg` in the album folder: it becomes the cover and is *not* shown in the gallery. Without one, the first photo is used; a landscape photo is anchored on the faces in it, or set `"coverFocus": "30% 40%"` (x% y%) to choose the anchor yourself.
 - `link` + `more` add a "+24 more frames on Facebook" button.
 
 ### Light & dark themes

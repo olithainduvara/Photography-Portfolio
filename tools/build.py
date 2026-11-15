@@ -7,6 +7,7 @@ Scan the portfolio/ folders and generate js/data.js (+ thumbnails).
         <album-folder>/      e.g. 07-kandy-wedding  (leading numbers only set the order)
           album.json         optional: title, location, date, description, cover, link, more, captions
           *.jpg / *.png / *.webp / *.mp4 / *.webm
+          _cover.jpg         optional: a portrait crop used ONLY as the album cover (not shown in the gallery)
         loose files here go into an album called "More <category>"
 
 Videos: put a poster image with the same name next to the video
@@ -19,7 +20,7 @@ import os
 import re
 import sys
 import time
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PORTFOLIO = os.path.join(ROOT, 'portfolio')
@@ -76,10 +77,45 @@ def make_thumb(src, rel):
     return url(dst), w, h
 
 
+_face = None
+
+
+def cover_focus(path, w, h):
+    """Album cards are portrait. For a landscape cover, say where to anchor the crop ('x% y%').
+
+    Uses OpenCV face detection when it is installed (pip install opencv-python); otherwise the centre.
+    """
+    global _face
+    if h >= w * 1.05:
+        return '50% 30%'
+    try:
+        import cv2
+        if _face is None:
+            _face = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+        img = cv2.imread(path)
+        if img is None:
+            return '50% 40%'
+        k = 640 / img.shape[1]
+        g = cv2.cvtColor(cv2.resize(img, None, fx=k, fy=k), cv2.COLOR_BGR2GRAY)
+        faces = _face.detectMultiScale(g, 1.1, 6, minSize=(int(g.shape[0] * .08),) * 2)
+        if len(faces):
+            # centre of all faces, weighted by size, so a group stays together
+            area = sum(fw * fh for _, _, fw, fh in faces)
+            cx = sum((x + fw / 2) * fw * fh for x, _, fw, fh in faces) / area
+            return f'{min(80, max(20, round(cx / g.shape[1] * 100)))}% 35%'
+    except Exception:
+        pass
+    return '50% 40%'
+
+
 def scan_album(folder, cat_id, album_id, title_fallback):
     meta = read_json(os.path.join(folder, 'album.json'))
     captions = meta.get('captions', {})
     files = sorted(f for f in os.listdir(folder) if os.path.isfile(os.path.join(folder, f)))
+    # "_cover.jpg": cover only, never a gallery item
+    cover_file = next((f for f in files if os.path.splitext(f)[0].lower() == '_cover'
+                       and os.path.splitext(f)[1].lower() in IMAGE_EXT), None)
+    files = [f for f in files if not f.startswith('_')]
     stems = {}
     for f in files:
         stems.setdefault(os.path.splitext(f)[0], []).append(f)
@@ -92,6 +128,7 @@ def scan_album(folder, cat_id, album_id, title_fallback):
             item = {'type': 'video', 'src': url(os.path.join(folder, f)), 'file': f,
                     'title': captions.get(f) or pretty(f), 'w': 16, 'h': 9}
             if poster:
+                item['_img'] = poster
                 posters.add(poster)
                 thumb, w, h = make_thumb(os.path.join(folder, poster), os.path.join(cat_id, album_id, poster))
                 item.update(poster=url(os.path.join(folder, poster)), thumb=thumb, w=w, h=h)
@@ -99,7 +136,7 @@ def scan_album(folder, cat_id, album_id, title_fallback):
     for f in files:
         if os.path.splitext(f)[1].lower() in IMAGE_EXT and f not in posters:
             thumb, w, h = make_thumb(os.path.join(folder, f), os.path.join(cat_id, album_id, f))
-            items.append({'type': 'image', 'src': url(os.path.join(folder, f)), 'file': f,
+            items.append({'type': 'image', 'src': url(os.path.join(folder, f)), 'file': f, '_img': f,
                           'thumb': thumb, 'title': captions.get(f) or pretty(f), 'w': w, 'h': h})
 
     order = meta.get('order')
@@ -112,6 +149,18 @@ def scan_album(folder, cat_id, album_id, title_fallback):
         return None
 
     cover = next((it for it in items if it['file'] == meta.get('cover')), items[0])
+    cover_img = cover.pop('_img', None) if cover is not None else None
+    if cover_file:
+        thumb, w, h = make_thumb(os.path.join(folder, cover_file), os.path.join(cat_id, album_id, cover_file))
+        cover, cover_img = {'thumb': thumb, 'src': url(os.path.join(folder, cover_file)), 'w': w, 'h': h}, cover_file
+    for it in items:
+        it.pop('_img', None)
+    focus = meta.get('coverFocus')
+    if not focus:
+        local = os.path.join(ROOT, unquote(cover['thumb'])) if cover.get('thumb') else None
+        if not (local and os.path.exists(local)):
+            local = os.path.join(folder, cover_img) if cover_img else None
+        focus = cover_focus(local, cover['w'], cover['h']) if local else '50% 40%'
     return {
         'id': album_id,
         'category': cat_id,
@@ -124,6 +173,7 @@ def scan_album(folder, cat_id, album_id, title_fallback):
         'cover': cover.get('thumb') or cover['src'],
         'coverW': cover['w'],
         'coverH': cover['h'],
+        'coverFocus': focus,                         # where a landscape cover is anchored in the portrait card
         'featured': meta.get('featured', True),    # false = Explore only, never on the home page
         'spotlight': meta.get('spotlight', False),  # true = the 3D showcase on the home page
         'reelsOrder': meta.get('reelsOrder', 0),     # higher = later in the home Reels row
