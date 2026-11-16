@@ -7,3 +7,11 @@ __pycache__/
 
 # raw originals (1.5 GB): the site uses the web-sized copies in portfolio/
 Assets 2/
+
+# reveal film: keep the scripts, ignore the heavy footage and renders
+promo/clips/
+promo/stills/
+promo/music.wav
+promo/*.mp4
+promo/music_portrait.wav
+promo/stills_portrait/
