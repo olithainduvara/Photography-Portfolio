@@ -93,7 +93,7 @@ Then open http://localhost:8080.
 
 ## Deploy on GitHub Pages
 
-1. Push this folder to a GitHub repository.
+1. Push this folder to a GitHub repository. Keep the empty `.nojekyll` file in the root: without it GitHub Pages skips every file whose name starts with `_` (such as the `_cover.jpg` portrait covers).
 2. Go to **Settings → Pages**, choose **Deploy from a branch**, pick `main` and `/ (root)`.
 3. Run `python tools/build.py` before every push, so `js/data.js` matches your folders.
 

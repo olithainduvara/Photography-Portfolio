@@ -1,10 +1,10 @@
 """Synthesise the soundtrack for the portrait film -> promo/music_portrait.wav (60 s, stereo, 44.1 kHz).
 
 Energetic house-style track, 120 BPM (one bar = 2 s), generated entirely with numpy/scipy:
-no samples, no copyrighted material. Scene cuts fall on bar lines: 4, 8, 18, 28, 38, 46, 54 s.
+no samples, no copyrighted material. Every scene cut falls on a bar line.
 
-    intro 0-4 | montage hits 4-8 | groove 8-18 | bigger groove 18-28 (build) |
-    drop 28-38 | lighter 38-46 (build) | drop 46-54 | outro 54-60
+    intro 0-2 (shutter hits + braam) | montage hits 2-6 | groove 6-16 | bigger groove 16-26 (build) |
+    drop 26-36 | lighter 36-42 (build) | drop 42-54 | outro 54-60
 
     python promo/music_portrait.py
 """
@@ -222,9 +222,9 @@ MELODY = {  # (beat, note, length in beats)
     'C': [(0, 76, .7), (.75, 79, .5), (1.5, 76, .45), (2, 74, .9), (3, 72, .45), (3.5, 74, .45)],
     'G': [(0, 74, .7), (.75, 79, .5), (1.5, 74, .45), (2, 71, .9), (3, 74, .45), (3.5, 71, .45)],
 }
-BARS = (['Am', 'Am'] + ['F', 'G'] + ['Am', 'F', 'C', 'G', 'Am'] + ['F', 'C', 'G', 'Am', 'G']
-        + ['Am', 'F', 'C', 'G', 'Am'] + ['F', 'C', 'G', 'G'] + ['Am', 'F', 'C', 'G'] + ['F', 'G', 'Am'])
-SEC = ['intro'] * 2 + ['hits'] * 2 + ['g1'] * 5 + ['g2'] * 5 + ['drop'] * 5 + ['mid'] * 4 + ['drop'] * 4 + ['outro'] * 3
+BARS = (['Am'] + ['F', 'G'] + ['Am', 'F', 'C', 'G', 'Am'] + ['F', 'C', 'G', 'Am', 'G']
+        + ['Am', 'F', 'C', 'G', 'Am'] + ['F', 'C', 'G'] + ['Am', 'F', 'C', 'G', 'Am', 'G'] + ['F', 'G', 'Am'])
+SEC = ['intro'] + ['hits'] * 2 + ['g1'] * 5 + ['g2'] * 5 + ['drop'] * 5 + ['mid'] * 3 + ['drop'] * 6 + ['outro'] * 3
 STAB_AT = [(0, .6), (.75, .6), (1.5, .8), (2.5, .6), (3.25, .6)]
 ARP = [0, 2, 1, 3, 2, 3, 1, 2, 0, 2, 3, 1, 2, 3, 1, 3]
 
@@ -246,9 +246,20 @@ for b, (name, sec) in enumerate(zip(BARS, SEC)):
     last_of = b + 1 == len(SEC) or SEC[b + 1] != sec           # last bar of its section
     breakdown = sec == 'g2' and last_of                       # bar before the first drop: drums drop out
 
-    if sec == 'intro':
-        PAD.add(t0, lp(sum(supersaw(m, BAR + .6) for m in tones) / 2, 700 + 500 * b) * env(int((BAR + .6) * SR), .8, .6)[:, None], .5)
-        FX.add(t0 + 1.0, bell(81 if b == 0 else 88), .22, -.3 if b == 0 else .3)
+    if sec == 'intro':                                         # four shutter strobes, then the braam
+        for k, tt in enumerate((0, .25, .5, .75)):
+            FX.add(tt - .012, shutter(), .75, (-.4, .4)[k % 2])
+            add_kick(tt, .55 + k * .12)
+        add_kick(1.0, 1.15)
+        n = int(1.1 * SR)
+        braam = sum(supersaw(m - 12, 1.1, 9, 22) for m in (45, 52, 57)) / 2
+        braam = lp(braam, 900) * (np.exp(-np.arange(n) / SR * 2.2) * env(n, .004, .2))[:, None]
+        PAD.add(1.0, braam, 1.0)
+        BASS.add(1.0, bass_note(33, .9, 1.6), 1.0)
+        FX.add(1.0, crash(), .45)
+        FX.add(1.0, impact(), .75)
+        roll(1.25, 2.0, .15, .6)
+        FX.add(1.0, riser(1.0), .32)
         continue
 
     if sec == 'hits':                                          # one hit per beat, under the photo cuts
@@ -266,7 +277,7 @@ for b, (name, sec) in enumerate(zip(BARS, SEC)):
         BASS.add(t0, bass_note(root - 12, BAR * .9, .6), .55)
         for k, idx in enumerate([3, 2, 1, 0, 3, 2, 1, 2]):
             delay(FX, t0 + k * BEAT / 2, bell(tones[idx] + 24, 1.6), .15, (-.5, .5)[k % 2], taps=2)
-        if b == 27:
+        if b == 28:
             for k in (0, 1, 2, 3):
                 DRUM.add(t0 + k * BEAT + .25, hat(True), .14 * (1 - k / 5))
         continue
@@ -323,16 +334,18 @@ for b, (name, sec) in enumerate(zip(BARS, SEC)):
         roll(t0 + 1.5, t0 + BAR, .25, .5)
 
 # section changes: risers before, crash + impact on the downbeat
-for t, big in ((4, 1), (8, 2), (18, 1), (28, 3), (38, 1), (46, 3), (54, 2)):
+for t, big in ((2, 2), (6, 2), (16, 1), (26, 3), (36, 1), (42, 3), (54, 2)):
     L = (1.0, 1.9, 3.6)[big - 1]
     FX.add(t - L, riser(L), (.22, .3, .42)[big - 1])
     c = crash()
     FX.add(t - 1.5, c[::-1][-int(1.5 * SR):], .16 * big / 2)       # reverse cymbal swell
     FX.add(t, c, (.3, .4, .5)[big - 1])
     FX.add(t, impact(), (.3, .45, .6)[big - 1])
-FX.add(.5 - .012, shutter(), .7)
-FX.add(48.0, bell(93, 2.0), .3)                               # light / dark switch
-FX.add(48.0, bell(88, 2.0), .25, .4)
+for t in (12, 22, 32, 48):                                     # scene cuts inside a section: a whoosh + soft hit
+    FX.add(t - .45, riser(.45, False), .2)
+    FX.add(t, impact(), .22)
+FX.add(43.5, bell(93, 2.0), .3)                               # light / dark switch
+FX.add(43.5, bell(88, 2.0), .25, .4)
 FX.add(58.6 - .012, shutter(), .5)
 
 # ------------------------------------------------------------------ mix

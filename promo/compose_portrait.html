@@ -6,44 +6,44 @@
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  /* Portrait film, 1080x1920, "editorial" theme: ivory paper + ink black, magazine serif, bronze foil.
-     Nothing animates on its own: render(t) sets every style from the time t. */
-  :root { --paper: #f1ece3; --sand: #e8e0d2; --ink: #121110; --fg: #121110; --mut: #6b655c; --hair: rgba(18, 17, 16, .18);
-          --serif: 'Bodoni Moda', 'Didot', Georgia, serif; --sans: 'Inter Tight', system-ui, sans-serif;
-          --foil: linear-gradient(100deg, #8f6d33 0%, #b88f48 22%, #f6e2a8 46%, #fff6dc 50%, #d9b46a 56%, #9a7436 78%, #8f6d33 100%); }
+  /* Portrait film, 1080x1920, "editorial" theme: ivory paper + ink, magazine serif, bronze foil.
+     Nothing animates on its own: render(t) sets every style from the time t (frame-exact rendering).
+
+     0-2 intro (shutter strobes, name slam) | 2-6 photo montage | 6-12 home (phone) | 12-16 album: 66th Inauguration
+     16-22 photography (laptop) | 22-26 album: Blooming Beauty | 26-32 reels (phone) | 32-36 album: Portrait Session
+     36-42 films & editing (laptop) | 42-48 light / dark | 48-54 photo wall finale | 54-60 outro */
+  :root { --serif: 'Bodoni Moda', 'Didot', Georgia, serif; --sans: 'Inter Tight', system-ui, sans-serif;
+          --foil-dark: linear-gradient(100deg, #5a4118 0%, #8c6a2a 24%, #b88f48 44%, #cfa660 50%, #a98238 57%, #7a5a22 78%, #5a4118 100%);
+          --foil-bright: linear-gradient(100deg, #c08a3a 0%, #e0aa55 22%, #f6d488 46%, #ffe4a3 50%, #eec06a 56%, #d29b45 78%, #c08a3a 100%); }
   * { box-sizing: border-box; margin: 0; }
   html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
-  #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--paper); font-family: var(--sans); color: var(--fg); }
+  #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #000; font-family: var(--sans);
+           --fg: #0f0e0d; --mut: #3a362f; --lab: #86631f; --hair: rgba(15, 14, 13, .22); color: var(--fg); }
   #world { position: absolute; inset: 0; perspective: 2400px; perspective-origin: 50% 52%; }
-  #bg, #flip, #glow, #grain, #flash, #fade, #wipe { position: absolute; inset: 0; pointer-events: none; }
-  #flip { background: var(--paper); }
-  #grain { z-index: 90; opacity: .1; mix-blend-mode: overlay; }
-  #flash { z-index: 91; background: #fff; opacity: 0; }
-  #fade { z-index: 95; background: #000; opacity: 0; }
-  #wipe { z-index: 80; }
-  #wipe i { position: absolute; left: 0; width: 100%; height: 321px; transform: scaleX(0); }
-  .foil { background: linear-gradient(100deg, #6e5020 0%, #a9823f 24%, #d6b064 44%, #ecd08e 50%, #c79d55 57%, #8f6d33 78%, #6e5020 100%); background-size: 260% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; }
+  .layer { position: absolute; inset: 0; pointer-events: none; }
+  .foil { background: var(--foil-dark); background-size: 260% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; }
+  #stage.ink .foil, .onphoto .foil { background-image: var(--foil-bright); }
+  .onphoto .foil { filter: drop-shadow(0 4px 14px rgba(0, 0, 0, .65)) drop-shadow(0 0 2px rgba(0, 0, 0, .5)); }
+  #dust { z-index: 3; }
 
-  /* persistent masthead */
-  #top { position: absolute; left: 64px; right: 64px; top: 58px; z-index: 40; display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 20px; border-bottom: 1.5px solid var(--hair); font-size: 21px; font-weight: 600; letter-spacing: .32em; text-transform: uppercase; color: var(--fg); opacity: 0; }
-  #top b { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 27px; letter-spacing: .04em; text-transform: none; }
-  .bigno { position: absolute; right: 36px; top: 108px; z-index: 2; font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 470px; line-height: 1; color: transparent; -webkit-text-stroke: 2px rgba(169, 130, 63, .55); opacity: 0; transform-origin: 100% 0; }
+  /* masthead (no numbers) */
+  #top { position: absolute; left: 64px; right: 64px; top: 58px; z-index: 40; display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 20px; border-bottom: 1.5px solid var(--hair); font-size: 21px; font-weight: 700; letter-spacing: .32em; text-transform: uppercase; color: var(--fg); opacity: 0; }
+  #top b { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 28px; letter-spacing: .04em; text-transform: none; }
 
   /* captions */
-  .cap { position: absolute; left: 76px; top: 168px; width: 930px; z-index: 30; opacity: 0; color: var(--fg); }
-  .cap .lab { display: flex; align-items: center; gap: 18px; font-size: 23px; font-weight: 700; letter-spacing: .34em; text-transform: uppercase; color: #a9823f; }
-  .cap .lab i { display: block; width: 70px; height: 2px; background: currentColor; transform-origin: left; }
-  .cap h2 { margin-top: 26px; font-family: var(--serif); font-weight: 500; font-size: 112px; line-height: 1.04; letter-spacing: -.02em; }
-  .cap h2 .ln { display: block; overflow: hidden; padding: 0 0 .16em; margin-bottom: -.16em; }
-  .cap h2 .ln > b { display: inline-block; font-weight: inherit; }
-  .cap h2 em { font-style: italic; font-weight: 500; padding-right: .06em; }
-  .cap p { margin-top: 26px; max-width: 640px; font-size: 33px; line-height: 1.42; font-weight: 500; color: var(--mut); }
-  .cap.center { left: 60px; width: 960px; text-align: center; }
+  .cap { position: absolute; left: 76px; top: 170px; width: 930px; z-index: 30; opacity: 0; color: var(--fg); }
+  .cap .lab { display: flex; align-items: center; gap: 18px; font-size: 24px; font-weight: 800; letter-spacing: .34em; text-transform: uppercase; color: var(--lab); }
+  .cap .lab i { display: block; width: 70px; height: 2.5px; background: currentColor; transform-origin: left; }
+  .cap h2 { margin-top: 26px; font-family: var(--serif); font-weight: 600; font-size: 116px; line-height: 1.03; letter-spacing: -.02em; }
+  .ln { display: block; overflow: hidden; padding: 0 0 .16em; margin-bottom: -.16em; }
+  .ln > b { display: inline-block; font-weight: inherit; }
+  .cap h2 em { font-style: italic; font-weight: 600; padding-right: .06em; }
+  .cap p { margin-top: 26px; max-width: 680px; font-size: 35px; line-height: 1.4; font-weight: 600; color: var(--mut); }
+  .cap.center { left: 50px; width: 980px; text-align: center; }
   .cap.center .lab { justify-content: center; }
   .cap.center p { margin-left: auto; margin-right: auto; }
-  .cap.center h2 { font-size: 128px; }
 
   /* devices */
   .dev { position: absolute; left: 0; top: 0; transform-style: preserve-3d; opacity: 0; z-index: 20; }
@@ -64,57 +64,108 @@
   .phone .vid { position: absolute; left: 0; right: 0; top: 36px; bottom: 0; }
   .phone .btn { position: absolute; width: 4px; border-radius: 2px; background: #9a958c; }
 
-  /* photo marquees */
+  /* scene props */
   .row { position: absolute; left: 0; width: 1080px; height: 290px; overflow: hidden; z-index: 10; opacity: 0; }
-  .row .track, .col .track { position: absolute; left: 0; top: 0; display: flex; gap: 18px; will-change: transform; }
+  .row .track, .col .track { position: absolute; left: 0; top: 0; display: flex; gap: 18px; }
   .row img { width: 232px; height: 290px; object-fit: cover; border-radius: 18px; flex: none; box-shadow: 0 18px 30px -18px rgba(30, 18, 4, .6); }
   .col { position: absolute; top: 620px; width: 240px; height: 1300px; overflow: hidden; z-index: 10; opacity: 0; -webkit-mask-image: linear-gradient(180deg, transparent, #000 14%, #000 86%, transparent); mask-image: linear-gradient(180deg, transparent, #000 14%, #000 86%, transparent); }
   .col .track { flex-direction: column; gap: 22px; }
   .col img { width: 240px; height: 427px; object-fit: cover; border-radius: 24px; flex: none; }
   .fan { position: absolute; left: 540px; top: 1545px; z-index: 12; }
   .fan img { position: absolute; left: 0; top: 0; width: 264px; height: 374px; object-fit: cover; border-radius: 16px; border: 6px solid #fff; box-shadow: 0 30px 50px -24px rgba(30, 18, 4, .7); opacity: 0; }
+  #tgl { position: absolute; left: 70px; top: 1440px; z-index: 30; width: 430px; opacity: 0; }
+  #tgl .sw { position: relative; height: 150px; border-radius: 999px; background: rgba(255, 255, 255, .1); border: 2px solid rgba(255, 255, 255, .25); box-shadow: inset 0 2px 0 rgba(255, 255, 255, .2), 0 30px 60px -30px rgba(0, 0, 0, .6); }
+  #tgl .knob { position: absolute; top: 13px; width: 120px; height: 120px; border-radius: 50%; display: grid; place-items: center; background: linear-gradient(160deg, #fff7e4, #e6cf9a); box-shadow: 0 10px 26px -8px rgba(0, 0, 0, .55), inset 0 2px 0 #fff; }
+  #tgl .knob svg { width: 58px; height: 58px; position: absolute; }
+  #tgl .lbl { position: absolute; top: 50%; transform: translateY(-50%); font-size: 30px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+  #tgl p { margin-top: 26px; font-size: 30px; font-weight: 600; line-height: 1.4; color: var(--mut); }
 
-  /* stats */
-  #stats { position: absolute; left: 80px; top: 1170px; z-index: 30; width: 470px; }
-  .stat { opacity: 0; padding: 22px 0 24px; border-top: 1.5px solid var(--hair); color: var(--fg); }
-  .stat b { display: block; font-family: var(--serif); font-weight: 500; font-size: 128px; line-height: 1; letter-spacing: -.02em; font-variant-numeric: lining-nums tabular-nums; }
-  .stat span { display: block; margin-top: 8px; font-size: 23px; font-weight: 700; letter-spacing: .3em; text-transform: uppercase; color: #a9823f; }
+  /* full-bleed photo scenes */
+  .full { position: absolute; inset: 0; overflow: hidden; z-index: 46; background: #000; opacity: 0; color: #fff; }
+  .full .ph { position: absolute; inset: 0; overflow: hidden; opacity: 0; }
+  .full .ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .shade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(0, 0, 0, .55) 0%, transparent 22%, transparent 50%, rgba(0, 0, 0, .88) 100%); }
+  .ttl { position: absolute; left: 70px; right: 60px; bottom: 210px; z-index: 5; }
+  .ttl small { display: flex; align-items: center; gap: 16px; font-size: 25px; font-weight: 800; letter-spacing: .32em; text-transform: uppercase; color: #f3d998; }
+  .ttl small i { display: block; width: 60px; height: 2.5px; background: currentColor; transform-origin: left; }
+  .ttl h3 { margin-top: 18px; font-family: var(--serif); font-weight: 600; font-size: 128px; line-height: 1.0; letter-spacing: -.02em; text-shadow: 0 6px 40px rgba(0, 0, 0, .5); }
+  .ttl h3 em { font-style: italic; }
+  .ttl p { margin-top: 22px; font-size: 31px; font-weight: 600; letter-spacing: .02em; color: rgba(255, 255, 255, .88); }
+  .lbar { position: absolute; left: 0; right: 0; height: 150px; background: #000; z-index: 6; }
+  .prog { position: absolute; left: 60px; right: 60px; top: 70px; z-index: 7; height: 4px; display: flex; gap: 10px; }
+  .prog i { flex: 1; border-radius: 2px; background: rgba(255, 255, 255, .28); overflow: hidden; }
+  .prog i b { display: block; height: 100%; width: 0; background: #fff; }
+  #albBB .pan { position: absolute; top: 0; bottom: 0; width: 536px; overflow: hidden; }
+  #albBB .pan img { position: absolute; left: 0; width: 536px; height: 1920px; object-fit: cover; }
+  #albBB .merge { position: absolute; inset: 0; z-index: 3; }
+  #albBB .merge img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 40%; }
 
-  /* intro / outro */
-  .seal { position: absolute; left: 50%; border-radius: 50%; background: #000 url('monogram.png') center / 112% no-repeat; }
-  .ring { position: absolute; left: 50%; border-radius: 50%; border: 2px dashed rgba(169, 130, 63, .7); }
-  .name { position: absolute; left: 0; right: 0; text-align: center; font-family: var(--serif); font-weight: 500; font-size: 204px; line-height: 1; letter-spacing: -.03em; overflow: hidden; padding-bottom: .2em; }
+  /* intro */
+  #intro { position: absolute; inset: 0; z-index: 60; background: #050505; overflow: hidden; }
+  #intro .strobe { position: absolute; inset: 0; opacity: 0; }
+  #intro .strobe img { width: 100%; height: 100%; object-fit: cover; }
+  #intro canvas { position: absolute; inset: 0; }
+  #slam { position: absolute; inset: 0; opacity: 0; color: #f6efe2; }
+  #slam .seal { top: 520px; width: 190px; height: 190px; margin-left: -95px; }
+  #slam .nm { position: absolute; left: 0; right: 0; text-align: center; font-family: var(--serif); font-weight: 600; line-height: 1; letter-spacing: -.03em; }
+  #slam .kick { position: absolute; left: 0; right: 0; text-align: center; font-size: 26px; font-weight: 800; text-transform: uppercase; color: #e9c983; }
+  .seal { position: absolute; left: 50%; border-radius: 50%; background: #000 url('monogram.png') center / 112% no-repeat; box-shadow: 0 0 0 2px rgba(227, 192, 120, .85); }
+
+  /* montage */
+  #montage { position: absolute; inset: 0; z-index: 50; background: #000; opacity: 0; }
+  #montage .w { position: absolute; left: 70px; right: 60px; bottom: 170px; z-index: 2; color: #fff; }
+  #montage .w small { display: block; font-size: 25px; font-weight: 800; letter-spacing: .3em; text-transform: uppercase; color: #f3d998; }
+  #montage .w b { display: block; margin-top: 12px; font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 176px; line-height: 1; letter-spacing: -.02em; }
+
+  /* finale wall */
+  #wall { position: absolute; inset: 0; z-index: 44; background: #07070a; opacity: 0; overflow: hidden; perspective: 1700px; perspective-origin: 50% 40%; }
+  #plane { position: absolute; left: 50%; top: 50%; width: 1944px; display: grid; grid-template-columns: repeat(6, 300px); gap: 24px; transform-style: preserve-3d; }
+  #plane img { width: 300px; height: 400px; object-fit: cover; border-radius: 18px; opacity: 0; box-shadow: 0 20px 40px -20px #000; }
+  #wallShade { position: absolute; inset: 0; z-index: 2; background: radial-gradient(75% 30% at 50% 42%, rgba(5, 5, 8, .9), rgba(5, 5, 8, .35) 60%, transparent 80%), linear-gradient(180deg, #07070a 0%, transparent 18%, transparent 75%, #07070a 100%); }
+  #capFin { position: absolute; left: 50px; right: 50px; top: 640px; z-index: 3; text-align: center; color: #fff; opacity: 0; }
+  #capFin small { display: flex; justify-content: center; align-items: center; gap: 16px; font-size: 25px; font-weight: 800; letter-spacing: .34em; text-transform: uppercase; color: #f3d998; }
+  #capFin small i { display: block; width: 60px; height: 2.5px; background: currentColor; }
+  #capFin h2 { margin-top: 26px; font-family: var(--serif); font-weight: 600; font-size: 130px; line-height: 1.04; letter-spacing: -.02em; }
+  #capFin h2 em { font-style: italic; }
+
+  /* outro */
+  #outro { position: absolute; inset: 0; z-index: 58; color: #f1ece3; opacity: 0; }
+  #outro .seal { top: 330px; width: 190px; height: 190px; margin-left: -95px; }
+  #outro .ring { position: absolute; left: 50%; top: 300px; width: 250px; height: 250px; margin-left: -125px; border-radius: 50%; border: 2px dashed rgba(227, 192, 120, .75); }
+  .name { position: absolute; left: 0; right: 0; text-align: center; font-family: var(--serif); font-weight: 600; font-size: 204px; line-height: 1; letter-spacing: -.03em; overflow: hidden; padding-bottom: .2em; }
   .name b { display: inline-block; font-weight: inherit; }
   .name em { font-style: italic; }
-  .kicker { position: absolute; left: 0; right: 0; text-align: center; font-size: 25px; font-weight: 700; text-transform: uppercase; color: #a9823f; }
-  .rule { position: absolute; left: 50%; width: 560px; margin-left: -280px; height: 2px; background: linear-gradient(90deg, transparent, #a9823f, transparent); }
-  .tag { position: absolute; left: 0; right: 0; text-align: center; font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 60px; }
-  .small { position: absolute; left: 0; right: 0; text-align: center; font-size: 22px; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; }
-  #intro { position: absolute; inset: 0; z-index: 45; color: var(--ink); }
-  #intro .box { position: absolute; inset: 44px; border: 1.5px solid rgba(18, 17, 16, .3); }
-  #intro .card { position: absolute; width: 270px; height: 350px; border-radius: 14px; border: 8px solid #fff; object-fit: cover; box-shadow: 0 30px 50px -24px rgba(30, 18, 4, .65); opacity: 0; }
-  #outro { position: absolute; inset: 0; z-index: 45; color: #f1ece3; }
-  #outro .url { position: absolute; left: 50%; top: 1310px; padding: 26px 52px; border-radius: 999px; font-size: 33px; font-weight: 700; letter-spacing: .01em; color: #17120a; background: var(--foil); background-size: 260% 100%; box-shadow: 0 26px 70px -22px rgba(217, 180, 106, .75), inset 0 2px 0 rgba(255, 255, 255, .6); white-space: nowrap; opacity: 0; }
+  .kicker { position: absolute; left: 0; right: 0; text-align: center; font-size: 25px; font-weight: 800; text-transform: uppercase; color: #e3c078; }
+  .rule { position: absolute; left: 50%; width: 560px; margin-left: -280px; height: 2px; background: linear-gradient(90deg, transparent, #c9a25a, transparent); }
+  .tag { position: absolute; left: 0; right: 0; text-align: center; font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 60px; }
+  .small { position: absolute; left: 0; right: 0; text-align: center; font-size: 23px; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; }
+  #oUrl { position: absolute; left: 50%; top: 1310px; padding: 26px 52px; border-radius: 999px; font-size: 33px; font-weight: 800; color: #17120a; background: var(--foil-bright); background-size: 260% 100%; box-shadow: 0 26px 70px -22px rgba(217, 180, 106, .75), inset 0 2px 0 rgba(255, 255, 255, .6); white-space: nowrap; opacity: 0; }
 
-  /* photo montage */
-  #montage { position: absolute; inset: 0; z-index: 50; background: #000; opacity: 0; }
-  .shot { position: absolute; inset: 0; overflow: hidden; opacity: 0; }
-  .shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .shot::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0, 0, 0, .35), transparent 22%, transparent 52%, rgba(0, 0, 0, .78)); }
-  .shot .w { position: absolute; left: 70px; right: 60px; bottom: 150px; z-index: 2; color: #fff; }
-  .shot .w small { display: block; font-size: 24px; font-weight: 700; letter-spacing: .34em; text-transform: uppercase; color: #f0d79a; }
-  .shot .w b { display: block; margin-top: 14px; font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 168px; line-height: 1; letter-spacing: -.02em; }
-  .shot .bar { position: absolute; left: 70px; right: 70px; top: 96px; z-index: 2; height: 3px; display: flex; gap: 10px; }
-  .shot .bar i { flex: 1; background: rgba(255, 255, 255, .3); }
-  .shot .bar i.on { background: #fff; }
+  /* cinematic layers */
+  #leak { z-index: 85; mix-blend-mode: screen; }
+  #flare { z-index: 86; mix-blend-mode: screen; opacity: 0; }
+  #flare .bar { position: absolute; left: -300px; right: -300px; top: 50%; height: 8px; margin-top: -4px; border-radius: 8px; background: linear-gradient(90deg, transparent, rgba(120, 190, 255, .25) 20%, rgba(190, 230, 255, .9) 44%, #fff 50%, rgba(190, 230, 255, .9) 56%, rgba(120, 190, 255, .25) 80%, transparent); box-shadow: 0 0 30px 6px rgba(140, 200, 255, .55); }
+  #flare .core { position: absolute; left: 50%; top: 50%; width: 520px; height: 520px; margin: -260px 0 0 -260px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 255, 255, .95) 0%, rgba(255, 220, 160, .55) 12%, rgba(255, 170, 90, .18) 34%, transparent 66%); }
+  #flare .ghost { position: absolute; width: 90px; height: 90px; border-radius: 50%; border: 3px solid rgba(160, 210, 255, .35); background: radial-gradient(circle, rgba(160, 210, 255, .18), transparent 70%); }
+  #vig { z-index: 88; }
+  #grain { z-index: 90; opacity: .085; mix-blend-mode: overlay; }
+  #wipe { z-index: 92; }
+  #wipe i { position: absolute; left: 0; width: 100%; height: 321px; transform: scaleX(0); }
+  #flash { z-index: 93; background: #fff; opacity: 0; }
+  #fade { z-index: 99; background: #000; opacity: 0; }
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute">
+  <filter id="mbP" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur id="mbPg" stdDeviation="0 0"/></filter>
+  <filter id="mbL" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur id="mbLg" stdDeviation="0 0"/></filter>
+  <filter id="mbA" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur id="mbAg" stdDeviation="0 0"/></filter>
+</svg>
 <div id="stage">
  <div id="world">
-  <div id="bg"></div><div id="flip"></div><div id="glow"></div>
-  <div class="bigno" id="no"></div>
-  <div id="top"><span>Olitha Induvara</span><b id="topIdx"></b></div>
+  <div class="layer" id="bg"></div><div class="layer" id="flip"></div><div class="layer" id="glow"></div>
+  <canvas class="layer" id="dust" width="1080" height="1920"></canvas>
+  <div id="top"><span>Olitha Induvara</span><b>Portfolio</b></div>
 
   <div class="row" id="row1" style="top:1252px"><div class="track"></div></div>
   <div class="row" id="row2" style="top:1568px"><div class="track"></div></div>
@@ -136,57 +187,104 @@
     </div></div>
   </div>
 
-  <div class="cap" id="cap2"><div class="lab"><i></i>The home page</div><h2><span class="ln"><b>Every picture</b></span><span class="ln"><b>tells a <em class="foil">story.</em></b></span></h2><p>A 3D lens, with every album in orbit around it.</p></div>
-  <div class="cap" id="cap3"><div class="lab"><i></i>Photography</div><h2><span class="ln"><b>Albums that</b></span><span class="ln"><b><em class="foil">open up.</em></b></span></h2><p>Portrait covers, a filmstrip on hover and a full-screen viewer.</p></div>
-  <div class="cap" id="cap4"><div class="lab"><i></i>Reels</div><h2><span class="ln"><b>Stories in</b></span><span class="ln"><b><em class="foil">motion.</em></b></span></h2><p>Vertical films that play as you swipe.</p></div>
-  <div class="cap" id="cap5"><div class="lab"><i></i>Films &amp; editing</div><h2><span class="ln"><b>Cinematic</b></span><span class="ln"><b><em class="foil">films.</em></b></span></h2><p>Event films, motion-graphics ads and collage designs.</p></div>
-  <div class="cap center" id="cap6"><div class="lab"><i></i>Every screen<i></i></div><h2><span class="ln"><b>Light or <em class="foil">dark.</em></b></span></h2><p>One portfolio, on the phone and the laptop.</p></div>
+  <div class="cap" id="capHome"><div class="lab"><i></i>The home page</div><h2><span class="ln"><b>Every picture</b></span><span class="ln"><b>tells a <em class="foil">story.</em></b></span></h2><p>A 3D lens, with every album in orbit around it.</p></div>
+  <div class="cap" id="capPhoto"><div class="lab"><i></i>Photography</div><h2><span class="ln"><b>Albums that</b></span><span class="ln"><b><em class="foil">open up.</em></b></span></h2><p>Portrait covers, a filmstrip on hover and a full-screen viewer.</p></div>
+  <div class="cap" id="capReels"><div class="lab"><i></i>Reels</div><h2><span class="ln"><b>Stories in</b></span><span class="ln"><b><em class="foil">motion.</em></b></span></h2><p>Vertical films that play as you swipe.</p></div>
+  <div class="cap" id="capFilms"><div class="lab"><i></i>Films &amp; editing</div><h2><span class="ln"><b>Cinematic</b></span><span class="ln"><b><em class="foil">films.</em></b></span></h2><p>Event films, motion-graphics ads and collage designs.</p></div>
+  <div class="cap center" id="capTheme"><div class="lab"><i></i>Every screen<i></i></div><h2><span class="ln"><b>Light or <em class="foil">dark.</em></b></span></h2></div>
 
-  <div id="stats">
-    <div class="stat"><b id="st1">0</b><span>Albums</span></div>
-    <div class="stat"><b id="st2">0</b><span>Photographs</span></div>
-    <div class="stat"><b id="st3">0</b><span>Films &amp; reels</span></div>
+  <div id="tgl">
+    <div class="sw"><span class="lbl" id="tglDark" style="left:52px">Dark</span><span class="lbl" id="tglLight" style="right:52px">Light</span>
+      <span class="knob" id="knob">
+        <svg id="kMoon" viewBox="0 0 24 24" fill="none" stroke="#5a4118" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg id="kSun" viewBox="0 0 24 24" fill="none" stroke="#5a4118" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4"/></svg>
+      </span></div>
+    <p>One tap, and it is remembered for every visit.</p>
   </div>
 
-  <div id="intro">
-    <div class="box" id="iBox"></div>
-    <div class="kicker" id="iKick" style="top:236px">A visual portfolio</div>
-    <span class="ring" id="iRing" style="top:330px;width:270px;height:270px;margin-left:-135px"></span>
-    <i class="seal" id="iSeal" style="top:360px;width:210px;height:210px;margin-left:-105px"></i>
-    <div class="name" style="top:650px"><b id="iN1">Olitha</b></div>
-    <div class="name" style="top:848px"><b id="iN2"><em class="foil">Induvara</em></b></div>
-    <div class="kicker" id="iSub" style="top:1092px">Photography</div>
-    <div class="rule" id="iRule" style="top:1160px"></div>
-    <div class="tag" id="iTag" style="top:1196px">Every picture tells a story.</div>
-    <img class="card" id="iC1" src="../portfolio/photography/01-graduation-day/side-by-side.jpg" alt="" style="left:96px;top:1420px">
-    <img class="card" id="iC2" src="../portfolio/photography/00b-science-66th-batch-inauguration/_cover.jpg" alt="" style="left:405px;top:1390px">
-    <img class="card" id="iC3" src="../portfolio/photography/05-blooming-beauty/bouquet-portrait.jpg" alt="" style="left:714px;top:1420px">
+  <!-- album: 66th Batch Inauguration (cinema frame) -->
+  <div class="full onphoto" id="alb66">
+    <div class="ph"><img src="../portfolio/photography/00b-science-66th-batch-inauguration/the-smile-of-a-dancer.jpg" alt="" style="object-position:42% 40%"></div>
+    <div class="ph"><img src="../portfolio/photography/00b-science-66th-batch-inauguration/a-graceful-reach.jpg" alt="" style="object-position:63% 40%"></div>
+    <div class="ph"><img src="../portfolio/photography/00b-science-66th-batch-inauguration/the-ves-headdress.jpg" alt="" style="object-position:37% 40%"></div>
+    <div class="ph"><img src="../portfolio/photography/00b-science-66th-batch-inauguration/singing-in-red-and-black.jpg" alt="" style="object-position:50% 30%"></div>
+    <div class="shade"></div>
+    <div class="lbar" style="top:0"></div><div class="lbar" style="bottom:0"></div>
+    <div class="ttl"><small><i></i>Album · Event coverage</small><h3><span class="ln"><b>66th Batch</b></span><span class="ln"><b><em class="foil">Inauguration</em></b></span></h3><p>Faculty of Science · University of Peradeniya</p></div>
   </div>
 
-  <div id="montage"></div>
+  <!-- album: Blooming Beauty (diptych) -->
+  <div class="full onphoto" id="albBB">
+    <div class="pan" id="bbL" style="left:0"><img src="../portfolio/photography/05-blooming-beauty/bouquet-in-the-ruins.jpg" alt="" style="top:0"><img src="../portfolio/photography/05-blooming-beauty/a-laugh-in-the-branches.jpg" alt="" style="top:1920px"></div>
+    <div class="pan" id="bbR" style="left:544px"><img src="../portfolio/photography/05-blooming-beauty/sunlit-smile.jpg" alt="" style="top:0"><img src="../portfolio/photography/05-blooming-beauty/walking-through-the-grass.jpg" alt="" style="top:-1920px"></div>
+    <div class="merge" id="bbM"><img src="../portfolio/photography/05-blooming-beauty/bouquet-portrait.jpg" alt=""></div>
+    <div class="shade" style="z-index:4"></div>
+    <div class="ttl"><small><i></i>Album · Portrait story</small><h3><span class="ln"><b><em class="foil">Blooming</em></b></span><span class="ln"><b>Beauty</b></span></h3><p>Flowers, ancient pillars and evening light</p></div>
+  </div>
 
-  <div id="outro">
-    <span class="ring" id="oRing" style="top:300px;width:250px;height:250px;margin-left:-125px;border-color:rgba(227,192,120,.75)"></span>
-    <i class="seal" id="oSeal" style="top:330px;width:190px;height:190px;margin-left:-95px;box-shadow:0 0 0 2px rgba(227,192,120,.8)"></i>
+  <!-- album: Portrait Session (beat cuts) -->
+  <div class="full onphoto" id="albPS">
+    <div class="ph"><img src="../portfolio/photography/04-portrait-session/with-the-puppy.jpg" alt=""></div>
+    <div class="ph"><img src="../portfolio/photography/04-portrait-session/in-the-frangipani.jpg" alt=""></div>
+    <div class="ph"><img src="../portfolio/photography/04-portrait-session/through-the-stone-frame.jpg" alt=""></div>
+    <div class="ph"><img src="../portfolio/photography/04-portrait-session/puppy-love.jpg" alt=""></div>
+    <div class="ph"><img src="../portfolio/photography/04-portrait-session/flowers-in-her-hair.jpg" alt=""></div>
+    <div class="ph"><img src="../portfolio/photography/04-portrait-session/smiling-with-flowers.jpg" alt=""></div>
+    <div class="ph"><img src="../portfolio/photography/04-portrait-session/reaching-for-the-light.jpg" alt=""></div>
+    <div class="ph"><img src="../portfolio/photography/04-portrait-session/among-the-branches.jpg" alt=""></div>
+    <div class="shade"></div>
+    <div class="prog" id="psProg"></div>
+    <div class="ttl"><small><i></i>Album · Natural light</small><h3><span class="ln"><b>Portrait</b></span><span class="ln"><b><em class="foil">Session</em></b></span></h3><p>Old trees, stone walls and a puppy who stole the show</p></div>
+  </div>
+
+  <!-- finale: 3D photo wall -->
+  <div id="wall" class="onphoto"><div id="plane"></div><div id="wallShade"></div>
+    <div id="capFin"><small><i></i>The collection<i></i></small><h2><span class="ln"><b>Every frame,</b></span><span class="ln"><b>a <em class="foil">story.</em></b></span></h2></div>
+  </div>
+
+  <!-- photo montage -->
+  <div id="montage" class="onphoto"></div>
+
+  <!-- intro -->
+  <div id="intro" class="onphoto">
+    <div class="strobe"><img src="../portfolio/photography/00b-science-66th-batch-inauguration/a-graceful-reach.jpg" alt="" style="object-position:63% 40%"></div>
+    <div class="strobe"><img src="../portfolio/photography/04-portrait-session/puppy-love.jpg" alt=""></div>
+    <div class="strobe"><img src="../portfolio/photography/05-blooming-beauty/in-the-white-tree.jpg" alt=""></div>
+    <div class="strobe"><img src="../portfolio/photography/00b-science-66th-batch-inauguration/dancers-in-motion.jpg" alt="" style="object-position:69% 40%"></div>
+    <canvas id="ifx" width="1080" height="1920"></canvas>
+    <div id="slam">
+      <i class="seal" id="sSeal"></i>
+      <div class="kick" id="sKick" style="top:760px">A visual portfolio</div>
+      <div class="nm" id="sN1" style="top:830px;font-size:210px">Olitha</div>
+      <div class="nm" id="sN2" style="top:1040px;font-size:210px"><em class="foil">Induvara</em></div>
+      <div class="kick" id="sSub" style="top:1300px">Photography · Films · Aerial</div>
+    </div>
+  </div>
+
+  <!-- outro -->
+  <div id="outro" class="onphoto">
+    <span class="ring" id="oRing"></span><i class="seal" id="oSeal"></i>
     <div class="name" style="top:610px"><b id="oN1">Olitha</b></div>
     <div class="name" style="top:806px"><b id="oN2"><em class="foil">Induvara</em></b></div>
-    <div class="kicker" id="oSub" style="top:1050px;color:#e3c078">Photography</div>
+    <div class="kicker" id="oSub" style="top:1050px">Photography</div>
     <div class="rule" id="oRule" style="top:1118px"></div>
     <div class="tag" id="oTag" style="top:1156px">Every picture tells a story.</div>
-    <div class="url" id="oUrl">olithainduvara.github.io/Photography-Portfolio</div>
-    <div class="small" id="oAreas" style="top:1470px;color:rgba(241,236,227,.62)">Photography · Films · Aerial · Reels · Editing</div>
+    <div id="oUrl">olithainduvara.github.io/Photography-Portfolio</div>
+    <div class="small" id="oAreas" style="top:1470px;color:rgba(241,236,227,.7)">Photography · Films · Aerial · Reels · Editing</div>
     <div class="small" id="oBook" style="top:1530px;color:#e3c078">Taking bookings · Peradeniya, Sri Lanka</div>
   </div>
  </div>
- <div id="wipe"></div><div id="flash"></div><div id="grain"></div><div id="fade"></div>
+ <div class="layer" id="leak"></div>
+ <div class="layer" id="flare"><div class="bar"></div><div class="core"></div><i class="ghost"></i><i class="ghost"></i><i class="ghost"></i></div>
+ <div class="layer" id="vig"></div>
+ <div class="layer" id="wipe"></div><div class="layer" id="flash"></div><div class="layer" id="grain"></div><div class="layer" id="fade"></div>
 </div>
 
 <script src="../js/data.js"></script>
 <script>
-/* ============================ timeline ============================ */
-const DUR = 60, FPS = 30, W = 1080, H = 1920;
-const PAPER = [241, 236, 227], SAND = [232, 224, 210], INK = [18, 17, 16];
-const CUTS = [[8, PAPER], [18, SAND], [28, INK], [38, PAPER], [46, INK], [54, INK]];   // scene changes: slats in the next colour
+/* ============================ helpers ============================ */
+const DUR = 60, FPS = 30;
+const PAPER = [241, 236, 227], SAND = [233, 225, 211], INK = [16, 15, 14];
 const $ = id => document.getElementById(id);
 const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
 const seg = (t, a, b) => clamp((t - a) / (b - a));
@@ -194,22 +292,28 @@ const lerp = (a, b, k) => a + (b - a) * k;
 const eio = x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
 const eo = x => 1 - Math.pow(1 - x, 4);
 const ei = x => x * x * x;
-const back = x => { const c = 1.5; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const back = x => { const c = 1.6; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
 const rgb = (a, b = a, k = 0) => `rgb(${a.map((v, i) => Math.round(lerp(v, b[i], k))).join(',')})`;
+const vis = (t, a, b, fi = .5, fo = .3) => eo(seg(t, a, a + fi)) * (1 - ei(seg(t, b - fo, b)));
+const rgbSplit = k => k > .01 ? `${(k * 12).toFixed(1)}px 0 0 rgba(255,40,90,${(.75 * k).toFixed(2)}), ${(-k * 12).toFixed(1)}px 0 0 rgba(40,220,255,${(.75 * k).toFixed(2)})` : 'none';
 function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let r = Math.imul(seed ^ seed >>> 15, 1 | seed); r = r + Math.imul(r ^ r >>> 7, 61 | r) ^ r; return ((r ^ r >>> 14) >>> 0) / 4294967296; }; }
-const vis = (t, a, b, fi = .6, fo = .35) => eo(seg(t, a, a + fi)) * (1 - ei(seg(t, b - fo, b)));
+function mblur(id, dx, dy) {                       // directional motion blur from on-screen velocity (px per frame)
+  const sx = Math.min(Math.abs(dx) * .45, 70), sy = Math.min(Math.abs(dy) * .45, 70);
+  $(id + 'g').setAttribute('stdDeviation', `${sx.toFixed(1)} ${sy.toFixed(1)}`);
+  return sx + sy > .8 ? `url(#${id})` : 'none';
+}
 
 /* device paths: [t, x, y, scale, rotY, rotX, rotZ, opacity] */
 const PATH = {
   phone: [
-    [7.9, 540, 2500, 1.36, -34, 12, 6, 0], [9.2, 540, 1244, 1.36, -16, 6, 0, 1], [17.3, 540, 1234, 1.4, 12, 4, 0, 1], [18.05, -520, 1300, 1.3, 42, 6, -8, 0],
-    [27.9, 540, 2600, 1.3, 30, 14, -6, 0], [29.1, 540, 1222, 1.36, 14, 6, 0, 1], [37.3, 540, 1212, 1.4, -12, 4, 0, 1], [38.05, 1720, 1300, 1.3, -42, 6, 8, 0],
-    [46.0, 1560, 1520, .9, -50, 6, 6, 0], [47.1, 806, 1372, .96, -22, 5, 0, 1], [53.4, 796, 1362, 1.0, -14, 4, 0, 1], [54.05, 806, 1440, .86, -14, 0, 0, 0],
+    [5.85, 540, 2650, 1.3, -30, 16, 6, 0], [6.7, 540, 1250, 1.36, -14, 6, 0, 1], [11.78, 540, 1236, 1.4, 12, 4, 0, 1], [12.12, -760, 1236, 1.34, 34, 4, -6, 0],
+    [25.98, 540, 1250, .35, -30, 18, 0, 0], [26.55, 540, 1236, 1.36, -14, 6, 0, 1], [31.78, 540, 1222, 1.4, 12, 4, 0, 1], [32.1, 540, -980, 1.3, 0, 34, 0, 0],
+    [41.98, 1560, 1520, .9, -50, 6, 6, 0], [42.95, 806, 1372, .96, -22, 5, 0, 1], [47.72, 796, 1362, 1.0, -14, 4, 0, 1], [48.05, 806, 1290, .78, -14, 0, 0, 0],
   ],
   laptop: [
-    [17.9, 1760, 905, .72, -42, 8, 4, 0], [19.1, 540, 905, .78, -12, 6, 0, 1], [27.3, 540, 898, .81, 8, 4, 0, 1], [28.05, -760, 900, .74, 42, 6, -4, 0],
-    [37.9, -760, 885, .72, 42, 8, -4, 0], [39.1, 540, 885, .78, 12, 6, 0, 1], [45.3, 540, 878, .81, -8, 4, 0, 1], [45.96, 540, 260, .7, 0, -22, 0, 0],
-    [46.0, 500, -420, .7, 0, 22, 0, 0], [47.0, 510, 812, .74, 8, 5, 0, 1], [53.4, 510, 804, .77, 5, 4, 0, 1], [54.05, 510, 740, .66, 5, 0, 0, 0],
+    [15.88, 1820, 900, .74, -42, 8, 4, 0], [16.75, 540, 900, .8, -12, 6, 0, 1], [21.78, 540, 890, .83, 8, 4, 0, 1], [22.12, -980, 890, .8, 34, 4, -3, 0],
+    [35.88, -980, 885, .74, 42, 8, -4, 0], [36.75, 540, 885, .8, 12, 6, 0, 1], [41.6, 540, 878, .83, -8, 4, 0, 1], [41.96, 540, 300, .7, 0, -24, 0, 0],
+    [41.98, 500, -460, .7, 0, 22, 0, 0], [42.9, 510, 812, .74, 8, 5, 0, 1], [47.72, 510, 804, .77, 5, 4, 0, 1], [48.05, 510, 640, .6, 5, 0, 0, 0],
   ],
 };
 function along(path, t) {
@@ -218,47 +322,60 @@ function along(path, t) {
   return path[path.length - 1].slice();
 }
 const CLIP = { pv_home: 'phone_home', pv_reels: 'phone_reels', pv_theme: 'theme_phone', lv_photo: 'photo_desktop', lv_films: 'home_desktop', lv_theme: 'theme_desktop' };
+const SWITCH = 43.5;                                  // the theme switch, on a beat
 const plays = t => ({
-  pv_home: [t < 24, .3 + Math.max(0, t - 8.9) * 1.45],
-  pv_reels: [t >= 24 && t < 42, 1.2 + Math.max(0, t - 29.0) * 1.5],
-  pv_theme: [t >= 42, Math.max(.2, 1.2 + (t - 48.0) * 1.15)],
-  lv_photo: [t < 33, .4 + Math.max(0, t - 18.8) * 1.5],
-  lv_films: [t >= 33 && t < 45.97, 7.3 + Math.max(0, t - 38.6) * 1.1],
-  lv_theme: [t >= 45.97, Math.max(.2, 1.2 + (t - 48.1) * 1.15)],
+  pv_home: [t < 19, .4 + Math.max(0, t - 6.0) * 1.75],
+  pv_reels: [t >= 19 && t < 37, 2.6 + Math.max(0, t - 26.0) * 1.9],
+  pv_theme: [t >= 37, Math.max(.2, 1.2 + (t - SWITCH) * 1.15)],
+  lv_photo: [t < 29, .6 + Math.max(0, t - 16.0) * 2.15],
+  lv_films: [t >= 29 && t < 41.97, 7.6 + Math.max(0, t - 36.0) * 1.25],
+  lv_theme: [t >= 41.97, Math.max(.2, 1.2 + (t - SWITCH) * 1.15)],
 });
-const SHOTS = [
-  ['photography/01-graduation-day/side-by-side.jpg', 'Graduations', '50% 30%'],
-  ['photography/04-portrait-session/in-the-frangipani.jpg', 'Portraits', '50% 30%'],
-  ['photography/00b-science-66th-batch-inauguration/_cover.jpg', 'Culture', '50% 30%'],
-  ['photography/00-ieee-iceeet-2026/on-the-mic.jpg', 'Events', '50% 30%'],
-  ['photography/05-blooming-beauty/bouquet-portrait.jpg', 'Stories', '62% 40%'],
-  ['photography/00c-pefaa-annual-general-meeting/_cover.jpg', 'Stage', '50% 30%'],
-  ['photography/02-graduation-in-the-rain/umbrella-to-the-sky.jpg', 'Moments', '50% 40%'],
-  ['aerial/06-sarasavi-viharaya-jaffna/sarasavi-viharaya.jpg', 'Aerial', '50% 50%'],
+const PH = 'photography/';
+const MONT = [
+  [PH + '00b-science-66th-batch-inauguration/the-smile-of-a-dancer.jpg', '42% 40%', 'Culture', '66th Batch Inauguration'],
+  [PH + '05-blooming-beauty/bouquet-portrait.jpg', '62% 40%', 'Stories', 'Blooming Beauty'],
+  [PH + '04-portrait-session/in-the-frangipani.jpg', '50% 30%', 'Portraits', 'Portrait Session'],
+  [PH + '01-graduation-day/side-by-side.jpg', '50% 30%', 'Graduations', 'Graduation Day'],
+  [PH + '00b-science-66th-batch-inauguration/the-ves-headdress.jpg', '37% 40%', 'Tradition', '66th Batch Inauguration'],
+  [PH + '05-blooming-beauty/sunlit-smile.jpg', '50% 30%', 'Light', 'Blooming Beauty'],
+  [PH + '04-portrait-session/with-the-puppy.jpg', '50% 30%', 'Moments', 'Portrait Session'],
+  ['aerial/06-sarasavi-viharaya-jaffna/sarasavi-viharaya.jpg', '50% 50%', 'Aerial', 'Sarasavi Viharaya'],
 ];
 const FAN = ['01-rainy-convocation', '05-graduation-day-story', '04-circles-in-the-garden', '09-bouquet-story-page', '10-two-page-story'];
+const IMPACTS = [1.0, 2.0, 26.0, 42.0, 48.0, 54.0];   // flare + shake
+const LEAKS = [[1.0, .9], [2.0, .7], [6.0, .35], [12.0, .55], [16.0, .35], [22.0, .55], [26.0, .9], [32.0, .6], [36.0, .35], [42.0, .8], [48.0, .8], [54.0, .7]];
 
 /* ============================ setup ============================ */
-const videos = {}, P = window.PORTFOLIO.categories, albums = P.flatMap(c => c.albums);
-const COUNT = { a: albums.length, p: albums.reduce((n, a) => n + a.items.filter(i => i.type === 'image').length, 0), v: albums.reduce((n, a) => n + a.items.filter(i => i.type === 'video').length, 0) };
+const videos = {}, CATS = window.PORTFOLIO.categories, ALB = CATS.flatMap(c => c.albums);
+const byId = id => ALB.find(a => a.id === id);
 const img = src => `<img src="../${src}" alt="">`;
-// photography covers -> two marquee rows; vertical video posters -> two columns
-const covers = P.find(c => c.id === 'photography').albums.map(a => a.cover);
+const covers = CATS.find(c => c.id === 'photography').albums.map(a => a.cover);
 $('row1').firstElementChild.innerHTML = covers.slice(0, 7).concat(covers.slice(0, 7)).map(img).join('');
 $('row2').firstElementChild.innerHTML = covers.slice(7).concat(covers.slice(7)).map(img).join('');
-const posters = albums.flatMap(a => a.items.filter(i => i.type === 'video' && i.h > i.w * 1.2 && i.thumb).map(i => i.thumb)).slice(0, 10);
+const posters = ALB.flatMap(a => a.items.filter(i => i.type === 'video' && i.h > i.w * 1.2 && i.thumb).map(i => i.thumb)).slice(0, 10);
 $('col1').firstElementChild.innerHTML = posters.slice(0, 5).concat(posters.slice(0, 5)).map(img).join('');
 $('col2').firstElementChild.innerHTML = posters.slice(5).concat(posters.slice(5)).map(img).join('');
 $('fan').innerHTML = FAN.map(f => img(`portfolio/editing/01-collage-designs/${f}.jpg`)).join('');
-$('montage').innerHTML = SHOTS.map(([src, word, pos], i) => `<div class="shot"><img src="../portfolio/${src}" alt="" style="object-position:${pos}">
-  <div class="bar">${SHOTS.map((_, j) => `<i class="${j <= i ? 'on' : ''}"></i>`).join('')}</div>
-  <div class="w"><small>${String(i + 1).padStart(2, '0')} — ${String(SHOTS.length).padStart(2, '0')}</small><b>${word}</b></div></div>`).join('');
+$('montage').innerHTML = MONT.map(([src, pos, word, alb]) => `<div class="full" style="opacity:1;z-index:auto"><div class="ph" style="opacity:1"><img src="../portfolio/${src}" alt="" style="object-position:${pos}"></div><div class="shade"></div>
+  <div class="w"><small>${alb}</small><b>${word}</b></div></div>`).join('');
+$('psProg').innerHTML = '<i><b></b></i>'.repeat(8);
+// the wall: preferred albums first, then the rest of the photography
+const pick = (id, n) => byId(id).items.filter(i => i.type === 'image' && i.h > i.w).slice(0, n).map(i => i.thumb);
+const wallSrc = [].concat(pick('04-portrait-session', 9), pick('05-blooming-beauty', 7), pick('00b-science-66th-batch-inauguration', 5),
+  pick('03-scroll-and-stethoscope', 6), pick('01-graduation-day', 6), pick('00-ieee-iceeet-2026', 3), pick('02-graduation-in-the-rain', 3), pick('11-baby-and-family-shoot', 3));
+const wr = rng(3); for (let i = wallSrc.length - 1; i > 0; i--) { const j = Math.floor(wr() * (i + 1)); [wallSrc[i], wallSrc[j]] = [wallSrc[j], wallSrc[i]]; }
+$('plane').innerHTML = wallSrc.slice(0, 42).map(img).join('');
 $('wipe').innerHTML = '<i></i>'.repeat(6);
-const slats = [...$('wipe').children], shots = [...$('montage').children], fan = [...$('fan').children];
+const slats = [...$('wipe').children], monts = [...$('montage').children], fan = [...$('fan').children], tiles = [...$('plane').children];
+const strobes = [...document.querySelectorAll('#intro .strobe')], ps = [...document.querySelectorAll('#albPS .ph')], a66 = [...document.querySelectorAll('#alb66 .ph')];
 slats.forEach((s, i) => { s.style.top = `${i * 320}px`; s.style.transformOrigin = i % 2 ? '100% 50%' : '0 50%'; });
 (() => { const c = document.createElement('canvas'); c.width = c.height = 256; const g = c.getContext('2d'), im = g.createImageData(256, 256), r = rng(42);
   for (let i = 0; i < im.data.length; i += 4) { const v = r() * 255; im.data[i] = im.data[i + 1] = im.data[i + 2] = v; im.data[i + 3] = 255; }
   g.putImageData(im, 0, 0); $('grain').style.backgroundImage = `url(${c.toDataURL()})`; })();
+const DUST = (() => { const r = rng(9); return Array.from({ length: 70 }, () => ({ x: r() * 1080, y: r() * 1920, rad: 1.5 + r() * r() * 10, vy: -8 - r() * 22, vx: (r() - .5) * 10, a: .1 + r() * .35, ph: r() * 6.28 })); })();
+const WARP = (() => { const r = rng(17); return Array.from({ length: 160 }, () => ({ ang: r() * 6.2832, r0: 40 + r() * 600, v: 900 + r() * 2200, len: 60 + r() * 260, w: .8 + r() * 2.2, a: .2 + r() * .6 })); })();
+const dctx = $('dust').getContext('2d'), ictx = $('ifx').getContext('2d');
 
 async function load() {
   await Promise.all(Object.entries(CLIP).map(async ([id, name]) => {
@@ -276,159 +393,299 @@ function seekTo(v, time) {
   if (Math.abs(v.currentTime - time) < 1e-4) return Promise.resolve();
   return new Promise(res => { v.addEventListener('seeked', res, { once: true }); v.currentTime = time; });
 }
-function caption(id, t, a, b) {
-  const el = $(id), out = ei(seg(t, b - .42, b - .04));
+function caption(id, t, a, b, split = false) {
+  const el = $(id), out = ei(seg(t, b - .38, b - .04));
   el.style.opacity = t < a || t >= b ? 0 : 1 - out;
   el.style.transform = `translateY(${-out * 46}px)`;
-  const lab = el.querySelector('.lab'), kl = eo(seg(t, a + .1, a + .8));
+  const lab = el.querySelector('.lab'), kl = eo(seg(t, a + .05, a + .6));
   lab.style.opacity = kl; lab.style.letterSpacing = `${lerp(.7, .34, kl)}em`;
-  lab.querySelectorAll('i').forEach(i => { i.style.transform = `scaleX(${eo(seg(t, a + .2, a + 1))})`; });
-  el.querySelectorAll('.ln > b').forEach((n, i) => { n.style.transform = `translateY(${(1 - eo(seg(t, a + .22 + i * .13, a + 1.0 + i * .13))) * 112}%)`; });
-  const p = el.querySelector('p'), kp = eo(seg(t, a + .6, a + 1.35));
-  p.style.opacity = kp; p.style.transform = `translateY(${(1 - kp) * 24}px)`;
+  lab.querySelectorAll('i').forEach(i => { i.style.transform = `scaleX(${eo(seg(t, a + .12, a + .8))})`; });
+  el.querySelectorAll('.ln > b').forEach((n, i) => {
+    n.style.transform = `translateY(${(1 - eo(seg(t, a + .14 + i * .1, a + .8 + i * .1))) * 112}%)`;
+    n.style.textShadow = split ? rgbSplit(Math.max(0, 1 - (t - a - .14 - i * .1) / .45)) : 'none';
+  });
+  const p = el.querySelector('p');
+  if (p) { const kp = eo(seg(t, a + .45, a + 1.05)); p.style.opacity = kp; p.style.transform = `translateY(${(1 - kp) * 24}px)`; }
 }
-function reveal(el, k, y = 30) { el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * y}px)`; }
+function title(root, t, a, b) {                         // lower-third title on a full-bleed scene
+  const sm = root.querySelector('.ttl small'), k = eo(seg(t, a + .1, a + .6)), out = ei(seg(t, b - .3, b));
+  root.querySelector('.ttl').style.opacity = 1 - out;
+  sm.style.opacity = k; sm.style.letterSpacing = `${lerp(.7, .32, k)}em`;
+  sm.querySelector('i').style.transform = `scaleX(${k})`;
+  root.querySelectorAll('.ttl .ln > b').forEach((n, i) => { n.style.transform = `translateY(${(1 - eo(seg(t, a + .18 + i * .1, a + .85 + i * .1))) * 112}%)`; });
+  const p = root.querySelector('.ttl p'), kp = eo(seg(t, a + .5, a + 1.1)); p.style.opacity = kp; p.style.transform = `translateY(${(1 - kp) * 20}px)`;
+}
+function iris(ctx, k, rot) {                            // camera aperture: k = 0 closed .. 1 open
+  ctx.save(); ctx.fillStyle = '#050505'; ctx.fillRect(0, 0, 1080, 1920);
+  if (k > 0) {
+    const R = k * 1180, n = 7, pts = [];
+    for (let i = 0; i < n; i++) { const a = rot + i * 6.2832 / n; pts.push([540 + Math.cos(a) * R, 960 + Math.sin(a) * R]); }
+    ctx.globalCompositeOperation = 'destination-out'; ctx.beginPath(); pts.forEach(([x, y], i) => i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)); ctx.closePath(); ctx.fill();
+    ctx.globalCompositeOperation = 'source-over'; ctx.strokeStyle = 'rgba(70,64,56,.9)'; ctx.lineWidth = 3;
+    pts.forEach(([x, y], i) => { const a = rot + i * 6.2832 / n + 1.75; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + Math.cos(a) * 2200, y + Math.sin(a) * 2200); ctx.stroke(); });
+  }
+  ctx.restore();
+}
 
 /* ============================ one frame ============================ */
 async function render(t) {
-  const stage = $('stage');
-  // ---- colour state: paper scenes use ink type, ink scenes use ivory type
-  const flipK = eio(seg(t, 48.0, 48.95));
-  let dark = t >= 28 && t < 38 ? 1 : t >= 46 && t < 54 ? 1 - eio(seg(t, 48.12, 48.7)) : t >= 54 ? 1 : 0;
-  stage.style.setProperty('--fg', rgb(INK, PAPER, dark));
-  stage.style.setProperty('--mut', rgb([107, 101, 92], [176, 169, 158], dark));
-  stage.style.setProperty('--hair', `rgba(${dark > .5 ? '241,236,227' : '18,17,16'},.2)`);
-  $('bg').style.background = rgb(t < 18 ? PAPER : t < 28 ? SAND : t < 38 ? INK : t < 46 ? PAPER : INK);
-  $('flip').style.opacity = t >= 46 && t < 54 ? 1 : 0;
-  $('flip').style.clipPath = `circle(${flipK * 2000}px at 930px 1010px)`;
-  const ga = lerp(.5, .2, dark);
-  $('glow').style.background = `radial-gradient(60% 34% at ${50 + Math.sin(t * .23) * 26}% ${30 + Math.cos(t * .19) * 8}%, rgba(226,186,110,${ga}), transparent 70%),
-    radial-gradient(70% 36% at ${50 - Math.sin(t * .17) * 28}% ${82 + Math.sin(t * .21) * 6}%, rgba(${dark > .5 ? '120,90,200' : '240,196,170'},${ga * .7}), transparent 70%)`;
+  const stage = $('stage'), dt = 1 / FPS;
+  // ---- scene colour: ink scenes use light type, paper scenes dark type
+  const ink = t < 6 || (t >= 26 && t < 32) || (t >= 42 && t < SWITCH + .55) || t >= 48 ? 1 : 0;
+  const flipK = eio(seg(t, SWITCH, SWITCH + .8));
+  const dark = t >= 42 && t < 48 ? 1 - eio(seg(t, SWITCH + .15, SWITCH + .6)) : ink;
+  stage.classList.toggle('ink', dark > .5);
+  stage.style.setProperty('--fg', rgb([15, 14, 13], [246, 241, 232], dark));
+  stage.style.setProperty('--mut', rgb([58, 54, 47], [206, 199, 187], dark));
+  stage.style.setProperty('--lab', rgb([134, 99, 31], [233, 201, 131], dark));
+  stage.style.setProperty('--hair', `rgba(${dark > .5 ? '246,241,232' : '15,14,13'},.22)`);
+  $('bg').style.background = rgb(t < 16 && t >= 6 ? PAPER : t >= 16 && t < 26 ? SAND : t >= 36 && t < 42 ? PAPER : INK);
+  $('flip').style.background = rgb(PAPER);
+  $('flip').style.opacity = t >= 42 && t < 48 ? 1 : 0;
+  $('flip').style.clipPath = `circle(${flipK * 2200}px at 300px 1515px)`;
+  const ga = dark > .5 ? .22 : .2;
+  $('glow').style.background = `radial-gradient(60% 30% at ${50 + Math.sin(t * .23) * 30}% ${72 + Math.cos(t * .19) * 8}%, rgba(226,186,110,${ga}), transparent 70%),
+    radial-gradient(70% 30% at ${50 - Math.sin(t * .17) * 28}% ${92}%, rgba(${dark > .5 ? '120,90,200' : '240,196,170'},${ga * .8}), transparent 70%)`;
+  $('vig').style.background = `radial-gradient(120% 90% at 50% 48%, transparent 58%, rgba(0,0,0,${dark > .5 ? .55 : .16}) 100%)`;
   $('grain').style.backgroundPosition = `${(Math.floor(t * FPS) * 97) % 256}px ${(Math.floor(t * FPS) * 57) % 256}px`;
   document.querySelectorAll('.foil').forEach(f => { f.style.backgroundPosition = `${((t * 34) % 200) - 30}% 0`; });
 
-  // ---- the beat: a tiny pulse on every kick while the drums are in
-  const drums = (t >= 8 && t < 26) || (t >= 28 && t < 54);
-  const pulse = drums ? Math.exp(-(t % .5) * 11) : 0, drop = (t >= 28 && t < 38) || (t >= 46 && t < 54);
-  $('world').style.transform = `scale(${1 + pulse * (drop ? .011 : .005)})`;
-
-  // ---- intro (0 .. 4)
-  const intro = $('intro');
-  intro.style.opacity = t < 4.15 ? 1 : 0;
-  if (t < 4.15) {
-    $('iBox').style.clipPath = `inset(${(1 - eo(seg(t, .15, 1.3))) * 50}% 0)`;
-    const kk = eo(seg(t, .35, 1.2)); $('iKick').style.opacity = kk; $('iKick').style.letterSpacing = `${lerp(1.2, .5, kk)}em`;
-    const ks = back(seg(t, .5, 1.35)); $('iSeal').style.transform = `scale(${ks})`; $('iSeal').style.opacity = seg(t, .5, .75);
-    $('iRing').style.opacity = eo(seg(t, .7, 1.5)); $('iRing').style.transform = `rotate(${t * 26}deg) scale(${lerp(.7, 1, eo(seg(t, .7, 1.6)))})`;
-    $('iN1').style.transform = `translateY(${(1 - eo(seg(t, .95, 1.85))) * 115}%)`;
-    $('iN2').style.transform = `translateY(${(1 - eo(seg(t, 1.15, 2.05))) * 115}%)`;
-    const k2 = eo(seg(t, 1.75, 2.55)); $('iSub').style.opacity = k2; $('iSub').style.letterSpacing = `${lerp(1.4, .62, k2)}em`;
-    $('iRule').style.transform = `scaleX(${eo(seg(t, 1.95, 2.8))})`;
-    reveal($('iTag'), eo(seg(t, 2.15, 2.95)));
-    [['iC1', -7, 2.3], ['iC2', 2, 2.45], ['iC3', 8, 2.6]].forEach(([id, rz, a]) => {
-      const k = eo(seg(t, a, a + .9)), el = $(id);
-      el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * 260 + Math.sin(t * 1.4 + rz) * 6}px) rotate(${rz * k}deg)`;
-    });
+  // ---- dust on ink scenes
+  dctx.clearRect(0, 0, 1080, 1920);
+  if (dark > .05) for (const d of DUST) {
+    const x = ((d.x + d.vx * t) % 1080 + 1080) % 1080, y = ((d.y + d.vy * t) % 1920 + 1920) % 1920, a = d.a * dark * (.6 + .4 * Math.sin(t * 1.4 + d.ph));
+    const g = dctx.createRadialGradient(x, y, 0, x, y, d.rad * 2.5); g.addColorStop(0, `rgba(240,200,120,${a})`); g.addColorStop(1, 'rgba(0,0,0,0)');
+    dctx.fillStyle = g; dctx.beginPath(); dctx.arc(x, y, d.rad * 2.5, 0, 6.2832); dctx.fill();
   }
 
-  // ---- photo montage (4 .. 8): one photo per beat, opened by an iris
-  const mon = $('montage'), mOn = t >= 3.7 && t < 8.02;
-  mon.style.opacity = mOn ? 1 : 0;
+  // ---- camera: beat pulse in the drops, shake on impacts
+  const drums = (t >= 2 && t < 54);
+  const pulse = drums ? Math.exp(-(t % .5) * 11) : 0, drop = (t >= 26 && t < 36) || (t >= 42 && t < 54);
+  let shx = 0, shy = 0;
+  for (const c of IMPACTS) if (t >= c && t < c + .6) { const a = 18 * Math.exp(-(t - c) * 8); shx += Math.sin(t * 97) * a; shy += Math.cos(t * 83) * a; }
+  $('world').style.transform = `translate(${shx}px, ${shy}px) scale(${1 + pulse * (drop ? .012 : .005)})`;
+
+  // ---- intro 0..2: four shutter strobes, the name slams in, zoom through
+  const intro = $('intro'), iOn = t < 2.02;
+  intro.style.opacity = iOn ? 1 : 0;
   let flash = 0;
+  if (iOn) {
+    const zk = ei(seg(t, 1.74, 2.0));
+    intro.style.transform = `scale(${1 + zk * 1.9})`; intro.style.filter = zk > .01 ? `blur(${zk * 22}px)` : 'none';
+    strobes.forEach((s, i) => {
+      const a = i * .25, on = t >= a && t < a + .25;
+      s.style.opacity = on ? 1 : 0;
+      if (on) s.querySelector('img').style.transform = `scale(${1.32 - eo(seg(t, a, a + .25)) * .2}) rotate(${(i % 2 ? 1 : -1) * 1.5}deg)`;
+      if (on) flash = Math.max(flash, (1 - (t - a) / .08) * .45);
+    });
+    if (t < 1.0) {
+      const a = Math.floor(t / .25) * .25, k = eo(seg(t, a, a + .09)) * (1 - ei(seg(t, a + .17, a + .25)));
+      iris(ictx, k, a * 4 + t * 1.8);
+    } else {                                           // warp streaks behind the name
+      ictx.clearRect(0, 0, 1080, 1920); ictx.fillStyle = '#060606'; ictx.fillRect(0, 0, 1080, 1920);
+      const g = ictx.createRadialGradient(540, 960, 0, 540, 960, 900);
+      g.addColorStop(0, `rgba(226,170,90,${.35 * eo(seg(t, 1.0, 1.3))})`); g.addColorStop(1, 'rgba(0,0,0,0)');
+      ictx.fillStyle = g; ictx.fillRect(0, 0, 1080, 1920);
+      const u = t - 1.0;
+      for (const w of WARP) {
+        const r = (w.r0 + w.v * u) % 1500, len = w.len * (1 + u * 2);
+        ictx.strokeStyle = `rgba(255,226,170,${w.a * clamp(r / 300) * .8})`; ictx.lineWidth = w.w;
+        ictx.beginPath(); ictx.moveTo(540 + Math.cos(w.ang) * r, 960 + Math.sin(w.ang) * r); ictx.lineTo(540 + Math.cos(w.ang) * (r + len), 960 + Math.sin(w.ang) * (r + len)); ictx.stroke();
+      }
+    }
+    const slam = $('slam'); slam.style.opacity = t >= 1.0 ? 1 : 0;
+    if (t >= 1.0) {
+      const k1 = eo(seg(t, 1.0, 1.16)), k2 = eo(seg(t, 1.06, 1.24));
+      $('sN1').style.transform = `scale(${lerp(2.2, 1, k1)})`; $('sN1').style.filter = k1 < 1 ? `blur(${(1 - k1) * 26}px)` : 'none';
+      $('sN1').style.letterSpacing = `${lerp(.25, -.03, k1)}em`; $('sN1').style.opacity = clamp(k1 * 1.6);
+      $('sN1').style.textShadow = rgbSplit(Math.max(0, 1 - (t - 1.0) / .5));
+      $('sN2').style.transform = `translateY(${(1 - k2) * 140}px) scale(${lerp(1.3, 1, k2)})`; $('sN2').style.opacity = clamp(k2 * 1.5);
+      $('sN2').style.filter = k2 < 1 ? `blur(${(1 - k2) * 18}px)` : 'none';
+      const ks = back(seg(t, 1.08, 1.4)); $('sSeal').style.transform = `scale(${ks}) rotate(${(1 - eo(seg(t, 1.08, 1.4))) * -90}deg)`; $('sSeal').style.opacity = seg(t, 1.08, 1.16);
+      const kk = eo(seg(t, 1.12, 1.45)); $('sKick').style.opacity = kk; $('sKick').style.letterSpacing = `${lerp(1.1, .48, kk)}em`;
+      const ku = eo(seg(t, 1.2, 1.55)); $('sSub').style.opacity = ku; $('sSub').style.letterSpacing = `${lerp(1.1, .4, ku)}em`;
+    }
+  }
+
+  // ---- montage 2..6: one photo per beat
+  const mon = $('montage'), mOn = t >= 2 && t < 6.02;
+  mon.style.opacity = mOn ? 1 : 0;
   if (mOn) {
-    mon.style.clipPath = t < 4.14 ? `circle(${eio(seg(t, 3.7, 4.14)) * 1150}px at 540px 960px)` : 'none';
-    const idx = clamp(Math.floor((t - 4) / .5), 0, SHOTS.length - 1), loc = Math.max(0, t - 4 - idx * .5);
-    shots.forEach((s, i) => {
+    const idx = clamp(Math.floor((t - 2) / .5), 0, MONT.length - 1), loc = t - 2 - idx * .5;
+    monts.forEach((s, i) => {
       s.style.opacity = i === idx ? 1 : 0;
       if (i !== idx) return;
-      s.querySelector('img').style.transform = `scale(${1.2 - eo(seg(loc, 0, .5)) * .1}) translateY(${(i % 2 ? 1 : -1) * (1 - eo(seg(loc, 0, .5))) * 1.5}%)`;
-      const w = s.querySelector('.w b'), k = eo(seg(loc, 0, .26));
-      w.style.transform = `translateY(${(1 - k) * 70}px)`; w.style.opacity = k;
+      const k = eo(seg(loc, 0, .5));
+      s.querySelector('img').style.transform = `scale(${1.22 - k * .12}) translateX(${(i % 2 ? 1 : -1) * (1 - k) * 2}%)`;
+      const w = s.querySelector('.w b'), kw = eo(seg(loc, 0, .24));
+      w.style.transform = `translateY(${(1 - kw) * 70}px)`; w.style.opacity = kw; w.style.textShadow = rgbSplit((1 - kw) * .9);
+      s.querySelector('.w small').style.opacity = eo(seg(loc, .04, .26));
     });
-    if (t >= 4.5) flash = Math.max(0, 1 - loc / .1) * .5;
+    if (t >= 2.5) flash = Math.max(flash, Math.max(0, 1 - loc / .08) * .3);
   }
 
-  // ---- masthead + numerals
-  const sc = t < 18 ? 1 : t < 28 ? 2 : t < 38 ? 3 : t < 46 ? 4 : 5, [sa, sb] = [[8, 18], [18, 28], [28, 38], [38, 46], [46, 54]][sc - 1];
-  $('top').style.opacity = vis(t, 8.2, 53.8, .8, .3);
-  $('topIdx').textContent = `No. ${String(sc).padStart(2, '0')} / 05`;
-  const no = $('no'), kn = vis(t, sa + .1, sb - .05, 1.0, .35);
-  no.textContent = String(sc).padStart(2, '0');
-  no.style.opacity = t >= 8 && sc < 5 ? kn * .9 : 0;
-  no.style.transform = `translate(${(1 - eo(seg(t, sa + .1, sa + 1.2))) * 200}px, ${-(t - sa) * 5}px) scale(${1 + pulse * .02})`;
+  // ---- masthead (device scenes only)
+  const mast = (t >= 6.2 && t < 11.9) || (t >= 16.2 && t < 21.9) || (t >= 26.3 && t < 31.9) || (t >= 36.2 && t < 41.9) || (t >= 42.3 && t < 47.9);
+  $('top').style.opacity = mast ? 1 : 0;
 
   // ---- captions
-  caption('cap2', t, 8.15, 18); caption('cap3', t, 18.15, 28); caption('cap4', t, 28.15, 38); caption('cap5', t, 38.15, 46); caption('cap6', t, 46.15, 54);
+  caption('capHome', t, 6.05, 11.95); caption('capPhoto', t, 16.05, 21.95); caption('capReels', t, 26.1, 31.95, true);
+  caption('capFilms', t, 36.05, 41.95); caption('capTheme', t, 42.15, 47.95, true);
 
-  // ---- devices
-  const pp = along(PATH.phone, t), lp = along(PATH.laptop, t), sway = Math.sin(t * .8) * 1.2;
+  // ---- devices with motion blur
+  const pp = along(PATH.phone, t), lp = along(PATH.laptop, t), pp0 = along(PATH.phone, t - dt), lp0 = along(PATH.laptop, t - dt);
+  const sway = Math.sin(t * .8) * 1.2;
   pp[4] += sway; pp[2] += Math.sin(t * 1.1) * 5; lp[5] += sway * .5; lp[2] += Math.cos(t * .9) * 4;
-  for (const [id, p, z] of [['phone', pp, 24], ['laptop', lp, 20]]) {
+  for (const [id, p, p0, f, z] of [['phone', pp, pp0, 'mbP', 24], ['laptop', lp, lp0, 'mbL', 20]]) {
     const el = $(id);
     el.style.opacity = p[7]; el.style.zIndex = z;
     el.style.transform = `translate3d(${p[1]}px, ${p[2]}px, 0) translate(-50%, -50%) rotateZ(${p[6]}deg) rotateY(${p[4]}deg) rotateX(${p[5]}deg) scale(${p[3] * (1 + pulse * .006)})`;
+    el.style.filter = p[7] > 0 ? mblur(f, p[1] - p0[1], (p[2] - p0[2]) + (p[3] - p0[3]) * 900) : 'none';
     el.querySelector('.glare').style.transform = `translateX(${p[4] * 1.7}%)`;
   }
-  const pl = t > 48.55;
+  const pl = t > SWITCH + .5;
   $('pstatus').style.background = pl ? '#f7f7f9' : '#0a0a0c'; $('pstatus').style.color = pl ? '#1d1d1f' : '#f4f1ea';
   const PL = plays(t), jobs = [], shown = { p: pp[7] > 0, l: lp[7] > 0 };
   for (const id in PL) { const [on, time] = PL[id], v = videos[id]; v.style.opacity = on ? 1 : 0; if (on && shown[id[0]]) jobs.push(seekTo(v, time)); }
 
-  // ---- photography: two rows of album covers drifting in opposite directions
-  [['row1', -1, 0], ['row2', 1, .15]].forEach(([id, dir, dl]) => {
-    const el = $(id), k = vis(t, 19.0 + dl, 27.75, .9, .3);
-    el.style.opacity = k;
-    el.style.transform = `translateY(${(1 - eo(seg(t, 19.0 + dl, 19.9 + dl))) * 120}px)`;
-    const x = ((t - 18) * 62) % 1750;
-    el.firstElementChild.style.transform = `translateX(${dir < 0 ? -x : x - 1750}px)`;
+  // ---- props: cover rows (photography), poster columns (reels), collage fan (films), theme switch
+  [['row1', -1, 0], ['row2', 1, .12]].forEach(([id, dir, dl]) => {
+    const el = $(id), k = vis(t, 16.7 + dl, 21.85, .7, .25);
+    el.style.opacity = k; el.style.transform = `translateY(${(1 - eo(seg(t, 16.7 + dl, 17.5 + dl))) * 120}px)`;
+    el.style.filter = 'blur(1px)';
+    const x = ((t - 16) * 80) % 1750; el.firstElementChild.style.transform = `translateX(${dir < 0 ? -x : x - 1750}px)`;
   });
-  // ---- reels: two columns of posters running past the phone
-  [['col1', -1, 0], ['col2', 1, .12]].forEach(([id, dir, dl]) => {
-    const el = $(id), k = vis(t, 28.6 + dl, 37.75, .9, .3);
-    el.style.opacity = k * .8;
-    const y = ((t - 28) * (drop ? 96 : 70)) % 2245;
-    el.firstElementChild.style.transform = `translateY(${dir < 0 ? -y : y - 2245}px)`;
+  [['col1', -1, 0], ['col2', 1, .1]].forEach(([id, dir, dl]) => {
+    const el = $(id), k = vis(t, 26.5 + dl, 31.85, .7, .25);
+    el.style.opacity = k * .85; el.style.filter = 'blur(1.5px)';
+    const y = ((t - 26) * 110) % 2245; el.firstElementChild.style.transform = `translateY(${dir < 0 ? -y : y - 2245}px)`;
   });
-  // ---- films & editing: a fan of collage pages
   fan.forEach((c, i) => {
-    const u = i - 2, a = 39.4 + Math.abs(u) * .12 + (u > 0 ? .06 : 0), k = back(seg(t, a, a + .9)) * (1 - ei(seg(t, 45.35, 45.7)));
-    c.style.opacity = clamp(seg(t, a, a + .3)) * (1 - ei(seg(t, 45.35, 45.7)));
+    const u = i - 2, a = 37.0 + Math.abs(u) * .1 + (u > 0 ? .05 : 0), k = back(seg(t, a, a + .8)) * (1 - ei(seg(t, 41.55, 41.85)));
+    c.style.opacity = clamp(seg(t, a, a + .25)) * (1 - ei(seg(t, 41.55, 41.85)));
     c.style.zIndex = 5 - Math.abs(u);
     c.style.transform = `translate(-50%, -50%) translate(${u * 176 * k}px, ${Math.abs(u) * 34 + (1 - k) * 420 + Math.sin(t * 1.3 + i) * 5}px) rotate(${u * 9 * k + Math.sin(t * .9 + i) * 1.2}deg) scale(${1 - Math.abs(u) * .05})`;
   });
-  // ---- every screen: counters
-  [['st1', COUNT.a, 0], ['st2', COUNT.p, .18], ['st3', COUNT.v, .36]].forEach(([id, n, dl]) => {
-    const el = $(id), a = 46.9 + dl, k = vis(t, a, 53.75, .7, .3);
-    el.parentElement.style.opacity = k;
-    el.parentElement.style.transform = `translateX(${(1 - eo(seg(t, a, a + .8))) * -70}px)`;
-    el.textContent = Math.round(n * eo(seg(t, a + .1, a + 1.5)));
-  });
+  const tg = $('tgl'), tk = vis(t, 42.9, 47.85, .6, .3), sw = eio(seg(t, SWITCH - .1, SWITCH + .25));
+  tg.style.opacity = tk; tg.style.transform = `translateX(${(1 - eo(seg(t, 42.9, 43.5))) * -80}px)`;
+  $('knob').style.left = `${lerp(296, 13, sw)}px`;
+  $('knob').style.transform = `rotate(${sw * 180}deg) scale(${1 + Math.sin(sw * Math.PI) * .12})`;
+  $('kMoon').style.opacity = 1 - sw; $('kSun').style.opacity = sw;
+  tg.querySelector('.sw').style.background = sw > .5 ? 'rgba(15,14,13,.06)' : 'rgba(255,255,255,.1)';
+  tg.querySelector('.sw').style.borderColor = sw > .5 ? 'rgba(15,14,13,.18)' : 'rgba(255,255,255,.25)';
+  $('tglDark').style.color = sw < .5 ? 'rgba(246,241,232,.8)' : 'transparent'; $('tglLight').style.color = sw > .5 ? 'rgba(15,14,13,.75)' : 'transparent';
 
-  // ---- outro (54 .. 60)
-  const outro = $('outro');
-  outro.style.opacity = t >= 54 ? 1 : 0;
-  if (t >= 54) {
-    const ks = back(seg(t, 54.2, 55.1)); $('oSeal').style.transform = `scale(${ks})`; $('oSeal').style.opacity = seg(t, 54.2, 54.5);
-    $('oRing').style.opacity = eo(seg(t, 54.4, 55.2)); $('oRing').style.transform = `rotate(${t * 26}deg)`;
-    $('oN1').style.transform = `translateY(${(1 - eo(seg(t, 54.45, 55.3))) * 115}%)`;
-    $('oN2').style.transform = `translateY(${(1 - eo(seg(t, 54.62, 55.47))) * 115}%)`;
-    const k2 = eo(seg(t, 55.05, 55.85)); $('oSub').style.opacity = k2; $('oSub').style.letterSpacing = `${lerp(1.4, .62, k2)}em`;
-    $('oRule').style.transform = `scaleX(${eo(seg(t, 55.2, 56.0))})`;
-    reveal($('oTag'), eo(seg(t, 55.35, 56.15)));
-    const ku = eo(seg(t, 55.8, 56.6)), u = $('oUrl');
-    u.style.opacity = ku; u.style.transform = `translateX(-50%) translateY(${(1 - ku) * 36}px) scale(${.92 + back(seg(t, 55.8, 56.7)) * .08})`;
-    u.style.backgroundPosition = `${((t * 34) % 200) - 30}% 0`;
-    reveal($('oAreas'), eo(seg(t, 56.2, 57.0)), 20); reveal($('oBook'), eo(seg(t, 56.4, 57.2)), 20);
+  // ---- album: 66th Batch Inauguration (12..16), cinema frame, cut every beat-pair
+  const A = $('alb66'), aIn = 1 - eio(seg(t, 11.8, 12.1)), aOut = ei(seg(t, 15.78, 16.0));
+  A.style.opacity = t >= 11.8 && t < 16.02 ? 1 : 0;
+  if (t >= 11.8 && t < 16.02) {
+    const x = aIn * 1080, x0 = (1 - eio(seg(t - dt, 11.8, 12.1))) * 1080;
+    A.style.transform = `translateX(${x}px) scale(${1 + aOut * .3})`;
+    A.style.filter = aOut > .01 ? `blur(${aOut * 16}px)` : mblur('mbA', x - x0, 0);
+    const idx = clamp(Math.floor(t - 12), 0, 3), loc = t - 12 - idx;
+    a66.forEach((p, i) => {
+      p.style.opacity = i === idx || (t < 12 && i === 0) ? 1 : 0;
+      if (i === idx) p.querySelector('img').style.transform = `scale(${1.16 - eo(seg(loc, 0, 1)) * .1}) translateX(${(i % 2 ? -1 : 1) * eo(seg(loc, 0, 1)) * 1.6}%)`;
+    });
+    if (t >= 13 && loc < .1) flash = Math.max(flash, (1 - loc / .1) * .32);
+    A.querySelectorAll('.lbar').forEach((b, i) => { b.style.height = `${eo(seg(t, 12.0, 12.4)) * 150}px`; });
+    title(A, t, 12.1, 15.95);
   }
 
-  // ---- scene changes: horizontal slats close in the next scene's colour
+  // ---- album: Blooming Beauty (22..26), diptych that merges into one frame
+  const B = $('albBB');
+  B.style.opacity = t >= 21.82 && t < 26.02 ? 1 : 0;
+  if (t >= 21.82 && t < 26.02) {
+    const kin = eio(seg(t, 21.82, 22.15)), kin0 = eio(seg(t - dt, 21.82, 22.15)), zt = ei(seg(t, 25.72, 26.0));
+    const L = $('bbL'), R = $('bbR');
+    L.style.transform = `translateY(${(1 - kin) * 1920}px)`; R.style.transform = `translateY(${(kin - 1) * 1920}px)`;
+    L.style.filter = R.style.filter = mblur('mbA', 0, (kin - kin0) * 1920);
+    const push = eio(seg(t, 23.9, 24.25));                // second pair pushes in
+    L.querySelectorAll('img').forEach((im, i) => { im.style.transform = `translateY(${-push * 1920}px) scale(${1.08 - seg(t, 22, 25) * .06})`; });
+    R.querySelectorAll('img').forEach((im, i) => { im.style.transform = `translateY(${push * 1920}px) scale(${1.08 - seg(t, 22, 25) * .06})`; });
+    const m = eio(seg(t, 24.95, 25.3));                   // merge into one full frame
+    $('bbM').style.clipPath = `inset(${(1 - m) * 46}% ${(1 - m) * 49.6}% ${(1 - m) * 46}% ${(1 - m) * 49.6}% round ${(1 - m) * 40}px)`;
+    $('bbM').style.opacity = t >= 24.95 ? 1 : 0;
+    $('bbM').querySelector('img').style.transform = `scale(${1.2 - eo(seg(t, 24.95, 26)) * .12})`;
+    if (t >= 24 && t < 24.08) flash = Math.max(flash, (1 - (t - 24) / .08) * .3);
+    B.style.transform = `scale(${1 + zt * 1.4})`; B.style.filter = zt > .01 ? `blur(${zt * 22}px)` : B.style.filter;
+    title(B, t, 22.15, 25.95);
+  }
+
+  // ---- album: Portrait Session (32..36), a cut on every beat
+  const C = $('albPS');
+  C.style.opacity = t >= 32 && t < 36.02 ? 1 : 0;
+  if (t >= 32 && t < 36.02) {
+    const idx = clamp(Math.floor((t - 32) / .5), 0, 7), loc = t - 32 - idx * .5;
+    ps.forEach((p, i) => {
+      p.style.opacity = i === idx ? 1 : 0;
+      if (i !== idx) return;
+      const k = eo(seg(loc, 0, .5)), w = 1 - eo(seg(loc, 0, .1));
+      p.querySelector('img').style.transform = `translateX(${(i % 2 ? 1 : -1) * w * 90}px) scale(${1.24 - k * .14}) rotate(${(i % 2 ? 1 : -1) * (1 - k) * 2}deg)`;
+      p.querySelector('img').style.filter = w > .05 ? `blur(${w * 10}px)` : 'none';
+    });
+    C.querySelectorAll('.prog i b').forEach((b, i) => { b.style.width = `${i < idx ? 100 : i === idx ? seg(loc, 0, .5) * 100 : 0}%`; });
+    flash = Math.max(flash, Math.max(0, 1 - loc / .07) * .28);
+    title(C, t, 32.05, 35.95);
+    C.querySelectorAll('.ttl .ln > b').forEach(n => { n.style.textShadow = rgbSplit(Math.max(0, 1 - loc / .18) * .6); });
+  }
+
+  // ---- finale: 3D photo wall (48..54)
+  const Wl = $('wall');
+  Wl.style.opacity = t >= 47.9 && t < 54.02 ? clamp(seg(t, 47.9, 48.05)) : 0;
+  if (t >= 47.9 && t < 54.02) {
+    const fly = eio(seg(t, 48, 53.2)), fin = eio(seg(t, 53.15, 54.0));
+    const rx = lerp(lerp(56, 40, fly), 0, fin), rz = lerp(lerp(-22, -12, fly), 0, fin), ty = lerp(lerp(620, -560, fly), 0, fin), sc = lerp(lerp(1.05, .92, fly), 2.6, fin);
+    $('plane').style.transform = `translate(-50%, -50%) translateY(${ty}px) scale(${sc}) rotateX(${rx}deg) rotateZ(${rz}deg)`;
+    $('plane').style.filter = fin > .05 ? `blur(${fin * 14}px)` : 'none';
+    tiles.forEach((im, i) => {
+      const cx = i % 6 - 2.5, cy = Math.floor(i / 6) - 3, d = Math.hypot(cx, cy), a = 48.0 + d * .09;
+      const k = eo(seg(t, a, a + .55));
+      im.style.opacity = k; im.style.transform = `rotateY(${(1 - k) * 90}deg) translateZ(${(1 - k) * -200 + Math.sin(t * 2 + i) * 6}px)`;
+    });
+    const cf = $('capFin'), kc = eo(seg(t, 48.4, 49.0)) * (1 - ei(seg(t, 53.1, 53.5)));
+    cf.style.opacity = kc;
+    cf.querySelectorAll('.ln > b').forEach((n, i) => { n.style.transform = `translateY(${(1 - eo(seg(t, 48.5 + i * .12, 49.2 + i * .12))) * 112}%)`; n.style.textShadow = rgbSplit(Math.max(0, 1 - (t - 48.5 - i * .12) / .4) * .8); });
+    cf.querySelector('small').style.letterSpacing = `${lerp(.7, .34, eo(seg(t, 48.4, 49.0)))}em`;
+  }
+
+  // ---- outro (54..60)
+  const O = $('outro');
+  O.style.opacity = t >= 54 ? 1 : 0;
+  if (t >= 54) {
+    const ks = back(seg(t, 54.15, 55.0)); $('oSeal').style.transform = `scale(${ks})`; $('oSeal').style.opacity = seg(t, 54.15, 54.4);
+    $('oRing').style.opacity = eo(seg(t, 54.3, 55.1)); $('oRing').style.transform = `rotate(${t * 26}deg)`;
+    $('oN1').style.transform = `translateY(${(1 - eo(seg(t, 54.3, 55.1))) * 115}%)`; $('oN1').style.textShadow = rgbSplit(Math.max(0, 1 - (t - 54.3) / .5) * .7);
+    $('oN2').style.transform = `translateY(${(1 - eo(seg(t, 54.45, 55.25))) * 115}%)`;
+    const k2 = eo(seg(t, 54.9, 55.7)); $('oSub').style.opacity = k2; $('oSub').style.letterSpacing = `${lerp(1.4, .62, k2)}em`;
+    $('oRule').style.transform = `scaleX(${eo(seg(t, 55.05, 55.85))})`;
+    const kt = eo(seg(t, 55.2, 56.0)); $('oTag').style.opacity = kt; $('oTag').style.transform = `translateY(${(1 - kt) * 30}px)`;
+    const ku = eo(seg(t, 55.6, 56.4)), u = $('oUrl');
+    u.style.opacity = ku; u.style.transform = `translateX(-50%) translateY(${(1 - ku) * 36}px) scale(${.92 + back(seg(t, 55.6, 56.5)) * .08})`;
+    u.style.backgroundPosition = `${((t * 34) % 200) - 30}% 0`;
+    [['oAreas', 56.0], ['oBook', 56.2]].forEach(([id, a]) => { const k = eo(seg(t, a, a + .8)); $(id).style.opacity = k; $(id).style.transform = `translateY(${(1 - k) * 20}px)`; });
+  }
+
+  // ---- cinematic layers: light leaks, anamorphic flare, slat wipes, flashes, fades
+  let leak = 0, lx = 50;
+  for (const [c, a] of LEAKS) { const k = Math.max(0, 1 - Math.abs(t - c) / .7); if (k > 0) { leak = Math.max(leak, k * k * a); lx = 50 + (t - c) * 70; } }
+  $('leak').style.opacity = leak;
+  $('leak').style.background = `radial-gradient(45% 30% at ${lx}% 30%, rgba(255,150,60,.75), transparent 70%), radial-gradient(40% 26% at ${100 - lx}% 78%, rgba(255,90,120,.45), transparent 70%), radial-gradient(60% 40% at ${lx * .6 + 20}% 55%, rgba(255,214,150,.4), transparent 70%)`;
+  let fl = 0, fx = 0;
+  for (const c of IMPACTS) { const k = seg(t, c - .05, c + .55); if (k > 0 && k < 1) { fl = Math.sin(k * Math.PI); fx = lerp(-420, 420, k); } }
+  const F = $('flare'); F.style.opacity = fl;
+  F.querySelector('.bar').style.transform = `translateX(${fx * .3}px) scaleX(${.6 + fl * .6})`;
+  F.querySelector('.core').style.transform = `translate(${fx}px, ${t < 2 ? 140 : 0}px) scale(${.5 + fl * .6})`;
+  F.querySelectorAll('.ghost').forEach((g, i) => { g.style.left = `${540 - fx * (1.2 + i * .7) - 45}px`; g.style.top = `${960 - (t < 2 ? -140 : 0) + (i - 1) * 120 - 45}px`; });
+  F.style.top = t < 2 ? '0px' : '0px';
   let wk = 0, wc = PAPER;
-  for (const [c, col] of CUTS) if (t >= c - .38 && t < c) { wk = seg(t, c - .38, c - .03); wc = col; }
+  for (const [c, col] of [[6, PAPER], [16, SAND], [36, PAPER], [42, INK]]) if (t >= c - .36 && t < c) { wk = seg(t, c - .36, c - .03); wc = col; }
   slats.forEach((s, i) => { s.style.background = rgb(wc); s.style.transform = `scaleX(${eio(clamp(wk * 1.5 - i * .1))})`; });
-  for (const [c, a] of [[8, .3], [28, .7], [38, .3], [46, .55], [48, .25], [54, .45]]) if (t >= c && t < c + .22) flash = Math.max(flash, (1 - (t - c) / .22) * a);
-  flash = Math.max(flash, Math.max(0, 1 - Math.abs(t - .5) / .1) * .8, Math.max(0, 1 - Math.abs(t - 58.6) / .09) * .55);
+  for (const [c, a] of [[1.0, .38], [2.0, .8], [6, .3], [12, .35], [16, .25], [22, .35], [26, .85], [32, .5], [36, .3], [42, .7], [SWITCH, .25], [48, .7], [54, .6]])
+    if (t >= c && t < c + .2) flash = Math.max(flash, (1 - (t - c) / .2) * a);
+  flash = Math.max(flash, Math.max(0, 1 - Math.abs(t - 58.6) / .09) * .5);
   $('flash').style.opacity = flash;
-  $('fade').style.opacity = Math.max(1 - seg(t, 0, .4), seg(t, 59.0, 59.85));
+  $('fade').style.opacity = Math.max(1 - seg(t, 0, .06), seg(t, 59.05, 59.9));
 
   await Promise.all(jobs);
   await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));

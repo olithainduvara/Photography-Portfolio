@@ -5,6 +5,7 @@
     python promo/render.py --from 20 --to 30     # a section only (silent) -> promo/section.mp4
     python promo/render.py --portrait            # the 60 s vertical film -> promo/olitha-portfolio-portrait.mp4
                                                  # (combine with --stills / --from / --to)
+    python promo/render.py --cinema              # the 60 s cinematic trailer -> promo/olitha-portfolio-cinematic.mp4
 
 Needs the site served at http://localhost:8080 (python -m http.server 8080 in the project folder)
 and promo/music.wav for the soundtrack (python promo/music.py).
@@ -14,14 +15,20 @@ import asyncio, os, subprocess, sys, time
 from playwright.async_api import async_playwright
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PORTRAIT = '--portrait' in sys.argv
-if PORTRAIT:
-    sys.argv.remove('--portrait')
-URL = 'http://localhost:8080/promo/' + ('compose_portrait.html' if PORTRAIT else 'compose.html')
-OUT = os.path.join(HERE, 'olitha-portfolio-portrait.mp4' if PORTRAIT else 'olitha-portfolio-reveal.mp4')
-VIEW = {'width': 1080, 'height': 1920} if PORTRAIT else {'width': 1920, 'height': 1080}
-MUSIC = os.path.join(HERE, 'music_portrait.wav' if PORTRAIT else 'music.wav')
-STILLS = os.path.join(HERE, 'stills_portrait' if PORTRAIT else 'stills')
+FILMS = {  # flag: (composition, output, viewport, soundtrack, stills folder)
+    None: ('compose.html', 'olitha-portfolio-reveal.mp4', (1920, 1080), 'music.wav', 'stills'),
+    '--portrait': ('compose_portrait.html', 'olitha-portfolio-portrait.mp4', (1080, 1920), 'music_portrait.wav', 'stills_portrait'),
+    '--cinema': ('compose_cinema.html', 'olitha-portfolio-cinematic.mp4', (1080, 1920), 'music_cinema.wav', 'stills_cinema'),
+}
+FLAG = next((f for f in FILMS if f and f in sys.argv), None)
+if FLAG:
+    sys.argv.remove(FLAG)
+_page, _out, _view, _music, _stills = FILMS[FLAG]
+URL = 'http://localhost:8080/promo/' + _page
+OUT = os.path.join(HERE, _out)
+VIEW = {'width': _view[0], 'height': _view[1]}
+MUSIC = os.path.join(HERE, _music)
+STILLS = os.path.join(HERE, _stills)
 
 
 def ffmpeg_exe():
@@ -45,8 +52,8 @@ async def main():
         page = await browser.new_page(viewport=VIEW)
         page.on('console', lambda m: print('[page]', m.text) if m.type == 'error' else None)
         page.on('pageerror', lambda e: print('[page error]', e))
-        await page.goto(URL, wait_until='networkidle')
-        await page.wait_for_function('window.ready === true', timeout=120000)
+        await page.goto(URL, wait_until='load', timeout=180000)
+        await page.wait_for_function('window.ready === true', timeout=300000)
         dur, fps = await page.evaluate('[DUR, FPS]')
 
         if stills is not None:
