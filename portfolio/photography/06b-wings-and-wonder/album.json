@@ -1,0 +1,28 @@
+{
+  "title": "Wings & Wonder",
+  "location": "Sri Lanka",
+  "description": "A playful portrait session with blue-and-gold macaws: laughter, bright feathers and dappled aviary light, plus the album pages designed from it.",
+  "captions": {
+    "layout-wings-and-smiles.jpg": "Album layout: wings and smiles",
+    "layout-the-aviary.jpg": "Album layout: the aviary",
+    "layout-three-frames.jpg": "Album layout: three frames",
+    "layout-gallery-wall.jpg": "Album layout: gallery wall"
+  },
+  "order": [
+    "eye-to-eye-with-a-macaw.jpg",
+    "a-moment-of-laughter.jpg",
+    "wings-wide-open.jpg",
+    "a-macaw-on-each-arm.jpg",
+    "giggles.jpg",
+    "two-little-parrots.jpg",
+    "a-crown-of-feathers.jpg",
+    "a-parrot-on-her-head.jpg",
+    "a-perch-on-her-arm.jpg",
+    "macaws-all-round.jpg",
+    "layout-wings-and-smiles.jpg",
+    "layout-the-aviary.jpg",
+    "layout-three-frames.jpg",
+    "layout-gallery-wall.jpg"
+  ],
+  "cover": "eye-to-eye-with-a-macaw.jpg"
+}

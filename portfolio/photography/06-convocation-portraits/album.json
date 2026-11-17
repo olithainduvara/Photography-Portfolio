@@ -1,13 +1,22 @@
 {
   "title": "Convocation Portraits",
   "location": "University of Peradeniya",
-  "description": "A proud moment captured. Hard work, dreams and a brand-new beginning, framed by the palm avenue.",
+  "description": "A proud moment captured: a silver saree, the gown and the scroll, framed by the palm avenue on convocation day.",
   "link": "https://www.facebook.com/profile.php?id=100091314396526",
-  "more": 3,
   "order": [
+    "scroll-and-a-smile.jpg",
+    "a-look-back.jpg",
+    "scroll-to-the-sky.jpg",
+    "into-the-air.jpg",
+    "the-scroll-up-close.jpg",
     "avenue-of-palms.jpg",
     "saree-and-scroll.jpg",
-    "the-scroll.jpg",
-    "proud-moment.jpg"
-  ]
+    "golden-light-on-the-avenue.jpg",
+    "standing-tall.jpg",
+    "layout-convocation-story.jpg"
+  ],
+  "captions": {
+    "layout-convocation-story.jpg": "Album layout: a convocation story"
+  },
+  "cover": "scroll-and-a-smile.jpg"
 }

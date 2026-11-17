@@ -1,0 +1,19 @@
+{
+  "title": "Pera in Bloom",
+  "location": "University of Peradeniya",
+  "description": "Peradeniya's blooming season: a sage-green dress beneath trees heavy with purple blossom, in soft evening light.",
+  "captions": {
+    "a-crown-of-blossoms.jpg": "A crown of blossoms",
+    "golden-light-through-the-blooms.jpg": "Golden light through the blooms"
+  },
+  "order": [
+    "a-crown-of-blossoms.jpg",
+    "golden-light-through-the-blooms.jpg",
+    "looking-up-at-the-blossoms.jpg",
+    "a-quiet-smile.jpg",
+    "a-shy-glance.jpg",
+    "a-yellow-flower-in-her-hair.jpg",
+    "in-the-woodland.jpg"
+  ],
+  "cover": "a-crown-of-blossoms.jpg"
+}

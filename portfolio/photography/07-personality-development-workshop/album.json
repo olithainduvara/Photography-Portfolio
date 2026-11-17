@@ -1,13 +1,32 @@
 {
   "title": "Personality Development Workshop",
   "location": "University of Peradeniya",
-  "description": "Full event coverage: speakers, group activities and the candid in-between moments.",
+  "description": "Event coverage for a Personality Development Workshop: talks from the stage, team challenges under neon light, smart-board sessions and quiet moments of reflection.",
   "link": "https://www.facebook.com/profile.php?id=100091314396526",
-  "more": 130,
   "order": [
-    "the-speaker.jpg",
-    "group-activity.jpg",
-    "conversations.jpg",
-    "hands-on.jpg"
-  ]
+    "the-speaker-takes-the-stage.jpg",
+    "a-moment-of-reflection.jpg",
+    "speaking-to-the-room.jpg",
+    "hands-up.jpg",
+    "under-the-neon.jpg",
+    "a-selfie-with-the-team.jpg",
+    "at-the-smart-board.jpg",
+    "making-a-point.jpg",
+    "opening-the-session.jpg",
+    "an-attentive-audience.jpg",
+    "the-group-challenge.jpg",
+    "one-to-one.jpg",
+    "cheering-the-answer.jpg",
+    "teamwork.jpg",
+    "working-it-out.jpg",
+    "team-leader.jpg",
+    "heads-together.jpg",
+    "table-discussions.jpg",
+    "walking-the-room.jpg",
+    "smiles-in-the-crowd.jpg",
+    "the-panel.jpg",
+    "eyes-closed.jpg",
+    "quiet-focus.jpg"
+  ],
+  "cover": "the-speaker-takes-the-stage.jpg"
 }

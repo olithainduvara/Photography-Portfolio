@@ -1,0 +1,23 @@
+{
+  "title": "Petals & Grace",
+  "location": "University of Peradeniya",
+  "description": "A purple dress, an armful of roses and the old banyan and frangipani trees of Peradeniya, in soft afternoon light.",
+  "captions": {
+    "layout-in-full-bloom.jpg": "Album layout: in full bloom"
+  },
+  "order": [
+    "a-bouquet-and-a-smile.jpg",
+    "close-to-the-roses.jpg",
+    "hand-in-her-hair.jpg",
+    "reaching-for-the-branches.jpg",
+    "resting-on-the-old-stone.jpg",
+    "a-shy-smile.jpg",
+    "roses-in-hand.jpg",
+    "walking-the-lawn.jpg",
+    "by-the-hedge.jpg",
+    "beneath-the-banyan.jpg",
+    "among-the-roots.jpg",
+    "layout-in-full-bloom.jpg"
+  ],
+  "cover": "a-bouquet-and-a-smile.jpg"
+}

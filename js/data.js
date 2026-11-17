@@ -26,8 +26,8 @@ window.PORTFOLIO = {
      "link": "",
      "more": 0,
      "cover": "thumbs/photography/00-ieee-iceeet-2026/on-the-mic.jpg",
-     "coverW": 1322,
-     "coverH": 2000,
+     "coverW": 1692,
+     "coverH": 2560,
      "coverFocus": "50% 30%",
      "featured": true,
      "spotlight": false,
@@ -41,8 +41,8 @@ window.PORTFOLIO = {
        "file": "on-the-mic.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/on-the-mic.jpg",
        "title": "On the mic",
-       "w": 1322,
-       "h": 2000
+       "w": 1692,
+       "h": 2560
       },
       {
        "type": "image",
@@ -50,8 +50,8 @@ window.PORTFOLIO = {
        "file": "the-whole-conference.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/the-whole-conference.jpg",
        "title": "The whole conference",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -59,8 +59,8 @@ window.PORTFOLIO = {
        "file": "keynote-address.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/keynote-address.jpg",
        "title": "Keynote address",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -68,8 +68,8 @@ window.PORTFOLIO = {
        "file": "in-front-of-the-banner.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/in-front-of-the-banner.jpg",
        "title": "In front of the banner",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -77,8 +77,8 @@ window.PORTFOLIO = {
        "file": "at-the-lectern.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/at-the-lectern.jpg",
        "title": "At the lectern",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -86,8 +86,8 @@ window.PORTFOLIO = {
        "file": "paper-presentation.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/paper-presentation.jpg",
        "title": "Paper presentation",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -95,8 +95,8 @@ window.PORTFOLIO = {
        "file": "presenting-research.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/presenting-research.jpg",
        "title": "Presenting research",
-       "w": 1333,
-       "h": 2000
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
@@ -104,8 +104,8 @@ window.PORTFOLIO = {
        "file": "presenting-with-the-mic.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/presenting-with-the-mic.jpg",
        "title": "Presenting with the mic",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -113,8 +113,8 @@ window.PORTFOLIO = {
        "file": "portrait-of-a-presenter.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/portrait-of-a-presenter.jpg",
        "title": "Portrait of a presenter",
-       "w": 1295,
-       "h": 2000
+       "w": 1658,
+       "h": 2560
       },
       {
        "type": "image",
@@ -122,8 +122,8 @@ window.PORTFOLIO = {
        "file": "explaining-the-results.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/explaining-the-results.jpg",
        "title": "Explaining the results",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -131,8 +131,8 @@ window.PORTFOLIO = {
        "file": "a-final-word.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/a-final-word.jpg",
        "title": "A final word",
-       "w": 1333,
-       "h": 2000
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
@@ -140,8 +140,8 @@ window.PORTFOLIO = {
        "file": "conversations-between-sessions.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/conversations-between-sessions.jpg",
        "title": "Conversations between sessions",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -149,8 +149,8 @@ window.PORTFOLIO = {
        "file": "addressing-the-hall.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/addressing-the-hall.jpg",
        "title": "Addressing the hall",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -158,8 +158,8 @@ window.PORTFOLIO = {
        "file": "at-the-podium.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/at-the-podium.jpg",
        "title": "At the podium",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -167,8 +167,8 @@ window.PORTFOLIO = {
        "file": "making-a-point.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/making-a-point.jpg",
        "title": "Making a point",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -176,8 +176,8 @@ window.PORTFOLIO = {
        "file": "in-the-audience.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/in-the-audience.jpg",
        "title": "In the audience",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -185,8 +185,8 @@ window.PORTFOLIO = {
        "file": "listening-in.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/listening-in.jpg",
        "title": "Listening in",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -194,8 +194,8 @@ window.PORTFOLIO = {
        "file": "taking-the-floor.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/taking-the-floor.jpg",
        "title": "Taking the floor",
-       "w": 1333,
-       "h": 2000
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
@@ -203,8 +203,8 @@ window.PORTFOLIO = {
        "file": "a-question-from-the-floor.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/a-question-from-the-floor.jpg",
        "title": "A question from the floor",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -212,8 +212,8 @@ window.PORTFOLIO = {
        "file": "presenter-by-the-screen.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/presenter-by-the-screen.jpg",
        "title": "Presenter by the screen",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -221,8 +221,8 @@ window.PORTFOLIO = {
        "file": "the-ieee-podium.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/the-ieee-podium.jpg",
        "title": "The ieee podium",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -230,8 +230,8 @@ window.PORTFOLIO = {
        "file": "the-audience.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/the-audience.jpg",
        "title": "The audience",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -239,8 +239,8 @@ window.PORTFOLIO = {
        "file": "the-hall.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/the-hall.jpg",
        "title": "The hall",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -248,8 +248,8 @@ window.PORTFOLIO = {
        "file": "keynote-wide.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/keynote-wide.jpg",
        "title": "Keynote wide",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -257,8 +257,8 @@ window.PORTFOLIO = {
        "file": "ready-to-present.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/ready-to-present.jpg",
        "title": "Ready to present",
-       "w": 1320,
-       "h": 2000
+       "w": 1690,
+       "h": 2560
       },
       {
        "type": "image",
@@ -266,8 +266,8 @@ window.PORTFOLIO = {
        "file": "lunch-break.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/lunch-break.jpg",
        "title": "Lunch break",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -275,8 +275,8 @@ window.PORTFOLIO = {
        "file": "networking.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/networking.jpg",
        "title": "Networking",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -284,8 +284,8 @@ window.PORTFOLIO = {
        "file": "hands-in-motion.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/hands-in-motion.jpg",
        "title": "Hands in motion",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -293,8 +293,8 @@ window.PORTFOLIO = {
        "file": "beside-the-ieee-banner.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/beside-the-ieee-banner.jpg",
        "title": "Beside the ieee banner",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -302,8 +302,8 @@ window.PORTFOLIO = {
        "file": "walking-through-the-slides.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/walking-through-the-slides.jpg",
        "title": "Walking through the slides",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -311,8 +311,8 @@ window.PORTFOLIO = {
        "file": "question-time.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/question-time.jpg",
        "title": "Question time",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -320,8 +320,8 @@ window.PORTFOLIO = {
        "file": "a-moment-of-thought.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/a-moment-of-thought.jpg",
        "title": "A moment of thought",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -329,8 +329,8 @@ window.PORTFOLIO = {
        "file": "table-discussion.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/table-discussion.jpg",
        "title": "Table discussion",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -338,8 +338,8 @@ window.PORTFOLIO = {
        "file": "engaging-the-audience.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/engaging-the-audience.jpg",
        "title": "Engaging the audience",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -347,8 +347,8 @@ window.PORTFOLIO = {
        "file": "at-the-podium-portrait.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/at-the-podium-portrait.jpg",
        "title": "At the podium portrait",
-       "w": 1333,
-       "h": 2000
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
@@ -356,8 +356,8 @@ window.PORTFOLIO = {
        "file": "guest-speaker.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/guest-speaker.jpg",
        "title": "Guest speaker",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -365,8 +365,8 @@ window.PORTFOLIO = {
        "file": "the-speakers-view.jpg",
        "thumb": "thumbs/photography/00-ieee-iceeet-2026/the-speakers-view.jpg",
        "title": "The speakers view",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       }
      ]
     },
@@ -380,8 +380,8 @@ window.PORTFOLIO = {
      "link": "",
      "more": 0,
      "cover": "thumbs/photography/00b-science-66th-batch-inauguration/_cover.jpg",
-     "coverW": 1600,
-     "coverH": 2000,
+     "coverW": 2048,
+     "coverH": 2560,
      "coverFocus": "50% 30%",
      "featured": true,
      "spotlight": false,
@@ -395,8 +395,8 @@ window.PORTFOLIO = {
        "file": "the-smile-of-a-dancer.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/the-smile-of-a-dancer.jpg",
        "title": "The smile of a dancer",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -404,8 +404,8 @@ window.PORTFOLIO = {
        "file": "a-graceful-reach.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/a-graceful-reach.jpg",
        "title": "A graceful reach",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -413,8 +413,8 @@ window.PORTFOLIO = {
        "file": "ves-dancer-in-full-costume.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/ves-dancer-in-full-costume.jpg",
        "title": "Ves dancer in full costume",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -422,8 +422,8 @@ window.PORTFOLIO = {
        "file": "the-opening-dance.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/the-opening-dance.jpg",
        "title": "The opening dance",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -431,8 +431,8 @@ window.PORTFOLIO = {
        "file": "dancers-in-motion.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/dancers-in-motion.jpg",
        "title": "Dancers in motion",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -440,8 +440,8 @@ window.PORTFOLIO = {
        "file": "in-formation.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/in-formation.jpg",
        "title": "In formation",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -449,8 +449,8 @@ window.PORTFOLIO = {
        "file": "across-the-stage.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/across-the-stage.jpg",
        "title": "Across the stage",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -458,8 +458,8 @@ window.PORTFOLIO = {
        "file": "the-ves-dancers.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/the-ves-dancers.jpg",
        "title": "The ves dancers",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -467,8 +467,8 @@ window.PORTFOLIO = {
        "file": "the-ves-headdress.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/the-ves-headdress.jpg",
        "title": "The ves headdress",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -476,8 +476,8 @@ window.PORTFOLIO = {
        "file": "moving-as-one.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/moving-as-one.jpg",
        "title": "Moving as one",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -485,8 +485,8 @@ window.PORTFOLIO = {
        "file": "lined-up.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/lined-up.jpg",
        "title": "Lined up",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -494,8 +494,8 @@ window.PORTFOLIO = {
        "file": "the-finale.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/the-finale.jpg",
        "title": "The finale",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -503,8 +503,8 @@ window.PORTFOLIO = {
        "file": "through-the-dance.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/through-the-dance.jpg",
        "title": "Through the dance",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -512,8 +512,8 @@ window.PORTFOLIO = {
        "file": "lighting-the-oil-lamp.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/lighting-the-oil-lamp.jpg",
        "title": "Lighting the oil lamp",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -521,8 +521,8 @@ window.PORTFOLIO = {
        "file": "the-comperes.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/the-comperes.jpg",
        "title": "The comperes",
-       "w": 1333,
-       "h": 2000
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
@@ -530,8 +530,8 @@ window.PORTFOLIO = {
        "file": "the-lead-singer.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/the-lead-singer.jpg",
        "title": "The lead singer",
-       "w": 1333,
-       "h": 2000
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
@@ -539,8 +539,8 @@ window.PORTFOLIO = {
        "file": "the-band.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/the-band.jpg",
        "title": "The band",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -548,8 +548,8 @@ window.PORTFOLIO = {
        "file": "voices-together.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/voices-together.jpg",
        "title": "Voices together",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -557,8 +557,8 @@ window.PORTFOLIO = {
        "file": "singing-in-red-and-black.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/singing-in-red-and-black.jpg",
        "title": "Singing in red and black",
-       "w": 1333,
-       "h": 2000
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
@@ -566,8 +566,8 @@ window.PORTFOLIO = {
        "file": "a-duet.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/a-duet.jpg",
        "title": "A duet",
-       "w": 1333,
-       "h": 2000
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
@@ -575,8 +575,8 @@ window.PORTFOLIO = {
        "file": "harmony.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/harmony.jpg",
        "title": "Harmony",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -584,8 +584,8 @@ window.PORTFOLIO = {
        "file": "centre-stage.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/centre-stage.jpg",
        "title": "Centre stage",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -593,8 +593,8 @@ window.PORTFOLIO = {
        "file": "the-whole-band.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/the-whole-band.jpg",
        "title": "The whole band",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -602,8 +602,8 @@ window.PORTFOLIO = {
        "file": "receiving-a-certificate.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/receiving-a-certificate.jpg",
        "title": "Receiving a certificate",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -611,8 +611,8 @@ window.PORTFOLIO = {
        "file": "a-proud-moment.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/a-proud-moment.jpg",
        "title": "A proud moment",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -620,8 +620,8 @@ window.PORTFOLIO = {
        "file": "handing-over.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/handing-over.jpg",
        "title": "Handing over",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -629,8 +629,8 @@ window.PORTFOLIO = {
        "file": "the-announcers.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/the-announcers.jpg",
        "title": "The announcers",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -638,8 +638,8 @@ window.PORTFOLIO = {
        "file": "addressing-the-batch.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/addressing-the-batch.jpg",
        "title": "Addressing the batch",
-       "w": 2000,
-       "h": 1334
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -647,8 +647,8 @@ window.PORTFOLIO = {
        "file": "a-word-of-welcome.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/a-word-of-welcome.jpg",
        "title": "A word of welcome",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -656,8 +656,8 @@ window.PORTFOLIO = {
        "file": "from-the-podium.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/from-the-podium.jpg",
        "title": "From the podium",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -665,8 +665,8 @@ window.PORTFOLIO = {
        "file": "a-speech-among-flowers.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/a-speech-among-flowers.jpg",
        "title": "A speech among flowers",
-       "w": 1333,
-       "h": 2000
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
@@ -674,8 +674,8 @@ window.PORTFOLIO = {
        "file": "closing-remarks.jpg",
        "thumb": "thumbs/photography/00b-science-66th-batch-inauguration/closing-remarks.jpg",
        "title": "Closing remarks",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       }
      ]
     },
@@ -689,8 +689,8 @@ window.PORTFOLIO = {
      "link": "",
      "more": 0,
      "cover": "thumbs/photography/00c-pefaa-annual-general-meeting/_cover.jpg",
-     "coverW": 1600,
-     "coverH": 2000,
+     "coverW": 2048,
+     "coverH": 2560,
      "coverFocus": "50% 30%",
      "featured": true,
      "spotlight": false,
@@ -704,8 +704,8 @@ window.PORTFOLIO = {
        "file": "balance-and-focus.jpg",
        "thumb": "thumbs/photography/00c-pefaa-annual-general-meeting/balance-and-focus.jpg",
        "title": "Balance and focus",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -713,8 +713,8 @@ window.PORTFOLIO = {
        "file": "five-plates-spinning.jpg",
        "thumb": "thumbs/photography/00c-pefaa-annual-general-meeting/five-plates-spinning.jpg",
        "title": "Five plates spinning",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -722,8 +722,8 @@ window.PORTFOLIO = {
        "file": "arms-outstretched.jpg",
        "thumb": "thumbs/photography/00c-pefaa-annual-general-meeting/arms-outstretched.jpg",
        "title": "Arms outstretched",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -731,8 +731,8 @@ window.PORTFOLIO = {
        "file": "the-full-act.jpg",
        "thumb": "thumbs/photography/00c-pefaa-annual-general-meeting/the-full-act.jpg",
        "title": "The full act",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -740,8 +740,8 @@ window.PORTFOLIO = {
        "file": "the-plate-spinner-begins.jpg",
        "thumb": "thumbs/photography/00c-pefaa-annual-general-meeting/the-plate-spinner-begins.jpg",
        "title": "The plate spinner begins",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -749,8 +749,8 @@ window.PORTFOLIO = {
        "file": "eyes-on-the-plates.jpg",
        "thumb": "thumbs/photography/00c-pefaa-annual-general-meeting/eyes-on-the-plates.jpg",
        "title": "Eyes on the plates",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -758,8 +758,8 @@ window.PORTFOLIO = {
        "file": "the-welcome-address.jpg",
        "thumb": "thumbs/photography/00c-pefaa-annual-general-meeting/the-welcome-address.jpg",
        "title": "The welcome address",
-       "w": 1333,
-       "h": 2000
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
@@ -767,8 +767,8 @@ window.PORTFOLIO = {
        "file": "on-stage-by-the-oil-lamp.jpg",
        "thumb": "thumbs/photography/00c-pefaa-annual-general-meeting/on-stage-by-the-oil-lamp.jpg",
        "title": "On stage by the oil lamp",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
@@ -776,8 +776,8 @@ window.PORTFOLIO = {
        "file": "a-question-from-the-floor.jpg",
        "thumb": "thumbs/photography/00c-pefaa-annual-general-meeting/a-question-from-the-floor.jpg",
        "title": "A question from the floor",
-       "w": 2000,
-       "h": 1333
+       "w": 2560,
+       "h": 1707
       }
      ]
     },
@@ -1624,7 +1624,7 @@ window.PORTFOLIO = {
      "cover": "thumbs/photography/05-blooming-beauty/among-the-ruins.jpg",
      "coverW": 2000,
      "coverH": 1333,
-     "coverFocus": "61% 35%",
+     "coverFocus": "48% 35%",
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
@@ -1738,13 +1738,13 @@ window.PORTFOLIO = {
      "title": "Convocation Portraits",
      "location": "University of Peradeniya",
      "date": "",
-     "description": "A proud moment captured. Hard work, dreams and a brand-new beginning, framed by the palm avenue.",
+     "description": "A proud moment captured: a silver saree, the gown and the scroll, framed by the palm avenue on convocation day.",
      "link": "https://www.facebook.com/profile.php?id=100091314396526",
-     "more": 3,
-     "cover": "portfolio/photography/06-convocation-portraits/avenue-of-palms.jpg",
-     "coverW": 318,
-     "coverH": 318,
-     "coverFocus": "38% 35%",
+     "more": 0,
+     "cover": "thumbs/photography/06-convocation-portraits/scroll-and-a-smile.jpg",
+     "coverW": 1707,
+     "coverH": 2560,
+     "coverFocus": "50% 30%",
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
@@ -1753,39 +1753,453 @@ window.PORTFOLIO = {
      "items": [
       {
        "type": "image",
+       "src": "portfolio/photography/06-convocation-portraits/scroll-and-a-smile.jpg",
+       "file": "scroll-and-a-smile.jpg",
+       "thumb": "thumbs/photography/06-convocation-portraits/scroll-and-a-smile.jpg",
+       "title": "Scroll and a smile",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06-convocation-portraits/a-look-back.jpg",
+       "file": "a-look-back.jpg",
+       "thumb": "thumbs/photography/06-convocation-portraits/a-look-back.jpg",
+       "title": "A look back",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06-convocation-portraits/scroll-to-the-sky.jpg",
+       "file": "scroll-to-the-sky.jpg",
+       "thumb": "thumbs/photography/06-convocation-portraits/scroll-to-the-sky.jpg",
+       "title": "Scroll to the sky",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06-convocation-portraits/into-the-air.jpg",
+       "file": "into-the-air.jpg",
+       "thumb": "thumbs/photography/06-convocation-portraits/into-the-air.jpg",
+       "title": "Into the air",
+       "w": 1706,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06-convocation-portraits/the-scroll-up-close.jpg",
+       "file": "the-scroll-up-close.jpg",
+       "thumb": "thumbs/photography/06-convocation-portraits/the-scroll-up-close.jpg",
+       "title": "The scroll up close",
+       "w": 1706,
+       "h": 2560
+      },
+      {
+       "type": "image",
        "src": "portfolio/photography/06-convocation-portraits/avenue-of-palms.jpg",
        "file": "avenue-of-palms.jpg",
-       "thumb": "portfolio/photography/06-convocation-portraits/avenue-of-palms.jpg",
+       "thumb": "thumbs/photography/06-convocation-portraits/avenue-of-palms.jpg",
        "title": "Avenue of palms",
-       "w": 318,
-       "h": 318
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
        "src": "portfolio/photography/06-convocation-portraits/saree-and-scroll.jpg",
        "file": "saree-and-scroll.jpg",
-       "thumb": "portfolio/photography/06-convocation-portraits/saree-and-scroll.jpg",
+       "thumb": "thumbs/photography/06-convocation-portraits/saree-and-scroll.jpg",
        "title": "Saree and scroll",
-       "w": 315,
-       "h": 318
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
-       "src": "portfolio/photography/06-convocation-portraits/the-scroll.jpg",
-       "file": "the-scroll.jpg",
-       "thumb": "portfolio/photography/06-convocation-portraits/the-scroll.jpg",
-       "title": "The scroll",
-       "w": 211,
-       "h": 208
+       "src": "portfolio/photography/06-convocation-portraits/golden-light-on-the-avenue.jpg",
+       "file": "golden-light-on-the-avenue.jpg",
+       "thumb": "thumbs/photography/06-convocation-portraits/golden-light-on-the-avenue.jpg",
+       "title": "Golden light on the avenue",
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
-       "src": "portfolio/photography/06-convocation-portraits/proud-moment.jpg",
-       "file": "proud-moment.jpg",
-       "thumb": "portfolio/photography/06-convocation-portraits/proud-moment.jpg",
-       "title": "Proud moment",
-       "w": 211,
-       "h": 208
+       "src": "portfolio/photography/06-convocation-portraits/standing-tall.jpg",
+       "file": "standing-tall.jpg",
+       "thumb": "thumbs/photography/06-convocation-portraits/standing-tall.jpg",
+       "title": "Standing tall",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06-convocation-portraits/layout-convocation-story.jpg",
+       "file": "layout-convocation-story.jpg",
+       "thumb": "thumbs/photography/06-convocation-portraits/layout-convocation-story.jpg",
+       "title": "Album layout: a convocation story",
+       "w": 2465,
+       "h": 2083
+      }
+     ]
+    },
+    {
+     "id": "06a-pera-in-bloom",
+     "category": "photography",
+     "title": "Pera in Bloom",
+     "location": "University of Peradeniya",
+     "date": "",
+     "description": "Peradeniya's blooming season: a sage-green dress beneath trees heavy with purple blossom, in soft evening light.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/photography/06a-pera-in-bloom/a-crown-of-blossoms.jpg",
+     "coverW": 1805,
+     "coverH": 2560,
+     "coverFocus": "50% 30%",
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "image",
+       "src": "portfolio/photography/06a-pera-in-bloom/a-crown-of-blossoms.jpg",
+       "file": "a-crown-of-blossoms.jpg",
+       "thumb": "thumbs/photography/06a-pera-in-bloom/a-crown-of-blossoms.jpg",
+       "title": "A crown of blossoms",
+       "w": 1805,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06a-pera-in-bloom/golden-light-through-the-blooms.jpg",
+       "file": "golden-light-through-the-blooms.jpg",
+       "thumb": "thumbs/photography/06a-pera-in-bloom/golden-light-through-the-blooms.jpg",
+       "title": "Golden light through the blooms",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06a-pera-in-bloom/looking-up-at-the-blossoms.jpg",
+       "file": "looking-up-at-the-blossoms.jpg",
+       "thumb": "thumbs/photography/06a-pera-in-bloom/looking-up-at-the-blossoms.jpg",
+       "title": "Looking up at the blossoms",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06a-pera-in-bloom/a-quiet-smile.jpg",
+       "file": "a-quiet-smile.jpg",
+       "thumb": "thumbs/photography/06a-pera-in-bloom/a-quiet-smile.jpg",
+       "title": "A quiet smile",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06a-pera-in-bloom/a-shy-glance.jpg",
+       "file": "a-shy-glance.jpg",
+       "thumb": "thumbs/photography/06a-pera-in-bloom/a-shy-glance.jpg",
+       "title": "A shy glance",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06a-pera-in-bloom/a-yellow-flower-in-her-hair.jpg",
+       "file": "a-yellow-flower-in-her-hair.jpg",
+       "thumb": "thumbs/photography/06a-pera-in-bloom/a-yellow-flower-in-her-hair.jpg",
+       "title": "A yellow flower in her hair",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06a-pera-in-bloom/in-the-woodland.jpg",
+       "file": "in-the-woodland.jpg",
+       "thumb": "thumbs/photography/06a-pera-in-bloom/in-the-woodland.jpg",
+       "title": "In the woodland",
+       "w": 1707,
+       "h": 2560
+      }
+     ]
+    },
+    {
+     "id": "06b-wings-and-wonder",
+     "category": "photography",
+     "title": "Wings & Wonder",
+     "location": "Sri Lanka",
+     "date": "",
+     "description": "A playful portrait session with blue-and-gold macaws: laughter, bright feathers and dappled aviary light, plus the album pages designed from it.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/photography/06b-wings-and-wonder/eye-to-eye-with-a-macaw.jpg",
+     "coverW": 1707,
+     "coverH": 2560,
+     "coverFocus": "50% 30%",
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/eye-to-eye-with-a-macaw.jpg",
+       "file": "eye-to-eye-with-a-macaw.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/eye-to-eye-with-a-macaw.jpg",
+       "title": "Eye to eye with a macaw",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/a-moment-of-laughter.jpg",
+       "file": "a-moment-of-laughter.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/a-moment-of-laughter.jpg",
+       "title": "A moment of laughter",
+       "w": 1942,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/wings-wide-open.jpg",
+       "file": "wings-wide-open.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/wings-wide-open.jpg",
+       "title": "Wings wide open",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/a-macaw-on-each-arm.jpg",
+       "file": "a-macaw-on-each-arm.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/a-macaw-on-each-arm.jpg",
+       "title": "A macaw on each arm",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/giggles.jpg",
+       "file": "giggles.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/giggles.jpg",
+       "title": "Giggles",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/two-little-parrots.jpg",
+       "file": "two-little-parrots.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/two-little-parrots.jpg",
+       "title": "Two little parrots",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/a-crown-of-feathers.jpg",
+       "file": "a-crown-of-feathers.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/a-crown-of-feathers.jpg",
+       "title": "A crown of feathers",
+       "w": 1831,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/a-parrot-on-her-head.jpg",
+       "file": "a-parrot-on-her-head.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/a-parrot-on-her-head.jpg",
+       "title": "A parrot on her head",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/a-perch-on-her-arm.jpg",
+       "file": "a-perch-on-her-arm.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/a-perch-on-her-arm.jpg",
+       "title": "A perch on her arm",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/macaws-all-round.jpg",
+       "file": "macaws-all-round.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/macaws-all-round.jpg",
+       "title": "Macaws all round",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/layout-wings-and-smiles.jpg",
+       "file": "layout-wings-and-smiles.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/layout-wings-and-smiles.jpg",
+       "title": "Album layout: wings and smiles",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/layout-the-aviary.jpg",
+       "file": "layout-the-aviary.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/layout-the-aviary.jpg",
+       "title": "Album layout: the aviary",
+       "w": 2560,
+       "h": 1708
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/layout-three-frames.jpg",
+       "file": "layout-three-frames.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/layout-three-frames.jpg",
+       "title": "Album layout: three frames",
+       "w": 2560,
+       "h": 1708
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06b-wings-and-wonder/layout-gallery-wall.jpg",
+       "file": "layout-gallery-wall.jpg",
+       "thumb": "thumbs/photography/06b-wings-and-wonder/layout-gallery-wall.jpg",
+       "title": "Album layout: gallery wall",
+       "w": 2560,
+       "h": 1708
+      }
+     ]
+    },
+    {
+     "id": "06c-petals-and-grace",
+     "category": "photography",
+     "title": "Petals & Grace",
+     "location": "University of Peradeniya",
+     "date": "",
+     "description": "A purple dress, an armful of roses and the old banyan and frangipani trees of Peradeniya, in soft afternoon light.",
+     "link": "",
+     "more": 0,
+     "cover": "thumbs/photography/06c-petals-and-grace/a-bouquet-and-a-smile.jpg",
+     "coverW": 1707,
+     "coverH": 2560,
+     "coverFocus": "50% 30%",
+     "featured": true,
+     "spotlight": false,
+     "reelsOrder": 0,
+     "pin": 0,
+     "inFeed": true,
+     "items": [
+      {
+       "type": "image",
+       "src": "portfolio/photography/06c-petals-and-grace/a-bouquet-and-a-smile.jpg",
+       "file": "a-bouquet-and-a-smile.jpg",
+       "thumb": "thumbs/photography/06c-petals-and-grace/a-bouquet-and-a-smile.jpg",
+       "title": "A bouquet and a smile",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06c-petals-and-grace/close-to-the-roses.jpg",
+       "file": "close-to-the-roses.jpg",
+       "thumb": "thumbs/photography/06c-petals-and-grace/close-to-the-roses.jpg",
+       "title": "Close to the roses",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06c-petals-and-grace/hand-in-her-hair.jpg",
+       "file": "hand-in-her-hair.jpg",
+       "thumb": "thumbs/photography/06c-petals-and-grace/hand-in-her-hair.jpg",
+       "title": "Hand in her hair",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06c-petals-and-grace/reaching-for-the-branches.jpg",
+       "file": "reaching-for-the-branches.jpg",
+       "thumb": "thumbs/photography/06c-petals-and-grace/reaching-for-the-branches.jpg",
+       "title": "Reaching for the branches",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06c-petals-and-grace/resting-on-the-old-stone.jpg",
+       "file": "resting-on-the-old-stone.jpg",
+       "thumb": "thumbs/photography/06c-petals-and-grace/resting-on-the-old-stone.jpg",
+       "title": "Resting on the old stone",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06c-petals-and-grace/a-shy-smile.jpg",
+       "file": "a-shy-smile.jpg",
+       "thumb": "thumbs/photography/06c-petals-and-grace/a-shy-smile.jpg",
+       "title": "A shy smile",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06c-petals-and-grace/roses-in-hand.jpg",
+       "file": "roses-in-hand.jpg",
+       "thumb": "thumbs/photography/06c-petals-and-grace/roses-in-hand.jpg",
+       "title": "Roses in hand",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06c-petals-and-grace/walking-the-lawn.jpg",
+       "file": "walking-the-lawn.jpg",
+       "thumb": "thumbs/photography/06c-petals-and-grace/walking-the-lawn.jpg",
+       "title": "Walking the lawn",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06c-petals-and-grace/by-the-hedge.jpg",
+       "file": "by-the-hedge.jpg",
+       "thumb": "thumbs/photography/06c-petals-and-grace/by-the-hedge.jpg",
+       "title": "By the hedge",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06c-petals-and-grace/beneath-the-banyan.jpg",
+       "file": "beneath-the-banyan.jpg",
+       "thumb": "thumbs/photography/06c-petals-and-grace/beneath-the-banyan.jpg",
+       "title": "Beneath the banyan",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06c-petals-and-grace/among-the-roots.jpg",
+       "file": "among-the-roots.jpg",
+       "thumb": "thumbs/photography/06c-petals-and-grace/among-the-roots.jpg",
+       "title": "Among the roots",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/06c-petals-and-grace/layout-in-full-bloom.jpg",
+       "file": "layout-in-full-bloom.jpg",
+       "thumb": "thumbs/photography/06c-petals-and-grace/layout-in-full-bloom.jpg",
+       "title": "Album layout: in full bloom",
+       "w": 1810,
+       "h": 2560
       }
      ]
     },
@@ -1795,13 +2209,13 @@ window.PORTFOLIO = {
      "title": "Personality Development Workshop",
      "location": "University of Peradeniya",
      "date": "",
-     "description": "Full event coverage: speakers, group activities and the candid in-between moments.",
+     "description": "Event coverage for a Personality Development Workshop: talks from the stage, team challenges under neon light, smart-board sessions and quiet moments of reflection.",
      "link": "https://www.facebook.com/profile.php?id=100091314396526",
-     "more": 130,
-     "cover": "portfolio/photography/07-personality-development-workshop/the-speaker.jpg",
-     "coverW": 316,
-     "coverH": 318,
-     "coverFocus": "44% 35%",
+     "more": 0,
+     "cover": "thumbs/photography/07-personality-development-workshop/_cover.jpg",
+     "coverW": 2048,
+     "coverH": 2560,
+     "coverFocus": "50% 30%",
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
@@ -1810,39 +2224,210 @@ window.PORTFOLIO = {
      "items": [
       {
        "type": "image",
-       "src": "portfolio/photography/07-personality-development-workshop/the-speaker.jpg",
-       "file": "the-speaker.jpg",
-       "thumb": "portfolio/photography/07-personality-development-workshop/the-speaker.jpg",
-       "title": "The speaker",
-       "w": 316,
-       "h": 318
+       "src": "portfolio/photography/07-personality-development-workshop/the-speaker-takes-the-stage.jpg",
+       "file": "the-speaker-takes-the-stage.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/the-speaker-takes-the-stage.jpg",
+       "title": "The speaker takes the stage",
+       "w": 2560,
+       "h": 1707
       },
       {
        "type": "image",
-       "src": "portfolio/photography/07-personality-development-workshop/group-activity.jpg",
-       "file": "group-activity.jpg",
-       "thumb": "portfolio/photography/07-personality-development-workshop/group-activity.jpg",
-       "title": "Group activity",
-       "w": 316,
-       "h": 299
+       "src": "portfolio/photography/07-personality-development-workshop/a-moment-of-reflection.jpg",
+       "file": "a-moment-of-reflection.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/a-moment-of-reflection.jpg",
+       "title": "A moment of reflection",
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
-       "src": "portfolio/photography/07-personality-development-workshop/conversations.jpg",
-       "file": "conversations.jpg",
-       "thumb": "portfolio/photography/07-personality-development-workshop/conversations.jpg",
-       "title": "Conversations",
-       "w": 315,
-       "h": 211
+       "src": "portfolio/photography/07-personality-development-workshop/speaking-to-the-room.jpg",
+       "file": "speaking-to-the-room.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/speaking-to-the-room.jpg",
+       "title": "Speaking to the room",
+       "w": 1707,
+       "h": 2560
       },
       {
        "type": "image",
-       "src": "portfolio/photography/07-personality-development-workshop/hands-on.jpg",
-       "file": "hands-on.jpg",
-       "thumb": "portfolio/photography/07-personality-development-workshop/hands-on.jpg",
-       "title": "Hands on",
-       "w": 315,
-       "h": 211
+       "src": "portfolio/photography/07-personality-development-workshop/hands-up.jpg",
+       "file": "hands-up.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/hands-up.jpg",
+       "title": "Hands up",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/under-the-neon.jpg",
+       "file": "under-the-neon.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/under-the-neon.jpg",
+       "title": "Under the neon",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/a-selfie-with-the-team.jpg",
+       "file": "a-selfie-with-the-team.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/a-selfie-with-the-team.jpg",
+       "title": "A selfie with the team",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/at-the-smart-board.jpg",
+       "file": "at-the-smart-board.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/at-the-smart-board.jpg",
+       "title": "At the smart board",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/making-a-point.jpg",
+       "file": "making-a-point.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/making-a-point.jpg",
+       "title": "Making a point",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/opening-the-session.jpg",
+       "file": "opening-the-session.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/opening-the-session.jpg",
+       "title": "Opening the session",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/an-attentive-audience.jpg",
+       "file": "an-attentive-audience.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/an-attentive-audience.jpg",
+       "title": "An attentive audience",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/the-group-challenge.jpg",
+       "file": "the-group-challenge.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/the-group-challenge.jpg",
+       "title": "The group challenge",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/one-to-one.jpg",
+       "file": "one-to-one.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/one-to-one.jpg",
+       "title": "One to one",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/cheering-the-answer.jpg",
+       "file": "cheering-the-answer.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/cheering-the-answer.jpg",
+       "title": "Cheering the answer",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/teamwork.jpg",
+       "file": "teamwork.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/teamwork.jpg",
+       "title": "Teamwork",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/working-it-out.jpg",
+       "file": "working-it-out.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/working-it-out.jpg",
+       "title": "Working it out",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/team-leader.jpg",
+       "file": "team-leader.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/team-leader.jpg",
+       "title": "Team leader",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/heads-together.jpg",
+       "file": "heads-together.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/heads-together.jpg",
+       "title": "Heads together",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/table-discussions.jpg",
+       "file": "table-discussions.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/table-discussions.jpg",
+       "title": "Table discussions",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/walking-the-room.jpg",
+       "file": "walking-the-room.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/walking-the-room.jpg",
+       "title": "Walking the room",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/smiles-in-the-crowd.jpg",
+       "file": "smiles-in-the-crowd.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/smiles-in-the-crowd.jpg",
+       "title": "Smiles in the crowd",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/the-panel.jpg",
+       "file": "the-panel.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/the-panel.jpg",
+       "title": "The panel",
+       "w": 2560,
+       "h": 1707
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/eyes-closed.jpg",
+       "file": "eyes-closed.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/eyes-closed.jpg",
+       "title": "Eyes closed",
+       "w": 1707,
+       "h": 2560
+      },
+      {
+       "type": "image",
+       "src": "portfolio/photography/07-personality-development-workshop/quiet-focus.jpg",
+       "file": "quiet-focus.jpg",
+       "thumb": "thumbs/photography/07-personality-development-workshop/quiet-focus.jpg",
+       "title": "Quiet focus",
+       "w": 1707,
+       "h": 2560
       }
      ]
     },
@@ -2561,7 +3146,7 @@ window.PORTFOLIO = {
        "w": 960,
        "h": 540,
        "poster": "portfolio/videography/04-event-promotions/enartia-2023.jpg",
-       "thumb": "thumbs/videography/04-event-promotions/enartia-2023.jpg"
+       "thumb": "portfolio/videography/04-event-promotions/enartia-2023.jpg"
       },
       {
        "type": "video",
@@ -2571,7 +3156,7 @@ window.PORTFOLIO = {
        "w": 996,
        "h": 922,
        "poster": "portfolio/videography/04-event-promotions/wesak-week-2026.jpg",
-       "thumb": "thumbs/videography/04-event-promotions/wesak-week-2026.jpg"
+       "thumb": "portfolio/videography/04-event-promotions/wesak-week-2026.jpg"
       },
       {
        "type": "video",
@@ -2581,7 +3166,7 @@ window.PORTFOLIO = {
        "w": 996,
        "h": 922,
        "poster": "portfolio/videography/04-event-promotions/yowun-daham-sakmana-2026.jpg",
-       "thumb": "thumbs/videography/04-event-promotions/yowun-daham-sakmana-2026.jpg"
+       "thumb": "portfolio/videography/04-event-promotions/yowun-daham-sakmana-2026.jpg"
       },
       {
        "type": "video",
@@ -2591,7 +3176,7 @@ window.PORTFOLIO = {
        "w": 960,
        "h": 960,
        "poster": "portfolio/videography/04-event-promotions/yowun-daham-sakmana-2024.jpg",
-       "thumb": "thumbs/videography/04-event-promotions/yowun-daham-sakmana-2024.jpg"
+       "thumb": "portfolio/videography/04-event-promotions/yowun-daham-sakmana-2024.jpg"
       },
       {
        "type": "video",
@@ -2601,7 +3186,7 @@ window.PORTFOLIO = {
        "w": 960,
        "h": 960,
        "poster": "portfolio/videography/04-event-promotions/poson-celebration.jpg",
-       "thumb": "thumbs/videography/04-event-promotions/poson-celebration.jpg"
+       "thumb": "portfolio/videography/04-event-promotions/poson-celebration.jpg"
       },
       {
        "type": "video",
@@ -2611,7 +3196,7 @@ window.PORTFOLIO = {
        "w": 1032,
        "h": 892,
        "poster": "portfolio/videography/04-event-promotions/pirith-pinkama-promotion.jpg",
-       "thumb": "thumbs/videography/04-event-promotions/pirith-pinkama-promotion.jpg"
+       "thumb": "portfolio/videography/04-event-promotions/pirith-pinkama-promotion.jpg"
       }
      ]
     },
@@ -2627,7 +3212,7 @@ window.PORTFOLIO = {
      "cover": "thumbs/videography/04b-engex-2025-promotions/engex-2025-promotion.jpg",
      "coverW": 1280,
      "coverH": 720,
-     "coverFocus": "50% 40%",
+     "coverFocus": "20% 35%",
      "featured": true,
      "spotlight": false,
      "reelsOrder": 0,
@@ -2652,7 +3237,7 @@ window.PORTFOLIO = {
        "w": 1124,
        "h": 818,
        "poster": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promo-1.jpg",
-       "thumb": "thumbs/videography/04b-engex-2025-promotions/engex-2025-promo-1.jpg"
+       "thumb": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promo-1.jpg"
       },
       {
        "type": "video",
@@ -2662,7 +3247,7 @@ window.PORTFOLIO = {
        "w": 1124,
        "h": 818,
        "poster": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promo-2.jpg",
-       "thumb": "thumbs/videography/04b-engex-2025-promotions/engex-2025-promo-2.jpg"
+       "thumb": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promo-2.jpg"
       },
       {
        "type": "video",
@@ -2672,7 +3257,7 @@ window.PORTFOLIO = {
        "w": 1124,
        "h": 818,
        "poster": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promo-3.jpg",
-       "thumb": "thumbs/videography/04b-engex-2025-promotions/engex-2025-promo-3.jpg"
+       "thumb": "portfolio/videography/04b-engex-2025-promotions/engex-2025-promo-3.jpg"
       }
      ]
     },
@@ -2685,7 +3270,7 @@ window.PORTFOLIO = {
      "description": "Gimbal and side-camera roles at major events like Wasanthaye Aga and Sandhwani: live coverage, framing and working under pressure.",
      "link": "",
      "more": 0,
-     "cover": "thumbs/videography/05-live-event-coverage/stage-production-gauge.jpg",
+     "cover": "portfolio/videography/05-live-event-coverage/stage-production-gauge.jpg",
      "coverW": 1080,
      "coverH": 719,
      "coverFocus": "50% 40%",
@@ -2699,7 +3284,7 @@ window.PORTFOLIO = {
        "type": "image",
        "src": "portfolio/videography/05-live-event-coverage/stage-production-gauge.jpg",
        "file": "stage-production-gauge.jpg",
-       "thumb": "thumbs/videography/05-live-event-coverage/stage-production-gauge.jpg",
+       "thumb": "portfolio/videography/05-live-event-coverage/stage-production-gauge.jpg",
        "title": "Stage production, Gauge",
        "w": 1080,
        "h": 719
@@ -2742,7 +3327,7 @@ window.PORTFOLIO = {
      "description": "A series of six short teasers announcing the Back To School day: past students back in uniform, counting down to 5 August.",
      "link": "",
      "more": 0,
-     "cover": "thumbs/videography/06-back-to-school-2023-teasers/teaser-1.jpg",
+     "cover": "portfolio/videography/06-back-to-school-2023-teasers/teaser-1.jpg",
      "coverW": 964,
      "coverH": 954,
      "coverFocus": "44% 35%",
@@ -2760,7 +3345,7 @@ window.PORTFOLIO = {
        "w": 964,
        "h": 954,
        "poster": "portfolio/videography/06-back-to-school-2023-teasers/teaser-1.jpg",
-       "thumb": "thumbs/videography/06-back-to-school-2023-teasers/teaser-1.jpg"
+       "thumb": "portfolio/videography/06-back-to-school-2023-teasers/teaser-1.jpg"
       },
       {
        "type": "video",
@@ -2770,7 +3355,7 @@ window.PORTFOLIO = {
        "w": 964,
        "h": 954,
        "poster": "portfolio/videography/06-back-to-school-2023-teasers/teaser-2.jpg",
-       "thumb": "thumbs/videography/06-back-to-school-2023-teasers/teaser-2.jpg"
+       "thumb": "portfolio/videography/06-back-to-school-2023-teasers/teaser-2.jpg"
       },
       {
        "type": "video",
@@ -2780,7 +3365,7 @@ window.PORTFOLIO = {
        "w": 964,
        "h": 954,
        "poster": "portfolio/videography/06-back-to-school-2023-teasers/teaser-3.jpg",
-       "thumb": "thumbs/videography/06-back-to-school-2023-teasers/teaser-3.jpg"
+       "thumb": "portfolio/videography/06-back-to-school-2023-teasers/teaser-3.jpg"
       },
       {
        "type": "video",
@@ -2790,7 +3375,7 @@ window.PORTFOLIO = {
        "w": 964,
        "h": 954,
        "poster": "portfolio/videography/06-back-to-school-2023-teasers/teaser-4.jpg",
-       "thumb": "thumbs/videography/06-back-to-school-2023-teasers/teaser-4.jpg"
+       "thumb": "portfolio/videography/06-back-to-school-2023-teasers/teaser-4.jpg"
       },
       {
        "type": "video",
@@ -2800,7 +3385,7 @@ window.PORTFOLIO = {
        "w": 964,
        "h": 954,
        "poster": "portfolio/videography/06-back-to-school-2023-teasers/teaser-5.jpg",
-       "thumb": "thumbs/videography/06-back-to-school-2023-teasers/teaser-5.jpg"
+       "thumb": "portfolio/videography/06-back-to-school-2023-teasers/teaser-5.jpg"
       },
       {
        "type": "video",
@@ -2810,7 +3395,7 @@ window.PORTFOLIO = {
        "w": 964,
        "h": 954,
        "poster": "portfolio/videography/06-back-to-school-2023-teasers/teaser-6.jpg",
-       "thumb": "thumbs/videography/06-back-to-school-2023-teasers/teaser-6.jpg"
+       "thumb": "portfolio/videography/06-back-to-school-2023-teasers/teaser-6.jpg"
       }
      ]
     },
@@ -2996,7 +3581,7 @@ window.PORTFOLIO = {
      "description": "The faculty lit up for the night, and the first-ever drone show in university history, captured from the air at EngEx 2025.",
      "link": "",
      "more": 0,
-     "cover": "thumbs/aerial/03-faculty-after-dark/faculty-lit-up.jpg",
+     "cover": "portfolio/aerial/03-faculty-after-dark/faculty-lit-up.jpg",
      "coverW": 960,
      "coverH": 540,
      "coverFocus": "50% 40%",
@@ -3010,7 +3595,7 @@ window.PORTFOLIO = {
        "type": "image",
        "src": "portfolio/aerial/03-faculty-after-dark/faculty-lit-up.jpg",
        "file": "faculty-lit-up.jpg",
-       "thumb": "thumbs/aerial/03-faculty-after-dark/faculty-lit-up.jpg",
+       "thumb": "portfolio/aerial/03-faculty-after-dark/faculty-lit-up.jpg",
        "title": "The faculty lit up after dark",
        "w": 960,
        "h": 540
@@ -3552,7 +4137,7 @@ window.PORTFOLIO = {
        "w": 960,
        "h": 540,
        "poster": "portfolio/editing/02-tuition-class-advertisements/pre-engineering-class.jpg",
-       "thumb": "thumbs/editing/02-tuition-class-advertisements/pre-engineering-class.jpg"
+       "thumb": "portfolio/editing/02-tuition-class-advertisements/pre-engineering-class.jpg"
       },
       {
        "type": "video",
@@ -3572,7 +4157,7 @@ window.PORTFOLIO = {
        "w": 1086,
        "h": 848,
        "poster": "portfolio/editing/02-tuition-class-advertisements/robotics-class-2.jpg",
-       "thumb": "thumbs/editing/02-tuition-class-advertisements/robotics-class-2.jpg"
+       "thumb": "portfolio/editing/02-tuition-class-advertisements/robotics-class-2.jpg"
       },
       {
        "type": "video",
@@ -3592,7 +4177,7 @@ window.PORTFOLIO = {
        "w": 1034,
        "h": 888,
        "poster": "portfolio/editing/02-tuition-class-advertisements/chemistry-revision.jpg",
-       "thumb": "thumbs/editing/02-tuition-class-advertisements/chemistry-revision.jpg"
+       "thumb": "portfolio/editing/02-tuition-class-advertisements/chemistry-revision.jpg"
       },
       {
        "type": "video",
@@ -3635,7 +4220,7 @@ window.PORTFOLIO = {
      "description": "Layouts that turn a full shoot into one story: layered frames, soft type and a consistent grade.",
      "link": "https://www.facebook.com/profile.php?id=100091314396526",
      "more": 0,
-     "cover": "thumbs/editing/03-portrait-collages/portrait-hexagon-collage.jpg",
+     "cover": "portfolio/editing/03-portrait-collages/portrait-hexagon-collage.jpg",
      "coverW": 960,
      "coverH": 540,
      "coverFocus": "50% 40%",
@@ -3649,7 +4234,7 @@ window.PORTFOLIO = {
        "type": "image",
        "src": "portfolio/editing/03-portrait-collages/portrait-hexagon-collage.jpg",
        "file": "portrait-hexagon-collage.jpg",
-       "thumb": "thumbs/editing/03-portrait-collages/portrait-hexagon-collage.jpg",
+       "thumb": "portfolio/editing/03-portrait-collages/portrait-hexagon-collage.jpg",
        "title": "Portrait hexagon collage",
        "w": 960,
        "h": 540
@@ -4175,7 +4760,7 @@ window.PORTFOLIO = {
      "description": "A few days of gold every March, some framed with short Sinhala verses.",
      "link": "",
      "more": 0,
-     "cover": "thumbs/mobile/03-golden-blossoms/golden-canopy.jpg",
+     "cover": "portfolio/mobile/03-golden-blossoms/golden-canopy.jpg",
      "coverW": 720,
      "coverH": 1080,
      "coverFocus": "50% 30%",
@@ -4189,7 +4774,7 @@ window.PORTFOLIO = {
        "type": "image",
        "src": "portfolio/mobile/03-golden-blossoms/golden-canopy.jpg",
        "file": "golden-canopy.jpg",
-       "thumb": "thumbs/mobile/03-golden-blossoms/golden-canopy.jpg",
+       "thumb": "portfolio/mobile/03-golden-blossoms/golden-canopy.jpg",
        "title": "Golden canopy",
        "w": 720,
        "h": 1080
@@ -4198,7 +4783,7 @@ window.PORTFOLIO = {
        "type": "image",
        "src": "portfolio/mobile/03-golden-blossoms/a-tree-in-full-bloom.jpg",
        "file": "a-tree-in-full-bloom.jpg",
-       "thumb": "thumbs/mobile/03-golden-blossoms/a-tree-in-full-bloom.jpg",
+       "thumb": "portfolio/mobile/03-golden-blossoms/a-tree-in-full-bloom.jpg",
        "title": "A tree in full bloom",
        "w": 720,
        "h": 1080
@@ -4243,7 +4828,7 @@ window.PORTFOLIO = {
        "type": "image",
        "src": "portfolio/mobile/03-golden-blossoms/verse-and-blossom.jpg",
        "file": "verse-and-blossom.jpg",
-       "thumb": "thumbs/mobile/03-golden-blossoms/verse-and-blossom.jpg",
+       "thumb": "portfolio/mobile/03-golden-blossoms/verse-and-blossom.jpg",
        "title": "Verse and blossom",
        "w": 720,
        "h": 1080

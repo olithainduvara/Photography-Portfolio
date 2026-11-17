@@ -29,7 +29,7 @@ OUT = os.path.join(ROOT, 'js', 'data.js')
 
 IMAGE_EXT = {'.jpg', '.jpeg', '.png', '.webp', '.avif', '.gif'}
 VIDEO_EXT = {'.mp4', '.webm', '.mov', '.m4v'}
-THUMB_SIZE = 900
+THUMB_SIZE = 1200          # long side of cover / feed images (shown at up to ~600 px, sharp on 2x screens)
 
 try:
     from PIL import Image, ImageOps
@@ -73,7 +73,7 @@ def make_thumb(src, rel):
             os.makedirs(os.path.dirname(dst), exist_ok=True)
             t = im.convert('RGB')
             t.thumbnail((THUMB_SIZE, THUMB_SIZE), Image.LANCZOS)
-            t.save(dst, quality=82, optimize=True, progressive=True)
+            t.save(dst, quality=88, optimize=True, progressive=True)
     return url(dst), w, h
 
 
